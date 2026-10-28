@@ -76,6 +76,7 @@ function localizedActionLabel(
     if (resolvedLocale === 'zh-TW') return '新增到對話';
     if (resolvedLocale === 'ja') return 'チャットに追加';
     if (resolvedLocale === 'ko') return '대화에 추가';
+    if (resolvedLocale === 'fr') return 'Ajouter à la conversation';
     return 'Add to chat';
   }
   // Copy 是两套菜单共用的同一条命令,标签只保留 catalog 一处正本。
@@ -85,12 +86,14 @@ function localizedActionLabel(
     if (resolvedLocale === 'zh-TW') return `查詢「${preview}」`;
     if (resolvedLocale === 'ja') return `「${preview}」を調べる`;
     if (resolvedLocale === 'ko') return `“${preview}” 찾아보기`;
+    if (resolvedLocale === 'fr') return `Rechercher « ${preview} »`;
     return `Look Up “${preview}”`;
   }
   if (resolvedLocale === 'zh-CN') return `在网页中搜索“${preview}”`;
   if (resolvedLocale === 'zh-TW') return `在網頁中搜尋「${preview}」`;
   if (resolvedLocale === 'ja') return `「${preview}」をウェブで検索`;
   if (resolvedLocale === 'ko') return `웹에서 “${preview}” 검색`;
+  if (resolvedLocale === 'fr') return `Rechercher « ${preview} » sur le Web`;
   return `Search the web for “${preview}”`;
 }
 

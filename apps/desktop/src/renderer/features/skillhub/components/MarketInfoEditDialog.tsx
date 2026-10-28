@@ -15,8 +15,9 @@ import { toast } from '@/lib/toast';
 import { marketActionErrorMessage } from '../lib/marketErrors';
 import { PlatformTagSelector } from './PlatformTagSelector';
 import type { MarketCategory } from '../../../../shared/skillhubCategory';
-import { SUPPORTED_LOCALES, type SupportedLocale } from '../../../../shared/locale';
 
+const SKILLHUB_CONTENT_LOCALES = ['zh-CN', 'zh-TW', 'en', 'ja', 'ko'] as const;
+type SkillHubContentLocale = (typeof SKILLHUB_CONTENT_LOCALES)[number];
 const DESCRIPTION_LIMIT = 2_000;
 const DISPLAY_NAME_LIMIT = 100;
 
@@ -127,8 +128,9 @@ export function MarketInfoEditDialog({
           displayName: displayName.trim(),
           summary: description,
           description,
-          contentLocale: (SUPPORTED_LOCALES as readonly string[]).includes(i18n.resolvedLanguage ?? '')
-            ? i18n.resolvedLanguage as SupportedLocale
+          // SkillHub content locales lag behind UI locales (no fr yet); anything else is sent as en.
+          contentLocale: (SKILLHUB_CONTENT_LOCALES as readonly string[]).includes(i18n.resolvedLanguage ?? '')
+            ? i18n.resolvedLanguage as SkillHubContentLocale
             : 'en',
           tags: categorySlugs,
         },

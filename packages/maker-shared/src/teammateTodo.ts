@@ -619,6 +619,8 @@ export function todoActionText(title: string, step: string, locale = 'en'): stri
         ? '続ける'
         : locale.startsWith('ko')
           ? '계속'
-          : 'Continue';
+          : locale.startsWith('fr')
+            ? 'Continuer'
+            : 'Continue';
   return `${prefix} “${title}”: ${step}`;
 }

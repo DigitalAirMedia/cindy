@@ -6,6 +6,7 @@ import zhCNCommon from '../i18n/locales/zh-CN/common.json';
 import jaCommon from '../i18n/locales/ja/common.json';
 import koCommon from '../i18n/locales/ko/common.json';
 import zhTWCommon from '../i18n/locales/zh-TW/common.json';
+import frCommon from '../i18n/locales/fr/common.json';
 
 /**
  * 内置模板多语言同步测试。
@@ -39,6 +40,7 @@ const LOCALES: Record<string, SchedulerL10n> = {
   en: (enCommon as { scheduler: SchedulerL10n }).scheduler,
   ja: (jaCommon as { scheduler: SchedulerL10n }).scheduler,
   ko: (koCommon as { scheduler: SchedulerL10n }).scheduler,
+  fr: (frCommon as { scheduler: SchedulerL10n }).scheduler,
 };
 
 // 正则与运行时替换（maker-scheduler engine/template.ts）完全一致：更宽松的写法

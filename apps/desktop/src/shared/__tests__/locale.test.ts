@@ -13,8 +13,10 @@ describe('desktop locale resolution', () => {
   });
 
   it('uses the first supported locale in the OS preference list', () => {
-    expect(resolvePreferredSystemLocale(['fr-FR', 'zh-Hant-TW', 'en-US'])).toBe('zh-TW');
-    expect(resolvePreferredSystemLocale(['fr-FR', 'ja-JP'])).toBe('ja');
-    expect(resolvePreferredSystemLocale(['fr-FR'])).toBe('en');
+    expect(resolvePreferredSystemLocale(['de-DE', 'zh-Hant-TW', 'en-US'])).toBe('zh-TW');
+    expect(resolvePreferredSystemLocale(['de-DE', 'ja-JP'])).toBe('ja');
+    expect(resolvePreferredSystemLocale(['de-DE'])).toBe('en');
+    expect(resolvePreferredSystemLocale(['fr-FR', 'en-US'])).toBe('fr');
+    expect(resolveSystemLocale('fr-BE')).toBe('fr');
   });
 });

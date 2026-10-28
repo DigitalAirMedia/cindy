@@ -22,8 +22,8 @@ const source = readFileSync(
 const glossary = JSON.parse(
   readFileSync(new URL('../../../i18n/glossary.json', import.meta.url), 'utf8'),
 );
-const locales = { en: 'en', zh_CN: 'zh-CN', zh_TW: 'zh-TW', ja: 'ja', ko: 'ko' };
-const entries = [...source.matchAll(/^!define (\w+)_(en|zh_CN|zh_TW|ja|ko) "([^"]+)"$/gm)].map(
+const locales = { en: 'en', zh_CN: 'zh-CN', zh_TW: 'zh-TW', ja: 'ja', ko: 'ko', fr: 'fr' };
+const entries = [...source.matchAll(/^!define (\w+)_(en|zh_CN|zh_TW|ja|ko|fr) "([^"]+)"$/gm)].map(
   ([, key, language, value]) => ({ key, locale: locales[language], value }),
 );
 const english = new Map(
@@ -31,7 +31,7 @@ const english = new Map(
 );
 
 describe('Windows installer directory messages', () => {
-  it('provides every message in all five client languages', () => {
+  it('provides every message in every client language', () => {
     expect(english.size).toBeGreaterThan(0);
     for (const key of english.keys()) {
       expect(
