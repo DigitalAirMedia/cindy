@@ -1170,7 +1170,7 @@ Settings → Appearance can import a VSCode color theme (`*.json` / jsonc) or an
 
 Cindy's product voice matches its visuals: **restrained, direct, never self-congratulatory**. Copy is part of the tool, not marketing.
 
-### 11.1 Language-Independent Principles (zh-CN / zh-TW / en / ja / ko alike)
+### 11.1 Language-Independent Principles (zh-CN / zh-TW / en / ja / ko / fr alike)
 
 - **Actions = verb + object, never a bare verb.** Buttons and menu items say what is done to what: `Deploy Project` / `删除会话` / `セッションを削除`. **Forbidden**: objectless verbs like `Confirm` / `OK` / `确定` / `提交` (confirm-dialog primary buttons especially must carry the object so they read correctly out of context).
 - **Errors name what failed; advice must be supported by the cause.** When the cause is known, give the corresponding remedy. Suggest retrying only when there is evidence it may help; never append "Try again / 请重试" by default. When the cause or recovery path is unknown, state the failed operation honestly (for example, `Could not save panel positions` / `未能保存面板位置`), without inventing a cause, promising recovery, or prescribing an arbitrary action. Before suggesting a repeated write, import, or payment, account for possible partial completion. Pairs with `docs/dev-rules/engineering-conventions.md` §2 (IPC error protocol).
@@ -1185,7 +1185,8 @@ Cindy's product voice matches its visuals: **restrained, direct, never self-cong
 - **zh-CN**: **no Title Case concept** — no per-word capitalization, no English-style punctuation in Chinese; keep English terms as-is in mixed text (`部署 Project`). No full stop at the end of toasts / labels.
 - **zh-TW**: likewise has no Title Case; use Traditional Chinese characters and punctuation, while keeping English terms as-is in mixed text. No full stop at the end of toasts / labels.
 - **ja / ko**: likewise no Title Case; follow each language's particle / politeness conventions, and verify terminology when unsure (per `docs/dev-rules/engineering-conventions.md` §5: no improvised ja/ko).
-- **Numbers / units**: Arabic numerals + half-width in all five languages; number-to-unit spacing per language convention.
+- **fr**: sentence case (capitalize only the first word and proper nouns); formal *vous* in the interface, informal *tu* only in prompts the user sends to the Agent; a space before `: ; ! ?`; « … » quotation marks; no em dashes as clause separators.
+- **Numbers / units**: Arabic numerals + half-width in all languages; number-to-unit spacing per language convention.
 - **Task elapsed time**: promote long durations to hours/minutes at one hour and days/hours/minutes at one day. Always retain the minute field, including zero (for example, `1h 0m` or `2d 0h 5m`). Apply this to work summaries, thinking, live counters, task cards and usage details on Desktop and Mobile. Keep existing sub-hour precision; live counters may retain a zero-padded remainder. Stored durations and rate calculations keep their original precision.
 
 ### 11.3 Self-Check (when touching copy)
