@@ -59,7 +59,7 @@
     "requestNotReplayed": "Cette requête n'a pas été répétée. Vérifiez le résultat de l'opération d'origine dans l'app.",
     "storageUnavailable": "Impossible de lire ou d'enregistrer les données de connexion des apps locales. Les autorisations existantes ont été conservées.",
     "stopUnconfirmed": "Les nouveaux messages vers cette exécution sont bloqués, mais l'arrêt du processus n'a pas été confirmé.",
-    "interactionUnavailable": "Le moteur requiert une interaction que cette app ne peut pas recevoir.",
+    "interactionUnavailable": "Le Harness requiert une interaction que cette app ne peut pas recevoir.",
     "interrupted": "Cet envoi a été interrompu.",
     "toolTimeout": "Le délai de l'outil de l'app a expiré. Il n'a pas été relancé automatiquement.",
     "connectResult": "Revenez à l'app demandeuse pour connaître le résultat de la connexion. L'autorisation se décide dans la fenêtre de confirmation de Cindy.",
@@ -70,7 +70,7 @@
     "codeCopied": "Code de connexion copié",
     "codeCopyFailed": "Impossible de copier le code de connexion",
     "developerState": {
-      "ready": "Pour des connexions temporaires depuis des apps de cet ordinateur. Une approbation dans ce Cindy reste nécessaire. Copiez un nouveau code après un redémarrage.",
+      "ready": "Pour des connexions temporaires depuis des apps de cet ordinateur. Une approbation dans cette Cindy reste nécessaire. Copiez un nouveau code après un redémarrage.",
       "starting": "Préparation de la connexion…",
       "owner-unavailable": "Connectez-vous ou passez d'abord en mode local",
       "host-in-use": "Une autre instance de Cindy gère les connexions pour ce dossier de données",
@@ -171,7 +171,7 @@
       "MIGRATION_REQUIRES_REPOSITORY_ROOT": "Pour les projets Git, le répertoire de la tâche doit être la racine du dépôt.",
       "MIGRATION_SUBMODULE_UNSUPPORTED": "Les projets avec des sous-modules Git ne peuvent pas encore être copiés.",
       "MIGRATION_NO_SPACE": "Espace insuffisant sur l'ordinateur de destination.",
-      "MIGRATION_TARGET_MODEL_UNAVAILABLE": "La destination n'a aucun modèle disponible pour le moteur de cette tâche. Connectez-y d'abord un fournisseur.",
+      "MIGRATION_TARGET_MODEL_UNAVAILABLE": "La destination n'a aucun modèle disponible pour le Harness de cette tâche. Connectez-y d'abord un fournisseur.",
       "MIGRATION_UNSUPPORTED": "Mettez à jour les deux ordinateurs vers une version qui prend en charge la copie de tâches.",
       "MIGRATION_TASK_QUEUED": "Cette tâche a des messages en file d'attente. Terminez-les ou supprimez-les avant de la copier.",
       "MIGRATION_SOURCE_CHANGED": "La tâche source a changé pendant la préparation. Relancez la copie.",
@@ -371,7 +371,7 @@
       "needsUpdate": "Mettez à jour Cindy sur l'ordinateur du fournisseur pour gérer l'accès aux modèles."
     },
     "entry": {
-      "label": "Distant et partage",
+      "label": "Accès distant et partage",
       "pending_one": "{{count}} demande de partage en attente",
       "pending_many": "{{count}} demandes de partage en attente",
       "pending_other": "{{count}} demandes de partage en attente",
@@ -497,9 +497,9 @@
       "title": "{{name}} a demandé l'accès à {{provider}}",
       "requestedAt": "Demandé {{time}} via votre lien de partage",
       "pairingHint": "Avant d'approuver, vous pouvez lui demander via le canal par lequel vous avez envoyé le lien : « Quel code d'appairage voyez-vous ? » Approuvez s'il correspond.",
-      "callout": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. L'Agent s'exécute sur cet ordinateur et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Distant et partage ».",
-      "calloutGroup": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. Le groupe de fournisseurs choisit l'ordinateur qui exécute l'Agent, et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Distant et partage ».",
-      "calloutRemote": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. L'Agent s'exécute sur l'ordinateur qui héberge ce fournisseur et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Distant et partage ».",
+      "callout": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. L'Agent s'exécute sur cet ordinateur et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Accès distant et partage ».",
+      "calloutGroup": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. Le groupe de fournisseurs choisit l'ordinateur qui exécute l'Agent, et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Accès distant et partage ».",
+      "calloutRemote": "Une fois la demande approuvée, {{name}} pourra utiliser les modèles {{provider}} dans ses propres sessions. L'Agent s'exécute sur l'ordinateur qui héberge ce fournisseur et la consommation est imputée à votre {{provider}}. Vous pouvez suspendre ou retirer l'accès à tout moment dans « {{provider}} · Accès distant et partage ».",
       "calloutClaudeEmail": "Pendant que {{name}} l'utilise, l'Agent peut voir l'adresse e-mail avec laquelle vous vous connectez à Claude.",
       "calloutUnknown": "Si vous ne connaissez pas cette personne, refusez ; le lien cesse de fonctionner une fois la demande refusée.",
       "approve": "Approuver le partage",
@@ -564,7 +564,7 @@
       "statusActive": "Actif",
       "statusPaused": "En pause",
       "hostOffline": "Son ordinateur est hors ligne",
-      "hostUnavailable": "Son Cindy doit être mis à jour",
+      "hostUnavailable": "Sa Cindy doit être mise à jour",
       "leave": "Quitter",
       "leaveAria": "Quitter {{provider}} partagé par {{name}}",
       "leaveConfirm": {
@@ -591,7 +591,7 @@
       },
       "modelsTitle": "Modèles disponibles",
       "modelsLoading": "Chargement des modèles partagés…",
-      "modelsRefused": "L'ordinateur du propriétaire n'autorise pas ce partage pour le moment. Il se peut qu'il n'autorise pas le contrôle à distance, que « Autoriser l'utilisation à distance » soit désactivé pour ce fournisseur ou que son Cindy soit encore en cours de démarrage. Réessayez dans un instant, ou demandez-lui de vérifier ces deux paramètres.",
+      "modelsRefused": "L'ordinateur du propriétaire n'autorise pas ce partage pour le moment. Il se peut qu'il n'autorise pas le contrôle à distance, que « Autoriser l'utilisation à distance » soit désactivé pour ce fournisseur ou que sa Cindy soit encore en cours de démarrage. Réessayez dans un instant, ou demandez-lui de vérifier ces deux paramètres.",
       "modelsFailedWithCode": "Impossible de lire les modèles mis à disposition. Réessayez dans un instant. (Code d'erreur : {{code}})",
       "retryModels": "Recharger les modèles",
       "groupStatus": {
@@ -601,7 +601,7 @@
         "computer": "Ordinateur {{number}}",
         "summary": "{{ready}} ordinateur(s) sur {{total}} peuvent accepter des tâches",
         "loading": "Lecture de l'état des ordinateurs…",
-        "unsupported": "Le Cindy de la personne qui partage n'a pas fourni d'état. Demandez-lui de vérifier ou de mettre à jour Cindy.",
+        "unsupported": "La Cindy de la personne qui partage n'a pas fourni d'état. Demandez-lui de vérifier ou de mettre à jour Cindy.",
         "failed": "Impossible de lire l'état des ordinateurs. Actualisez pour réessayer.",
         "unconfirmed": "L'état de certains ordinateurs n'est pas confirmé. Actualisez dans un instant.",
         "noneReady": "Aucun ordinateur ne peut accepter de tâches pour le moment. Demandez à la personne qui partage de vérifier.",
@@ -696,7 +696,7 @@
       "unsupported": "La version de Cindy sur l'ordinateur qui héberge ce groupe ne prend pas encore en charge la gestion à distance. Mettez d'abord à jour Cindy sur cet ordinateur."
     },
     "page": {
-      "title": "{{provider}} · Distant et partage"
+      "title": "{{provider}} · Accès distant et partage"
     },
     "usage": {
       "title": "Consommation",
@@ -759,7 +759,7 @@
         "model": "Modèle"
       },
       "loadFailed": "Impossible de lire la consommation pour le moment. Une nouvelle tentative aura lieu automatiquement.",
-      "legacyNote": "Cindy doit être mis à jour sur {{device}}. Affichage des totaux depuis le début en attendant.",
+      "legacyNote": "Cindy doit être mise à jour sur {{device}}. Affichage des totaux depuis le début en attendant.",
       "coverage": "Les statistiques quotidiennes commencent le {{date}}",
       "emptyRange": "Aucune consommation sur cette période"
     },
@@ -1332,7 +1332,7 @@
     },
     "databaseCleanup": {
       "interruptedTitle": "Le nettoyage de la base de données a été interrompu",
-      "interruptedDescription": "Le nettoyage de la base de données s'est arrêté de façon inattendue. Redémarrez Cindy pour qu'il puisse reprendre en toute sécurité à partir de l'état de maintenance enregistré.",
+      "interruptedDescription": "Le nettoyage de la base de données s'est arrêté de façon inattendue. Redémarrez Cindy pour qu'elle puisse reprendre en toute sécurité à partir de l'état de maintenance enregistré.",
       "recoveryFailedTitle": "Impossible de récupérer la base de données locale en toute sécurité",
       "recoveryFailedDescription": "Échec de la récupération après le nettoyage de la base de données. Cindy n'ouvre plus la base de données locale afin de ne pas écraser les données d'origine."
     },
@@ -2410,7 +2410,8 @@
         "zh-TW": "Chinois traditionnel",
         "en": "English",
         "ja": "日本語",
-        "ko": "한국어"
+        "ko": "한국어",
+        "fr": "Français"
       }
     },
     "userProfile": {
@@ -3355,7 +3356,7 @@
         "replaceKey": "Remplacer la clé API",
         "addAndAuthorize": "Ajouter et autoriser",
         "retryOAuth": "Relancer l'autorisation",
-        "harnesses": "Configuration des harness",
+        "harnesses": "Configuration des Harness",
         "fetchAfterConfirm": "Les modèles seront récupérés après confirmation",
         "modelCount": "{{count}} modèle(s)",
         "keyIncluded": "Clé API incluse (masquée)",
@@ -3575,7 +3576,7 @@
           "codexDesc": "Codex utilise le protocole OpenAI Responses. Choisissez Responses natif, ou laissez Cindy faire la passerelle vers Chat Completions ou Anthropic Messages. Saisissez l'URL de base, la clé et les modèles de cette source pour Codex ; laissez vide pour ne pas utiliser Codex avec cette source.",
           "codexUpstream": "Protocole en amont actuel : ",
           "pi": "Pi",
-          "piDesc": "Pi est un harness multiprotocole : vos modèles personnalisés ou locaux se connectent de façon native (Ollama, vLLM, endpoints auto-hébergés), sans passer par le proxy de compatibilité de Cindy. Choisissez le type d'API ci-dessous, puis saisissez l'URL de base, la clé et les modèles de cette source pour Pi ; laissez vide pour ne pas utiliser Pi avec cette source."
+          "piDesc": "Pi est un Harness multiprotocole : vos modèles personnalisés ou locaux se connectent de façon native (Ollama, vLLM, endpoints auto-hébergés), sans passer par le proxy de compatibilité de Cindy. Choisissez le type d'API ci-dessous, puis saisissez l'URL de base, la clé et les modèles de cette source pour Pi ; laissez vide pour ne pas utiliser Pi avec cette source."
         },
         "errors": {
           "nameRequired": "Le nom affiché est obligatoire",
@@ -3814,19 +3815,19 @@
           "defaultEffort": "Effort de raisonnement par défaut",
           "defaultEffortHint": "L'effort initial pour les nouvelles tâches. Vous pouvez toujours l'ajuster au sein d'une tâche.",
           "contextLimit": "Limite de contexte",
-          "contextLimitHint": "S'applique à tous les moteurs disponibles pour ce modèle. Saisissez des K entiers (1 K = 1 000 jetons) ; les valeurs non modifiées conservent leur précision. Les modifications enregistrées s'appliquent aux exécutions suivantes sans interrompre une réponse. La capacité réelle reste soumise aux limites du service de modèles.",
+          "contextLimitHint": "S'applique à tous les Harness disponibles pour ce modèle. Saisissez des K entiers (1 K = 1 000 jetons) ; les valeurs non modifiées conservent leur précision. Les modifications enregistrées s'appliquent aux exécutions suivantes sans interrompre une réponse. La capacité réelle reste soumise aux limites du service de modèles.",
           "contextLimitLocalMillionHint": "256K en natif (262 144 jetons), extensible en option à 1M (1 000 000). Si le service est en cours d'exécution, redémarrez-le depuis Gérer le service pour appliquer les modifications ; s'il est arrêté, elles s'appliqueront à la prochaine utilisation. Les entrées plus longues nécessitent davantage de mémoire et sont plus longues à traiter.",
           "contextLimitAria": "Limite de contexte (milliers de jetons)",
           "compaction": {
             "title": "Compactage automatique",
-            "hint": "Compacter le contexte au pourcentage d'utilisation sélectionné. Une valeur plus basse compacte plus tôt ; les limites du moteur s'appliquent toujours.",
+            "hint": "Compacter le contexte au pourcentage d'utilisation sélectionné. Une valeur plus basse compacte plus tôt ; les limites du Harness s'appliquent toujours.",
             "default": "{{pct}} % (par défaut)",
-            "timing": "S'applique à tous les moteurs disponibles pour ce modèle et cette source lors des exécutions suivantes, sans interrompre une réponse."
+            "timing": "S'applique à tous les Harness disponibles pour ce modèle et cette source lors des exécutions suivantes, sans interrompre une réponse."
           },
           "contextLimitRoute": "Actuellement {{tokens}} jetons · 1 K = 1 000 jetons",
           "contextLimitOverWindow": "Supérieur à la fenêtre déclarée par le fournisseur ; les requêtes peuvent échouer.",
           "restoreDefault": "Restaurer la valeur par défaut",
-          "engines": "Prise en charge des moteurs",
+          "engines": "Prise en charge des Harness",
           "enginesHint": "Le mode de compatibilité convertit les requêtes. Il est désactivé par défaut et peut être activé si nécessaire.",
           "engineUnsupported": "Non pris en charge",
           "engineNotConfigured": "Non configuré",
@@ -3852,7 +3853,7 @@
           "catalogCapabilities": "Capacités déclarées dans le catalogue",
           "contextInvalid": "Saisissez un nombre entier compris entre {{min}} et 100 000 K.",
           "contextWriteFailed": "Non enregistré. Veuillez réessayer.",
-          "contextMixed": "Les paramètres existants des harness diffèrent. La modification ou la réinitialisation s'applique à tous les harness.",
+          "contextMixed": "Les paramètres existants des Harness diffèrent. La modification ou la réinitialisation s'applique à tous les Harness.",
           "inputModalities": "Types d'entrée",
           "outputModalities": "Types de sortie",
           "modalities": {
@@ -3862,7 +3863,7 @@
             "video": "Vidéo",
             "file": "Fichier"
           },
-          "effortMixed": "L'effort diffère selon le moteur. Une sélection s'applique aux moteurs qui prennent en charge ce niveau.",
+          "effortMixed": "L'effort diffère selon le Harness. Une sélection s'applique aux Harness qui prennent en charge ce niveau.",
           "protocol": {
             "reference": "API native",
             "compatibility": "Mode de compatibilité",
@@ -3914,7 +3915,7 @@
         "groupBadge_one": "Groupe de fournisseurs · {{count}} ordinateur",
         "groupBadge_many": "Groupe de fournisseurs · {{count}} ordinateurs",
         "groupBadge_other": "Groupe de fournisseurs · {{count}} ordinateurs",
-        "groupNote": "{{device}} a fait de ce fournisseur un groupe de fournisseurs. Lorsque vous lancez une tâche avec celui-ci, {{device}} l'attribue à l'un des ordinateurs ci-dessous selon la stratégie du groupe, et la déplace vers un autre si cet ordinateur rencontre un problème. Tant que {{device}} est en ligne, utilisez Accès à distance et partage ici pour gérer le groupe et ses partages.",
+        "groupNote": "{{device}} a fait de ce fournisseur un groupe de fournisseurs. Lorsque vous lancez une tâche avec celui-ci, {{device}} l'attribue à l'un des ordinateurs ci-dessous selon la stratégie du groupe, et la déplace vers un autre si cet ordinateur rencontre un problème. Tant que {{device}} est en ligne, utilisez Accès distant et partage ici pour gérer le groupe et ses partages.",
         "groupMembersTitle": "Ordinateurs du groupe",
         "groupMembersFailed": "Impossible d'obtenir pour le moment l'état des ordinateurs du groupe."
       },
@@ -4762,8 +4763,8 @@
         "title": "Participation aux groupes",
         "hint": "Les groupes vus par le bot apparaissent ici. « Actif » = il lit chaque message et décide lui-même d'intervenir ou non (chaque message consomme des jetons).",
         "empty": "Aucun groupe pour l'instant. Ajoutez le bot à un groupe : il apparaîtra ici dès que quelqu'un parlera.",
-        "contactsOn": "Les personnes qui parlent dans les groupes sont ajoutées automatiquement aux Smart Contacts (l'interrupteur principal est activé).",
-        "contactsOff": "Smart Contacts est désactivé — les personnes qui parlent dans les groupes ne seront pas mémorisées automatiquement.",
+        "contactsOn": "Les personnes qui parlent dans les groupes sont ajoutées automatiquement aux Contacts intelligents (l'interrupteur principal est activé).",
+        "contactsOff": "Les Contacts intelligents sont désactivés — les personnes qui parlent dans les groupes ne seront pas mémorisées automatiquement.",
         "contactsEnable": "Activer",
         "error": {
           "load": "Impossible de charger les groupes Telegram. Vérifiez la connexion et réessayez.",
@@ -4923,7 +4924,7 @@
         "ariaLabel": "Choisir le second modèle auxiliaire de secours"
       },
       "emptySlot": "Non sélectionné",
-      "customHint": "Les modèles sont essayés dans l'ordre choisi et servent aussi de secours à l'Auto-review lorsque ses modèles intégrés sont indisponibles. Les fournisseurs sélectionnés reçoivent le contexte de la revue : messages et références, détails des tâches et des actions (y compris les actions bloquées), identité et autorisations, chemins de fichiers et système d'exploitation.",
+      "customHint": "Les modèles sont essayés dans l'ordre choisi et servent aussi de secours à la revue automatique lorsque ses modèles intégrés sont indisponibles. Les fournisseurs sélectionnés reçoivent le contexte de la revue : messages et références, détails des tâches et des actions (y compris les actions bloquées), identité et autorisations, chemins de fichiers et système d'exploitation.",
       "signInHint": "Connectez-vous à Cindy pour utiliser les recommandations automatiques. Sans connexion, choisissez un modèle configuré d'un autre fournisseur sous Personnalisé.",
       "chooseAgent": "Choisir un Agent",
       "backToAgents": "Retour à la sélection de l'Agent",
@@ -4961,7 +4962,7 @@
       "title": "Personnalisation",
       "subtitle": "Prompts personnalisés",
       "description": "Donnez à vos assistants des instructions et un contexte supplémentaires.",
-      "placeholder": "Saisissez vos instructions personnalisées ici. Elles seront ajoutées à la fin du prompt système de Claude / Codex.\n\n· S'applique uniquement aux sessions intégrées de {{appName}}. Les sessions existantes conservent leur instantané de démarrage ; les modifications prennent effet à la prochaine nouvelle session.\n· Pour l'imposer à toutes les sessions Claude Code (terminal, autres IDE, etc.), configurez un hook SessionStart dans ~/.claude/settings.json (application au niveau du harnais).\n· Codex CLI : configurez un hook SessionStart dans ~/.codex/hooks.json pour une injection déterministe (même mécanisme de harnais que CC) ; ou utilisez ~/.codex/AGENTS.md (chargé automatiquement, simple recommandation).",
+      "placeholder": "Saisissez vos instructions personnalisées ici. Elles seront ajoutées à la fin du prompt système de Claude / Codex.\n\n· S'applique uniquement aux sessions intégrées de {{appName}}. Les sessions existantes conservent leur instantané de démarrage ; les modifications prennent effet à la prochaine nouvelle session.\n· Pour l'imposer à toutes les sessions Claude Code (terminal, autres IDE, etc.), configurez un hook SessionStart dans ~/.claude/settings.json (application au niveau du Harness).\n· Codex CLI : configurez un hook SessionStart dans ~/.codex/hooks.json pour une injection déterministe (même mécanisme de Harness que CC) ; ou utilisez ~/.codex/AGENTS.md (chargé automatiquement, simple recommandation).",
       "ariaLabel": "Instructions personnalisées",
       "save": "Enregistrer",
       "overLimit": " — limite dépassée",
@@ -5119,7 +5120,7 @@
         "custom": "Combinaison personnalisée. Ajustez directement les champs ci-dessous."
       },
       "maxConcurrent": "Limite de commandes simultanées",
-      "maxConcurrentHint": "Nombre maximal de commandes que le moteur Claude Code peut exécuter simultanément ; les commandes supplémentaires attendent dans une file. 0 signifie illimité. Les commandes Codex s'exécutent dans leur propre sandbox sans hook par commande et sont couvertes à la place par les niveaux de priorité et de plafond de threads.",
+      "maxConcurrentHint": "Nombre maximal de commandes que le Harness Claude Code peut exécuter simultanément ; les commandes supplémentaires attendent dans une file. 0 signifie illimité. Les commandes Codex s'exécutent dans leur propre sandbox sans hook par commande et sont couvertes à la place par les niveaux de priorité et de plafond de threads.",
       "priority": "Priorité des processus",
       "priorityHint": "Réduisez-la pour que les Agents n'utilisent que la capacité inactive et que les applications au premier plan restent réactives. La réduction s'applique aux Agents en cours d'exécution en 15 secondes environ ; le retour à Normale ne s'applique qu'aux Agents nouvellement démarrés.",
       "priorityOptions": {
@@ -7118,16 +7119,16 @@
       "trust": {
         "official": "Plugin Cindy officiel",
         "officialDetail": "Fourni avec Cindy.",
-        "reviewed": "Éditeur vérifié · Cette version a été examinée",
-        "reviewedDetail": "Les signatures sont valides et la signature d'examen Cindy correspond à chaque fichier de cette version précise.",
+        "reviewed": "Éditeur vérifié · Cette version a passé la revue",
+        "reviewedDetail": "Les signatures sont valides et la signature de revue Cindy correspond à chaque fichier de cette version précise.",
         "verifiedPublisher": "Éditeur vérifié : {{publisher}}",
-        "verifiedPublisherDetail": "La signature est valide et les fichiers n'ont pas été modifiés, mais cette version précise ne dispose d'aucune signature d'examen Cindy.",
+        "verifiedPublisherDetail": "La signature est valide et les fichiers n'ont pas été modifiés, mais cette version précise ne dispose d'aucune signature de revue Cindy.",
         "signedUnverified": "Signé, mais l'identité de l'éditeur n'est pas vérifiée : {{publisher}}",
         "signedUnverifiedDetail": "La signature prouve que les fichiers n'ont pas été modifiés, mais cette version de Cindy ne reconnaît pas la clé de l'éditeur.",
         "unsigned": "Non vérifié / non signé",
         "unsignedDetail": "Impossible de vérifier la provenance du paquet ni s'il a été modifié après sa distribution.",
         "unknownPublisher": "Éditeur inconnu",
-        "unknownReviewerDetail": "Le paquet affirme avoir été examiné, mais cette version de Cindy ne reconnaît pas la clé de l'examinateur : il n'est donc pas affiché comme examiné."
+        "unknownReviewerDetail": "Le paquet affirme avoir passé une revue, mais cette version de Cindy ne reconnaît pas la clé du relecteur : il n'est donc pas affiché comme ayant passé la revue."
       },
       "perm": {
         "mail": "Utiliser les brouillons d'e-mail et les cartes d'envoi",
@@ -7156,7 +7157,7 @@
         "agentUserActionDetail": "Chaque clic n'autorise qu'un seul tour, et uniquement dans la session à laquelle appartient la carte.",
         "agentBackground": "Peut lancer automatiquement de nouveaux tours de l'Agent en arrière-plan",
         "agentBackgroundDetail": "Ne nécessite pas de clic à chaque fois, mais ne peut utiliser que les sessions que vous avez précédemment connectées à ce plugin. Des frais de modèle peuvent s'appliquer.",
-        "agentTasksRequest": "Examiner l'autorisation de tâches",
+        "agentTasksRequest": "Vérifier l'autorisation de tâches",
         "agentTasks": "Peut créer et gérer ses propres tâches Cindy",
         "agentTasksDetail": "Peut envoyer des messages, lire les résultats et arrêter ses propres exécutions. Les tâches restent visibles pour vous. Utilise les paramètres IA de ce plugin et peut entraîner des frais de modèle ; ne donne pas accès aux autres tâches.",
         "agentTargets": "Peut envoyer des messages aux projets, aux tâches existantes et aux compagnons",
@@ -7190,7 +7191,7 @@
         "subscribeActivity": "Observe quand l'IA réfléchit et quand elle attend votre intervention",
         "subscribeActivityDetail": "Ne voit que la chronologie : quand la réflexion commence et se termine, et quand l'IA attend votre approbation ou votre réponse. Il ne voit jamais le texte du raisonnement, l'action en attente d'approbation, la commande ou le fichier concerné, le plan, la question ni votre réponse — et il ne peut rien approuver à votre place.",
         "subscribeHooks": "Peut lire, bloquer ou réécrire les messages que vous envoyez",
-        "subscribeHooksDetail": "Examine chaque message avant l'envoi : il peut le bloquer ou en réécrire le texte avant qu'il parte ; les messages bloqués peuvent être modifiés et renvoyés.",
+        "subscribeHooksDetail": "Vérifie chaque message avant l'envoi : il peut le bloquer ou en réécrire le texte avant qu'il parte ; les messages bloqués peuvent être modifiés et renvoyés.",
         "subscribeAssistantReply": "Peut lire et réécrire les réponses de l'IA",
         "subscribeAssistantReplyDetail": "Traite chaque réponse de l'IA une fois terminée : il peut en peaufiner ou réécrire le texte (en le remplaçant directement, sans conserver l'original), ou remplacer la bulle de réponse par sa propre carte (dans ce cas, le texte original est conservé et consultable d'un simple toucher).",
         "card": "Affiche des cartes de message",
@@ -7485,9 +7486,9 @@
         "doneAction": "Terminé",
         "doneToast": "Mise à jour groupée terminée : {{done}} mis à jour, {{rest}} non terminés",
         "permissionChanged": "Autorisations modifiées",
-        "rereview": "Réexaminer",
-        "reviewDiff": "Examiner",
-        "reviewOutdated": "Examen obsolète",
+        "rereview": "Vérifier à nouveau",
+        "reviewDiff": "Vérifier",
+        "reviewOutdated": "Vérification obsolète",
         "approve": "Approuver",
         "skip": "Ignorer"
       },
@@ -7511,7 +7512,7 @@
         "badge": {
           "validating": "Vérification",
           "processing": "Traitement",
-          "pending": "En attente d'examen",
+          "pending": "En attente de revue",
           "approved": "Publié",
           "rejected": "Refusé",
           "failed": "Échec",
@@ -7619,20 +7620,20 @@
         "usesExplanation": "Nombre cumulé d'appels d'outils partagés, toutes versions confondues, au sein de l'audience autorisée. Vos appels ci-dessous ne concernent que ce compte sur cet ordinateur."
       },
       "contribution": {
-        "unreadReview": "Nouveau résultat d'examen",
-        "viewReviewResult": "Voir le résultat de l'examen de {{version}}",
+        "unreadReview": "Nouveau résultat de revue",
+        "viewReviewResult": "Voir le résultat de la revue de {{version}}",
         "anonymous": "Publier anonymement",
         "anonymousHint": "Masquer l'attribution publique pour l'ensemble du plugin. Si cette option est désactivée, chaque version affiche le nom de l'auteur d'origine enregistré lors de sa soumission.",
         "anonymousAuthorOnly": "Seul l'auteur d'origine peut modifier ce réglage",
         "anonymousUnavailable": "Paramètres d'auteur indisponibles",
         "anonymousUpdateFailed": "Impossible de confirmer l'enregistrement du réglage d'anonymat. Actualisez avant de réessayer.",
         "myPlugins": "Publier un plugin",
-        "publish": "Soumettre pour examen",
-        "submitUpdate": "Soumettre une nouvelle version pour examen",
+        "publish": "Soumettre pour revue",
+        "submitUpdate": "Soumettre une nouvelle version pour revue",
         "publishHint": "Ne publiez que des plugins que vous êtes autorisé à publier. Une approbation humaine est requise pour figurer dans la communauté.",
         "preparing": "Préparation du plugin installé…",
-        "confirmSubmit": "Soumettre pour examen",
-        "confirmPublic": "Le paquet actuel du plugin, y compris son code et ses autorisations déclarées, sera soumis à un examen humain. La distribution publique dans la communauté requiert une approbation.",
+        "confirmSubmit": "Soumettre pour revue",
+        "confirmPublic": "Le paquet actuel du plugin, y compris son code et ses autorisations déclarées, sera soumis à une revue humaine. La distribution publique dans la communauté requiert une approbation.",
         "packageSize": "Taille du paquet : {{size}} octets",
         "refreshList": "Actualiser la liste",
         "refreshDetail": "Actualiser les détails",
@@ -7648,12 +7649,12 @@
         "filterLabel": "Filtrer vos plugins",
         "filter": {
           "all": "Tous",
-          "pending": "En attente d'examen",
+          "pending": "En attente de revue",
           "needs_action": "Action requise",
           "published": "Publiés"
         },
         "loading": "Chargement…",
-        "empty": "Aucun plugin soumis pour l'instant. Choisissez un plugin que vous avez développé et utilisé, puis soumettez-le pour examen.",
+        "empty": "Aucun plugin soumis pour l'instant. Choisissez un plugin que vous avez développé et utilisé, puis soumettez-le pour revue.",
         "noMatches": "Aucun plugin ne correspond à cette recherche ou à ce filtre.",
         "goPublish": "Publier un plugin",
         "currentMarket": "Version actuellement publiée",
@@ -7661,7 +7662,7 @@
         "localVersion": "Version locale",
         "localEnabled": "Activée",
         "localDisabled": "Désactivée",
-        "submitVersion": "Soumettre {{version}} pour examen",
+        "submitVersion": "Soumettre {{version}} pour revue",
         "installPublished": "Installer la version publiée",
         "publishedContentUnavailable": "La description et les notes de version de la version publiée actuelle sont temporairement indisponibles.",
         "currentSubmission": "Soumission actuelle",
@@ -7670,10 +7671,10 @@
           "unavailable": "Version locale temporairement indisponible"
         },
         "listedVersion": "Publiée",
-        "pendingVersion": "En attente d'examen",
+        "pendingVersion": "En attente de revue",
         "notInstalled": "Non installé",
         "versionUnknown": "Version inconnue",
-        "noPendingVersion": "Aucun examen en attente",
+        "noPendingVersion": "Aucune revue en attente",
         "versionFacts": "État de la version",
         "publishing": "Publication",
         "latestSubmission": "Dernière soumission",
@@ -7686,7 +7687,7 @@
           "release_unavailable": "Version indisponible"
         },
         "review": {
-          "pending": "En attente d'examen",
+          "pending": "En attente de revue",
           "approved": "Approuvé",
           "rejected": "Renvoyé",
           "published": "Publié",
@@ -7705,7 +7706,7 @@
         "revision": "Révision",
         "technicalDetails": "Détails techniques",
         "outcome": {
-          "submitted_for_review": "Soumis pour examen",
+          "submitted_for_review": "Soumis pour revue",
           "metadata_updated": "Informations d'affichage mises à jour",
           "unchanged": "Résultat existant renvoyé"
         },
@@ -7732,11 +7733,11 @@
         },
         "errors": {
           "CONTRIBUTION_NOT_AUTHORIZED": "Vous n'êtes pas autorisé à publier ce plugin public. Contactez son mainteneur ; l'installation ne confère pas de droits de publication.",
-          "CONTRIBUTION_REVISION_STALE": "La version cible a changé. Actualisez et examinez-la, puis relancez explicitement la préparation.",
+          "CONTRIBUTION_REVISION_STALE": "La version cible a changé. Actualisez et vérifiez-la, puis relancez explicitement la préparation.",
           "RELEASE_VERSION_CONFLICT": "Cette version ne peut pas remplacer son contenu d'exécution existant. Changez la version du plugin avant de le soumettre.",
           "PLUGIN_GHOST_ID_CONFLICT": "Cet identifiant de plugin est déjà utilisé. Choisissez un autre identifiant pour un nouveau plugin, ou connectez-vous avec le compte de publication d'origine pour mettre à jour le plugin existant.",
           "CONTRIBUTION_OPERATION_NOT_FOUND": "Ce compte ne peut pas voir cette soumission.",
-          "PRECONDITION_FAILED": "Ce plugin ne peut pas être soumis pour examen pour le moment.",
+          "PRECONDITION_FAILED": "Ce plugin ne peut pas être soumis pour revue pour le moment.",
           "PERSONAL_CONTEXT_REQUIRED": "Connectez-vous pour gérer les plugins que vous soumettez au marketplace public.",
           "ACCOUNT_REAUTH_REQUIRED": "Votre session n'est plus valide. Reconnectez-vous avant de réessayer.",
           "PERMISSION_DENIED": "Ce compte ne peut pas publier ce plugin.",
@@ -7762,20 +7763,20 @@
           "CONTRIBUTION_TARGET_MISMATCH": "Le paquet ne correspond pas à la cible de la soumission. Vérifiez l'ID et la version du plugin.",
           "PUBLISH_STORAGE_UNAVAILABLE": "Le stockage de fichiers est temporairement indisponible. Veuillez réessayer plus tard.",
           "PUBLISH_INTERNAL_ERROR": "Le serveur n'a pas pu traiter la requête. Veuillez réessayer plus tard.",
-          "RELEASE_NOTES_REQUIRED": "Non soumis pour examen : complétez ghost.json.releaseNotes dans la source du plugin, installez le plugin mis à jour, puis soumettez-le pour examen.",
-          "VERSION_ALREADY_SUBMITTED": "Cette version a déjà été soumise. Changez le numéro de version et installez le plugin mis à jour avant de le soumettre à nouveau pour examen.",
-          "PLUGIN_PENDING_RELEASE_EXISTS": "Une autre version est en cours d'examen. Consultez ou annulez d'abord cet examen.",
+          "RELEASE_NOTES_REQUIRED": "Non soumis pour revue : complétez ghost.json.releaseNotes dans la source du plugin, installez le plugin mis à jour, puis soumettez-le pour revue.",
+          "VERSION_ALREADY_SUBMITTED": "Cette version a déjà été soumise. Changez le numéro de version et installez le plugin mis à jour avant de le soumettre à nouveau pour revue.",
+          "PLUGIN_PENDING_RELEASE_EXISTS": "Une autre version est en cours de revue. Consultez ou annulez d'abord cette revue.",
           "CONTRIBUTION_PACKAGE_CHANGED": "Le plugin installé a changé après l'affichage du récapitulatif. Actualisez et vérifiez-le à nouveau."
         },
-        "installForAccount": "L'installation du plugin sélectionnée initialement est introuvable. Sélectionnez à nouveau le plugin dans le compte actuel et vérifiez-le avant de le soumettre pour examen.",
+        "installForAccount": "L'installation du plugin sélectionnée initialement est introuvable. Sélectionnez à nouveau le plugin dans le compte actuel et vérifiez-le avant de le soumettre pour revue.",
         "releaseSha": "SHA-256 du paquet de version",
         "uploadedSha": "SHA-256 du paquet envoyé",
         "publishPlugin": "Publier un plugin",
-        "chooseLocal": "Choisissez un plugin local que vous avez développé, vérifiez sa version et soumettez-le pour examen.",
+        "chooseLocal": "Choisissez un plugin local que vous avez développé, vérifiez sa version et soumettez-le pour revue.",
         "noLocalPlugins": "Aucun plugin installé pour l'instant. Installez et utilisez d'abord un plugin que vous avez développé.",
         "noPublishablePlugins": "Aucun plugin installé n'est publiable. Installez et utilisez un plugin que vous avez développé, puis vérifiez son identité d'installation et l'approbation de ses autorisations dans les détails.",
         "unavailable": {
-          "officialGithubRequired": "Les plugins publics officiels ne peuvent pas être soumis pour examen depuis le client. Soumettez les modifications via le dépôt GitHub afin de garder sa source complète et de faciliter la maintenance future.",
+          "officialGithubRequired": "Les plugins publics officiels ne peuvent pas être soumis pour revue depuis le client. Soumettez les modifications via le dépôt GitHub afin de garder sa source complète et de faciliter la maintenance future.",
           "reservedId": "Les plugins utilisant les identifiants réservés de Cindy ne peuvent pas être soumis depuis le client. Soumettez les modifications de plugins publics officiels via GitHub afin que la source du dépôt reste complète et maintenable.",
           "privatePlugin": "Les plugins d'organisation et privés ne peuvent pas être convertis en plugins communautaires publics.",
           "identityPending": "L'identité d'installation du plugin n'est pas encore confirmée. La publication est indisponible.",
@@ -7784,7 +7785,7 @@
           "sourceUnverified": "La source d'installation de ce plugin n'a pas pu être vérifiée. Ouvrez un plugin local que vous avez développé.",
           "publishingPermissionRequired": "Ce compte n'est pas autorisé à soumettre ce plugin."
         },
-        "intro": "Gérez les versions, mises à jour et examens des plugins du marketplace public",
+        "intro": "Gérez les versions, mises à jour et revues des plugins du marketplace public",
         "pluginColumn": "Plugin",
         "latestState": "Dernier état",
         "version": "Version",
@@ -7798,19 +7799,19 @@
         "versionManagement": "Gérer les versions",
         "versionContent": "Contenu de la version",
         "loadMoreVersions": "Charger plus de versions",
-        "notSubmitted": "Non soumis pour examen",
-        "publishingVersion": "Version à examiner · {{version}}",
+        "notSubmitted": "Non soumis pour revue",
+        "publishingVersion": "Version soumise à la revue · {{version}}",
         "refreshSummary": "Actualiser le récapitulatif de publication",
-        "versionConsumedHint": "Une fois une soumission acceptée pour examen, son numéro de version ne peut plus être réutilisé, même après annulation ou refus.",
-        "cancelReview": "Annuler cet examen",
-        "cancelReviewTitle": "Annuler l'examen de {{name}} {{version}} ?",
+        "versionConsumedHint": "Une fois une soumission acceptée pour revue, son numéro de version ne peut plus être réutilisé, même après annulation ou refus.",
+        "cancelReview": "Annuler cette revue",
+        "cancelReviewTitle": "Annuler la revue de {{name}} {{version}} ?",
         "cancelReviewDescription": "La version actuellement référencée reste disponible. La version {{version}} a été soumise et ne peut pas l'être à nouveau. Utilisez un nouveau numéro de version.",
-        "keepReview": "Conserver l'examen",
+        "keepReview": "Conserver la revue",
         "cancelledAt": "Annulé le",
         "cancelled": "Annulé",
-        "cancelReviewCompleted": "Examen annulé. La version actuellement référencée est inchangée.",
-        "cancelReviewAlreadyFinal": "L'examen était déjà terminé : il n'a donc pas été annulé. Le résultat réel est affiché ci-dessous.",
-        "viewPendingVersion": "Voir la version en cours d'examen",
+        "cancelReviewCompleted": "Revue annulée. La version actuellement référencée est inchangée.",
+        "cancelReviewAlreadyFinal": "La revue était déjà terminée : elle n'a donc pas été annulée. Le résultat réel est affiché ci-dessous.",
+        "viewPendingVersion": "Voir la version en cours de revue",
         "submitFailed": "Échec de la soumission",
         "viewDetails": "Voir les détails"
       }
@@ -8044,7 +8045,7 @@
       "guide": {
         "hint": "Laissez l'IA vous aider à ajouter des fiches de contact, valider les fiches en attente et nettoyer les doublons.",
         "cta": "Gérer les contacts avec l'IA",
-        "managementPrompt": "Aide-moi à gérer mes Contacts intelligents. Vérifie d'abord l'état actuel et les outils déjà disponibles, puis guide-moi pour ajouter des contacts utiles, examiner les doublons et traiter les fiches en attente. Demande-moi avant toute écriture, fusion ou suppression."
+        "managementPrompt": "Aide-moi à gérer mes Contacts intelligents. Vérifie d'abord l'état actuel et les outils déjà disponibles, puis guide-moi pour ajouter des contacts utiles, vérifier les doublons et traiter les fiches en attente. Demande-moi avant toute écriture, fusion ou suppression."
       }
     },
     "remotePermission": {
@@ -8197,7 +8198,7 @@
       "deny": "Refuser",
       "questionTitle": "Votre réponse est requise",
       "submit": "Envoyer",
-      "planTitle": "Examen du plan",
+      "planTitle": "Revue du plan",
       "approve": "Approuver",
       "requestChanges": "Demander des modifications",
       "planFeedbackPlaceholder": "Retour (facultatif)"
@@ -8703,10 +8704,10 @@
       }
     },
     "byAgent": {
-      "title": "Par Agent / harnais",
+      "title": "Par Agent / Harness",
       "subtitle": "30 derniers jours",
       "col": {
-        "agent": "Agent / harnais",
+        "agent": "Agent / Harness",
         "total": "Jetons (30 j)",
         "totalInRange": "Jetons ({{range}})",
         "share": "Part",
@@ -9007,7 +9008,7 @@
       "filterEmptyTitle": "Aucune modification pour ce filtre",
       "filterEmptyDesc": "Aucune modification git n'est visible avec le filtre ou les paramètres actuels.",
       "noSessionTitle": "Aucune session",
-      "noSessionDesc": "Sélectionnez une session locale pour examiner les modifications de son worktree git.",
+      "noSessionDesc": "Sélectionnez une session locale pour passer en revue les modifications de son worktree git.",
       "loadingTitle": "Lecture des modifications git",
       "loadingDesc": "Le panneau conserve le contenu précédent jusqu'à la fin de l'actualisation.",
       "errorTitle": "Impossible de lire les modifications",
@@ -9273,7 +9274,7 @@
         },
         "no-workdir": {
           "title": "Aucun répertoire de travail",
-          "desc": "Cette session n'a pas de répertoire de travail local à examiner."
+          "desc": "Cette session n'a pas de répertoire de travail local à passer en revue."
         },
         "non-git": {
           "title": "Pas un dépôt git",
@@ -9564,7 +9565,7 @@
       "thisTask": "Cette tâche redémarre avec {{appName}} une fois la réponse actuelle terminée.",
       "remote": "Les téléphones et autres connexions distantes se déconnectent brièvement pendant le redémarrage. Reconnectez-vous pour voir le résultat dans cette tâche.",
       "linuxAuth": "L'installation nécessite le mot de passe système de cet ordinateur.",
-      "succeeded": "{{appName}} est passé à la version {{version}} (auparavant {{from}}).",
+      "succeeded": "{{appName}} est passée à la version {{version}} (auparavant {{from}}).",
       "failed": "La mise à jour de {{appName}} n'a pas abouti. Cet ordinateur est toujours en version {{version}}.",
       "retryHint": "Demandez-moi de réessayer plus tard, ou recherchez des mises à jour dans Paramètres → À propos.",
       "reasons": {
@@ -9911,7 +9912,7 @@
       "actionFailed": "L'action n'a pas abouti. Réessayez dans un instant.",
       "deleteFailed": "Le coéquipier n'a pas été supprimé.",
       "restart": "Redémarrer le coéquipier",
-      "restartDescription": "Arrête l'exécution en cours et prépare un nouveau départ. L'historique des conversations, les souvenirs et les fichiers sont conservés.",
+      "restartDescription": "Arrête l'exécution en cours et prépare un nouveau départ. L'historique des conversations, les mémoires et les fichiers sont conservés.",
       "restarting": "Redémarrage…",
       "restarted": "Redémarré. Envoyez un message pour continuer."
     },
@@ -9919,12 +9920,12 @@
     "memory": {
       "title": "Mémoire",
       "enabled": "Utiliser la mémoire",
-      "disabledHint": "Désactivée. Les souvenirs ne sont ni lus ni enregistrés.",
+      "disabledHint": "Désactivée. Les mémoires ne sont ni lues ni enregistrées.",
       "aboutMe": "Ce que vous savez de moi",
-      "search": "Rechercher dans les souvenirs",
-      "empty": "Aucun souvenir pour l'instant",
-      "noResults": "Aucun souvenir correspondant",
-      "loadFailed": "Impossible de charger les souvenirs",
+      "search": "Rechercher dans les mémoires",
+      "empty": "Aucune mémoire pour l'instant",
+      "noResults": "Aucune mémoire correspondante",
+      "loadFailed": "Impossible de charger les mémoires",
       "types": {
         "user": "À votre sujet",
         "feedback": "Vos préférences",
@@ -9942,16 +9943,16 @@
       "tooLong": "Trop long. Raccourcissez-le pour enregistrer.",
       "titleRequired": "Ajoutez un titre pour enregistrer.",
       "bodyRequired": "Ajoutez du contenu pour enregistrer.",
-      "deleteTitle": "Supprimer ce souvenir ?",
+      "deleteTitle": "Supprimer cette mémoire ?",
       "deleteDescription": "{{name}} ne fera plus référence à « {{title}} ».",
-      "deleted": "Supprimé",
-      "deleteFailed": "Impossible de supprimer le souvenir",
-      "changedTitle": "{{name}} vient de mettre à jour ce souvenir",
+      "deleted": "Supprimée",
+      "deleteFailed": "Impossible de supprimer la mémoire",
+      "changedTitle": "{{name}} vient de mettre à jour cette mémoire",
       "useLatest": "Utiliser la dernière version",
       "keepMine": "Conserver mes modifications",
       "saveFailed": "Non enregistré",
       "unsavedTitle": "Modifications non enregistrées",
-      "unsavedDescription": "Quitter supprimera ces modifications du souvenir.",
+      "unsavedDescription": "Quitter supprimera ces modifications de la mémoire.",
       "discard": "Abandonner les modifications",
       "continueEditing": "Continuer la modification"
     },
@@ -10209,8 +10210,8 @@
         "stepTimeout": "{{name}} a mis trop de temps ; cette étape a donc été arrêtée",
         "stepUnavailable": "{{name}} est indisponible et ne peut pas réaliser cette étape",
         "runtimeFailure": {
-          "REMOTE_DEVICE_LIMIT": "{{name}} ne peut pas répondre : l'appareil du coéquipier a atteint sa limite de sessions distantes.\nDemandez au propriétaire du coéquipier d'archiver les sessions inutilisées, ou au propriétaire de l'ordinateur distant d'augmenter la limite dans Accès à distance et partage.",
-          "REMOTE_TOTAL_LIMIT": "{{name}} ne peut pas répondre : l'ordinateur distant a atteint sa limite totale de sessions distantes.\nDemandez au propriétaire de cet ordinateur de libérer les sessions inutilisées ou d'augmenter la limite dans Accès à distance et partage.",
+          "REMOTE_DEVICE_LIMIT": "{{name}} ne peut pas répondre : l'appareil du coéquipier a atteint sa limite de sessions distantes.\nDemandez au propriétaire du coéquipier d'archiver les sessions inutilisées, ou au propriétaire de l'ordinateur distant d'augmenter la limite dans Accès distant et partage.",
+          "REMOTE_TOTAL_LIMIT": "{{name}} ne peut pas répondre : l'ordinateur distant a atteint sa limite totale de sessions distantes.\nDemandez au propriétaire de cet ordinateur de libérer les sessions inutilisées ou d'augmenter la limite dans Accès distant et partage.",
           "IMAGE_INPUT_UNSUPPORTED": "{{name}} n'a pas pu répondre : le modèle actuel ne prend pas en charge les images.\nChoisissez un modèle compatible avec les images, ou activez et configurez Vision Bridge dans Paramètres → Personnalisation, puis renvoyez votre message.",
           "MODEL_UNAVAILABLE": "{{name}} n'a pas pu répondre : aucun modèle n'est disponible.\nChoisissez un modèle connecté et disponible dans les paramètres du coéquipier, puis renvoyez votre message.",
           "AUTH_REQUIRED": "{{name}} n'a pas pu répondre : la connexion au modèle nécessite une authentification.\nReconnectez le fournisseur de modèles dans les Paramètres, puis renvoyez votre message.",
@@ -10577,7 +10578,7 @@
       "title": "Créer un coéquipier",
       "reviewTitle": "Votre nouveau coéquipier",
       "question": "Décrivez brièvement vos attentes.",
-      "placeholder": "Par exemple : aidez-moi à pratiquer l'anglais grâce à des conversations du quotidien et des corrections bienveillantes.",
+      "placeholder": "Par exemple : aide-moi à pratiquer l'anglais grâce à des conversations du quotidien et des corrections bienveillantes.",
       "generate": "Créer le coéquipier",
       "generating": "Création de votre coéquipier…",
       "generationFailed": "Impossible de générer votre coéquipier. Votre idée est conservée ; veuillez réessayer.",
@@ -10622,7 +10623,7 @@
       "description": "Choisissez ce que vous souhaitez reprendre de Hermes ou OpenClaw.",
       "empty": "Aucun Agent installé n'a été trouvé sur cet ordinateur.",
       "personality": "Personnalité et habitudes",
-      "memory": "Souvenirs",
+      "memory": "Mémoires",
       "skills": "Skills",
       "connections": "Environnement et connexions",
       "automations": "Automatisations",
@@ -10664,9 +10665,9 @@
       "databaseDriver": "Impossible de charger le pilote de base de données. Mettez à jour ou réparez Cindy, puis réessayez.",
       "databaseUnavailable": "Impossible de lire la base de données source. Les données d'origine sont inchangées ; réessayez après réparation.",
       "fileTooLarge": "Un fichier ou cet import dépasse la limite de lecture. Le contenu n'a pas été tronqué.",
-      "memoryMetadata": "Le résumé ou le titre du souvenir dépasse les limites de stockage.",
+      "memoryMetadata": "Le résumé ou le titre de la mémoire dépasse les limites de stockage.",
       "memoryWrite": "Échec de l'écriture de la mémoire ou de la vérification de son intégrité. Vous pouvez réessayer.",
-      "memoryChanged": "Le souvenir enregistré a été modifié et n'a pas été écrasé.",
+      "memoryChanged": "La mémoire enregistrée a été modifiée et n'a pas été écrasée.",
       "attachmentUnsupported": "Ce format de pièce jointe n'est pas encore pris en charge. L'original reste à la source.",
       "diskFull": "Espace disque insuffisant. Libérez de l'espace, puis réessayez.",
       "permissionDenied": "Autorisation manquante pour lire ou enregistrer cet élément. Corrigez les autorisations, puis réessayez.",
@@ -10742,7 +10743,7 @@
       "mergeLabel": "Fusionner les Cindy en double",
       "mergeHint": "Vous avez {{count}} Cindy : {{devices}}",
       "mergeTitle": "Fusionner {{count}} Cindy en une seule ?",
-      "mergeDescription": "Une seule Cindy sera conservée. L'historique de conversation, les souvenirs, les skills, les tâches à faire et les routines des autres sont repris ; un souvenir ou une skill portant le même nom mais avec un contenu différent est conservé en tant que seconde copie, jamais écrasé. Les autres Cindy sont désactivées ; leurs données restent dans le cloud et sur leurs ordinateurs.",
+      "mergeDescription": "Une seule Cindy sera conservée. L'historique de conversation, les mémoires, les skills, les tâches à faire et les routines des autres sont repris ; une mémoire ou une skill portant le même nom mais avec un contenu différent est conservée en tant que seconde copie, jamais écrasée. Les autres Cindy sont désactivées ; leurs données restent dans le cloud et sur leurs ordinateurs.",
       "mergeKeep": "Conserver le nom, la personnalité et les paramètres de",
       "mergeAction": "Fusionner",
       "merged": "{{count}} Cindy fusionnées en une seule, avec {{messages}} messages repris",
@@ -10821,7 +10822,7 @@
       "removeAria": "Retirer {{platform}}",
       "empty": "Ajoutez un bot que vous possédez déjà, ou connectez votre WeChat personnel ci-dessous, et {{name}} y répondra.",
       "externalNote": "Toute personne qui écrit à ce bot parle à {{name}}. Vos propres messages s'exécutent avec les autorisations de {{name}} ; toutes les autres personnes obtiennent une tâche masquée distincte aux autorisations restreintes.",
-      "sharedMemoryNote": "{{name}} combine les informations provenant d'ici et d'autres conversations. Pour séparer les souvenirs, utilisez un autre coéquipier.",
+      "sharedMemoryNote": "{{name}} combine les informations provenant d'ici et d'autres conversations. Pour séparer les mémoires, utilisez un autre coéquipier.",
       "groups": {
         "title": "Groupes",
         "hint": "Les groupes rejoints par {{name}} apparaissent ici. « Toujours » = lire chaque message et laisser {{name}} décider d'intervenir ou non (chaque message consomme des jetons).",
@@ -11173,103 +11174,103 @@
       "dismiss": "Ne plus afficher",
       "storageUsage": {
         "label": "Faire le ménage sur mon ordinateur",
-        "prompt": "Aidez-moi à repérer ce qui mérite d'être nettoyé sur mon ordinateur et combien d'espace je pourrais libérer. Demandez-moi confirmation avant de supprimer quoi que ce soit."
+        "prompt": "Aide-moi à repérer ce qui mérite d'être nettoyé sur mon ordinateur et combien d'espace je pourrais libérer. Demande-moi confirmation avant de supprimer quoi que ce soit."
       },
       "whySlow": {
         "label": "Comprendre pourquoi mon ordinateur est lent",
-        "prompt": "Aidez-moi à comprendre pourquoi mon ordinateur est lent et suggérez des moyens de l'améliorer."
+        "prompt": "Aide-moi à comprendre pourquoi mon ordinateur est lent et suggère des moyens de l'améliorer."
       },
       "downloadsDesktop": {
         "label": "Ranger mes Téléchargements et mon Bureau",
-        "prompt": "Aidez-moi à ranger mon dossier Téléchargements et mon bureau pour que tout soit facile à retrouver. Montrez-moi d'abord le plan."
+        "prompt": "Aide-moi à ranger mon dossier Téléchargements et mon bureau pour que tout soit facile à retrouver. Montre-moi d'abord le plan."
       },
       "diagnoseNetwork": {
         "label": "Diagnostiquer la vitesse de mon réseau",
-        "prompt": "Aidez-moi à comprendre pourquoi ma connexion internet est lente et suggérez comment y remédier."
+        "prompt": "Aide-moi à comprendre pourquoi ma connexion internet est lente et suggère comment y remédier."
       },
       "unusedApps": {
         "label": "Trouver les applications peu utilisées qui prennent de la place",
-        "prompt": "Aidez-moi à trouver les applications qui ne sont peut-être plus utilisées depuis longtemps et qui prennent de la place. Demandez-moi confirmation avant de désinstaller quoi que ce soit."
+        "prompt": "Aide-moi à trouver les applications qui ne sont peut-être plus utilisées depuis longtemps et qui prennent de la place. Demande-moi confirmation avant de désinstaller quoi que ce soit."
       },
       "stockDigest": {
         "label": "M'envoyer un point boursier quotidien",
-        "prompt": "Mettez en place un point boursier quotidien pour moi. Nous pouvons commencer par 2400.HK (XD Inc.) ; demandez-moi quelles autres actions m'intéressent et à quelle heure je souhaite le recevoir."
+        "prompt": "Mets en place un point boursier quotidien pour moi. Nous pouvons commencer par 2400.HK (XD Inc.) ; demande-moi quelles autres actions m'intéressent et à quelle heure je souhaite le recevoir."
       },
       "morningBrief": {
         "label": "Créer mon briefing matinal quotidien",
-        "prompt": "Mettez en place un briefing matinal quotidien pour moi. Choisissons ensemble les sujets et l'heure d'envoi."
+        "prompt": "Mets en place un briefing matinal quotidien pour moi. Choisissons ensemble les sujets et l'heure d'envoi."
       },
       "watchWebpage": {
         "label": "Surveiller une page web pour moi",
-        "prompt": "Surveillez une page web pour moi et prévenez-moi lorsqu'un élément qui m'intéresse change. Choisissons ensemble l'URL, ce qu'il faut surveiller et la fréquence de vérification."
+        "prompt": "Surveille une page web pour moi et préviens-moi lorsqu'un élément qui m'intéresse change. Choisissons ensemble l'URL, ce qu'il faut surveiller et la fréquence de vérification."
       },
       "expenseTracker": {
         "label": "Créer un suivi de dépenses simple",
-        "prompt": "Aidez-moi à créer un outil de suivi de mes dépenses personnelles. Nous pouvons discuter des fonctionnalités et de la façon dont je l'utiliserai, puis laissez-moi l'essayer."
+        "prompt": "Aide-moi à créer un outil de suivi de mes dépenses personnelles. Nous pouvons discuter des fonctionnalités et de la façon dont je l'utiliserai, puis laisse-moi l'essayer."
       },
       "kidsGame": {
         "label": "Je veux créer un jeu",
-        "prompt": "Je veux créer un jeu. Aidez-moi à développer mon idée ou proposez-moi des concepts amusants, puis choisissons une direction et construisons-le ensemble."
+        "prompt": "Je veux créer un jeu. Aide-moi à développer mon idée ou propose-moi des concepts amusants, puis choisissons une direction et construisons-le ensemble."
       },
       "habitTracker": {
         "label": "Créer un suivi d'habitudes",
-        "prompt": "Créez une page de suivi d'habitudes adaptée à ce que je veux continuer à faire, et laissez-moi l'essayer."
+        "prompt": "Crée une page de suivi d'habitudes adaptée à ce que je veux continuer à faire, et laisse-moi l'essayer."
       },
       "recentDocs": {
         "label": "Résumer ces documents en une page",
-        "prompt": "Transformez les documents que je fournis en un résumé d'une page pour que je saisisse rapidement les points clés."
+        "prompt": "Transforme les documents que je fournis en un résumé d'une page pour que je saisisse rapidement les points clés."
       },
       "subscriptionSpend": {
         "label": "Faire le bilan de mes abonnements",
-        "prompt": "Aidez-moi à passer en revue mes dépenses d'abonnement et à repérer ceux qui mériteraient d'être résiliés ou modifiés. Donnez-moi d'abord des suggestions."
+        "prompt": "Aide-moi à passer en revue mes dépenses d'abonnement et à repérer ceux qui mériteraient d'être résiliés ou modifiés. Donne-moi d'abord des suggestions."
       },
       "organizeFolder": {
         "label": "Trier et ranger ce dossier",
-        "prompt": "Aidez-moi à ranger un dossier pour que les fichiers soient plus faciles à retrouver. Mettons-nous d'abord d'accord sur le dossier et le plan. Ne supprimez aucun fichier."
+        "prompt": "Aide-moi à ranger un dossier pour que les fichiers soient plus faciles à retrouver. Mettons-nous d'abord d'accord sur le dossier et le plan. Ne supprime aucun fichier."
       },
       "photoTimeline": {
         "label": "Classer mes photos par ordre chronologique",
-        "prompt": "Aidez-moi à classer mes photos selon une chronologie claire, en conservant les originaux."
+        "prompt": "Aide-moi à classer mes photos selon une chronologie claire, en conservant les originaux."
       },
       "photoAlbumPage": {
         "label": "Transformer ces photos en album web",
-        "prompt": "Créez un beau site d'album, facile à parcourir, avec mes photos. Ouvrez-le pour moi quand il sera prêt, et conservez les photos originales."
+        "prompt": "Crée un beau site d'album, facile à parcourir, avec mes photos. Ouvre-le pour moi quand il sera prêt, et conserve les photos originales."
       },
       "uncommittedChanges": {
-        "label": "Relire mes modifications non commitées",
-        "prompt": "Relisez les modifications non commitées de mon projet pour repérer les problèmes et les oublis. Donnez-moi des suggestions sans modifier les fichiers."
+        "label": "Faire la revue de mes modifications non commitées",
+        "prompt": "Fais une revue des modifications non commitées de mon projet pour repérer les problèmes et les oublis. Donne-moi des suggestions sans modifier les fichiers."
       },
       "exploreRepo": {
         "label": "Me faire découvrir ce projet",
-        "prompt": "Faites-moi découvrir ce projet : ce qu'il fait, comment le lancer et quelles parties méritent d'être explorées davantage."
+        "prompt": "Fais-moi découvrir ce projet : ce qu'il fait, comment le lancer et quelles parties méritent d'être explorées davantage."
       },
       "initAgentDoc": {
         "label": "Générer un AGENTS.md",
-        "prompt": "Aidez-moi à créer un AGENTS.md adapté à mon projet. Si des fichiers de consignes existent déjà, suggérez des ajouts sans les écraser."
+        "prompt": "Aide-moi à créer un AGENTS.md adapté à mon projet. Si des fichiers de consignes existent déjà, suggère des ajouts sans les écraser."
       },
       "listCodeProjects": {
         "label": "Lister mes projets de code et expliquer chacun d'eux",
-        "prompt": "Aidez-moi à faire l'inventaire des projets de code sur mon ordinateur et expliquez ce que fait chacun d'eux."
+        "prompt": "Aide-moi à faire l'inventaire des projets de code sur mon ordinateur et explique ce que fait chacun d'eux."
       },
       "devEnvironment": {
         "label": "Vérifier mon environnement de développement",
-        "prompt": "Vérifiez mon environnement de développement pour repérer ce qui mérite d'être corrigé ou amélioré. Donnez-moi d'abord des suggestions."
+        "prompt": "Vérifie mon environnement de développement pour repérer ce qui mérite d'être corrigé ou amélioré. Donne-moi d'abord des suggestions."
       },
       "makePlugin": {
         "label": "Créer un plugin pour Cindy",
-        "prompt": "Je veux créer un plugin Cindy. Aidez-moi à préciser mes besoins ou proposez-moi des idées utiles et amusantes, puis développez-le une fois la direction choisie."
+        "prompt": "Je veux créer un plugin Cindy. Aide-moi à préciser mes besoins ou propose-moi des idées utiles et amusantes, puis développe-le une fois la direction choisie."
       },
       "sendFeedback": {
         "label": "Envoyer un retour aux développeurs de Cindy",
-        "prompt": "Aidez-moi à transformer mes impressions sur Cindy en un retour clair. Laissez-moi le relire avant de l'envoyer."
+        "prompt": "Aide-moi à transformer mes impressions sur Cindy en un retour clair. Laisse-moi le relire avant de l'envoyer."
       },
       "readOwnSource": {
         "label": "Explorer le code source de Cindy",
-        "prompt": "Montrez-moi le code source de Cindy (github.com/makecindy/cindy), expliquez comment vous êtes construite et explorez avec moi quelques parties intéressantes."
+        "prompt": "Montre-moi le code source de Cindy (github.com/makecindy/cindy), explique comment tu es construite et explore avec moi quelques parties intéressantes."
       },
       "whatCindyCanDo": {
-        "label": "Trouver quelques tâches où vous pouvez m'aider",
-        "prompt": "En vous basant sur mes tâches récentes et vos capacités actuelles, suggérez des actions concrètes qui me feraient gagner du temps. Laissez-moi en choisir une pour commencer."
+        "label": "Trouver quelques tâches où tu peux m'aider",
+        "prompt": "En te basant sur mes tâches récentes et tes capacités actuelles, suggère des actions concrètes qui me feraient gagner du temps. Laisse-moi en choisir une pour commencer."
       }
     },
     "noProvider": {
@@ -11286,7 +11287,7 @@
     "sendButton": {
       "send": "Envoyer le message",
       "queue": "Mettre le message en file d'attente",
-      "queueTooltip": "Cliquez pour mettre en file d'attente ; appuyez sur {{shortcut}} pour orienter la tâche sans l'interrompre",
+      "queueTooltip": "Cliquez pour mettre en file d'attente ; appuyez sur {{shortcut}} pour réorienter la tâche sans l'interrompre",
       "queueTooltipSendMode": "Cliquez pour mettre en file d'attente ; appuyez sur {{shortcut}} pour envoyer ce message",
       "stop": "Arrêter la génération"
     },
@@ -11408,7 +11409,7 @@
       "quickStarts": {
         "explore": "Explorer et comprendre du code",
         "build": "Créer une fonctionnalité, une application ou un outil",
-        "review": "Relire du code et suggérer des modifications",
+        "review": "Faire une revue de code et suggérer des modifications",
         "fix": "Corriger des problèmes et des échecs"
       },
       "sidebar": {
@@ -11604,7 +11605,7 @@
         "effortEndFast": "Plus rapide",
         "effortEndSmart": "Plus intelligent",
         "railSameEngine": "{{agent}} uniquement",
-        "crossEngineWarning": "Changer de moteur reconstruit le contexte et peut entraîner une perte de contenu",
+        "crossEngineWarning": "Changer de Harness reconstruit le contexte et peut entraîner une perte de contenu",
         "favoritesSyncFailed": "Impossible de synchroniser les favoris. Rouvrez le sélecteur pour réessayer ; l'ordinateur distant a peut-être besoin d'une mise à jour.",
         "favoritesSyncFailedUnreachable": "Les favoris ne sont pas encore synchronisés : cet ordinateur est injoignable. Rouvrez le sélecteur une fois la connexion rétablie.",
         "railRemoteProviderGroup": "{{provider}} · {{device}} · {{group}}",
@@ -11623,7 +11624,7 @@
     "permissionSelector": {
       "triggerAria": "Sélectionner le mode d'autorisation : {{label}}",
       "listAria": "Modes d'autorisation",
-      "autoFallback": "La révision automatique est temporairement indisponible. Passage aux autorisations par défaut ; une confirmation sera demandée si nécessaire.",
+      "autoFallback": "La revue automatique est temporairement indisponible. Passage aux autorisations par défaut ; une confirmation sera demandée si nécessaire.",
       "modes": {
         "claude-code": {
           "ask": {
@@ -11635,8 +11636,8 @@
             "description": "Accepte automatiquement les demandes de modification de fichiers pour limiter les confirmations répétées. Les commandes ou autorisations plus risquées restent soumises à la politique d'autorisation sous-jacente."
           },
           "auto": {
-            "label": "Révision automatique",
-            "description": "Autorise la lecture et l'écriture dans l'espace de travail et examine automatiquement les demandes d'élévation ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation. Cela réduit les interruptions, mais des erreurs sont possibles."
+            "label": "Revue automatique",
+            "description": "Autorise la lecture et l'écriture dans l'espace de travail et soumet automatiquement les demandes d'élévation à une revue ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation. Cela réduit les interruptions, mais des erreurs sont possibles."
           },
           "bypassPermissions": {
             "label": "Accès complet",
@@ -11649,8 +11650,8 @@
             "description": "Autorise la lecture et l'écriture dans l'espace de travail et demande confirmation avant d'utiliser des autorisations plus élevées, l'accès réseau ou des chemins hors de l'espace de travail."
           },
           "auto": {
-            "label": "Révision automatique",
-            "description": "Exécute automatiquement les commandes dans le bac à sable protégé de l'espace de travail. Les actions qui franchissent les limites du bac à sable sont soumises à un réviseur automatique ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation."
+            "label": "Revue automatique",
+            "description": "Exécute automatiquement les commandes dans le bac à sable protégé de l'espace de travail. Les actions qui franchissent les limites du bac à sable sont soumises à un relecteur automatique ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation."
           },
           "bypassPermissions": {
             "label": "Accès complet",
@@ -11663,7 +11664,7 @@
             "description": "Les outils en lecture seule s'exécutent directement ; l'écriture de fichiers, l'exécution de commandes et les outils MCP demandent confirmation à chaque fois."
           },
           "auto": {
-            "label": "Révision automatique",
+            "label": "Revue automatique",
             "description": "Les écritures dans l'espace de travail et les commandes sûres s'exécutent automatiquement ; les écritures hors de l'espace de travail, les commandes risquées et les outils MCP demandent toujours confirmation."
           },
           "bypassPermissions": {
@@ -11743,12 +11744,12 @@
       "pluginSenderFallback": "Plugin",
       "botRowAria": "Message en file d'attente du coéquipier « {{sender}} »",
       "dragAria": "Faire glisser le message en file d'attente {{index}} pour le réordonner",
-      "steerAction": "Orienter",
-      "steerRunningTip": "Injecter ce message dans la tâche en cours d'exécution sans l'interrompre ; il sera traité une fois l'action en cours terminée",
+      "steerAction": "Réorienter",
+      "steerRunningTip": "Réorienter la tâche en cours d'exécution avec ce message, sans l'interrompre ; il sera traité une fois l'action en cours terminée",
       "steerPausedTip": "Reprendre la tâche en traitant d'abord ce message",
-      "steeringAction": "Orientation…",
-      "steerAria": "Injecter le message en file d'attente {{index}} dans la tâche en cours d'exécution",
-      "steeringAria": "Le message en file d'attente {{index}} est en cours d'injection",
+      "steeringAction": "Réorientation…",
+      "steerAria": "Réorienter la tâche en cours d'exécution avec le message en file d'attente {{index}}",
+      "steeringAria": "Réorientation en cours avec le message en file d'attente {{index}}",
       "editAction": "Modifier",
       "removeAction": "Supprimer",
       "removeAria": "Supprimer le message en file d'attente {{index}}",
@@ -11873,7 +11874,7 @@
       },
       "credentialSwitchDeferred": "Fournisseur de modèles changé : la modification prendra effet à la fin de la tâche en cours.",
       "effortRuntimeDirty": "L'effort de raisonnement est encore en cours de mise à jour. Patientez un instant, puis renvoyez.",
-      "steerNotSent": "Message non envoyé. Le guidage est temporairement indisponible ; votre brouillon a été conservé.",
+      "steerNotSent": "Message non envoyé. La réorientation est temporairement indisponible ; votre brouillon a été conservé.",
       "credentialSwitchApplied": "Le changement de fournisseur de modèles est désormais effectif.",
       "credentialSwitchFailed": "Échec du changement de fournisseur de modèles. Choisissez à nouveau le modèle.",
       "modelSwitchContextGuard": {
@@ -11885,12 +11886,12 @@
         "cancelSwitch": "Conserver ce modèle"
       },
       "agentSwitch": {
-        "engineNotReady": "Moteur changé, mais le nouveau moteur n'a pas pu démarrer ; une nouvelle tentative aura lieu à l'envoi d'un message",
-        "failed": "Échec du changement de moteur ; non appliqué",
+        "engineNotReady": "Harness changé, mais le nouveau Harness n'a pas pu démarrer ; une nouvelle tentative aura lieu à l'envoi d'un message",
+        "failed": "Échec du changement de Harness ; non appliqué",
         "deferred": "Changement programmé : passage à {{agent}} · {{model}} à l'envoi de votre prochain message",
         "confirmation": {
           "title": "Changer d'Agent ?",
-          "description": "Le nouveau moteur d'Agent reprend à partir d'un résumé de transfert : le raisonnement et d'autres contenus ne sont donc pas garantis d'être parfaitement conservés. Revenir en arrière vous permet toujours de poursuivre la session du moteur d'origine. Le changement interrompt aussi une fois le cache du prompt et peut augmenter la consommation de jetons.",
+          "description": "Le nouveau Harness de l'Agent reprend à partir d'un résumé de transfert : le raisonnement et d'autres contenus ne sont donc pas garantis d'être parfaitement conservés. Revenir en arrière vous permet toujours de poursuivre la session du Harness d'origine. Le changement interrompt aussi une fois le cache du prompt et peut augmenter la consommation de jetons.",
           "confirm": "Changer d'Agent",
           "cancel": "Conserver l'Agent actuel",
           "dontShowAgain": "Ne plus me le rappeler"
@@ -11905,9 +11906,9 @@
       }
     },
     "agentSelect": {
-      "label": "Moteur",
+      "label": "Harness",
       "trigger": {
-        "aria": "Sélectionner le moteur : {{agent}}"
+        "aria": "Sélectionner le Harness : {{agent}}"
       }
     },
     "atMention": {
@@ -11929,7 +11930,7 @@
       "keepTyping": "Continuez à saisir pour affiner…"
     },
     "planReview": {
-      "title": "Examiner le plan de l'Agent",
+      "title": "Passer en revue le plan de l'Agent",
       "hintSelect": "Sélectionnez du texte pour laisser un commentaire à l'Agent",
       "hintEditMode": "Utilisez le mode @ Commentaire pour laisser des commentaires en ligne",
       "restoreAria": "Restaurer la visionneuse de plan",
@@ -11975,8 +11976,8 @@
       "alwaysAllowScoped": "Toujours autoriser {{scope}} dans cette session",
       "alwaysAllowScopedHint": "S'applique à toute la session, et uniquement à ce qui est listé ici.",
       "alwaysAllowSessionHint": "S'applique à toute la session, pas seulement à cette demande.",
-      "autoReviewUnavailable": "L'examen automatique n'a pas pu aboutir. Confirmez si vous autorisez cette action.",
-      "autoReviewReason": "L'examen automatique nécessite votre décision : {{reason}}",
+      "autoReviewUnavailable": "La revue automatique n'a pas pu aboutir. Confirmez si vous autorisez cette action.",
+      "autoReviewReason": "La revue automatique nécessite votre décision : {{reason}}",
       "titleCommand": "Autoriser l'exécution de cette commande ?",
       "titleFileRead": "Autoriser la lecture de fichiers ?",
       "titleFileWrite": "Autoriser la modification de fichiers ?",
@@ -12201,7 +12202,7 @@
       "answerPlaceholder": "Saisissez votre réponse…"
     },
     "planReviewBubble": {
-      "title": "Examen du plan",
+      "title": "Revue du plan",
       "approved": "Approuvé",
       "revisionRequested": "Révision demandée",
       "expired": "Expiré",
@@ -12434,8 +12435,8 @@
       "networkHideRaw": "Masquer les détails",
       "diagnose": "Diagnostiquer",
       "diagnoseTitle": "Diagnostiquer cette erreur dans une nouvelle session",
-      "diagnosePrompt": "Veuillez diagnostiquer cette erreur : trouvez la cause et indiquez-moi comment la corriger.\n\nSession : {{sessionUrl}}\nErreur : {{message}}\nDétails :\n{{details}}\n\nSi vous constatez qu'il s'agit d'un problème lié à Cindy elle-même, dites-le-moi afin que je puisse décider de signaler ou non une issue à l'équipe Cindy.",
-      "diagnosePromptWithoutSession": "Veuillez diagnostiquer cette erreur : trouvez la cause et indiquez-moi comment la corriger.\n\nErreur : {{message}}\nDétails :\n{{details}}\n\nSi vous constatez qu'il s'agit d'un problème lié à Cindy elle-même, dites-le-moi afin que je puisse décider de signaler ou non une issue à l'équipe Cindy.",
+      "diagnosePrompt": "Diagnostique cette erreur, s'il te plaît : trouve la cause et indique-moi comment la corriger.\n\nSession : {{sessionUrl}}\nErreur : {{message}}\nDétails :\n{{details}}\n\nSi tu constates qu'il s'agit d'un problème lié à Cindy elle-même, dis-le-moi afin que je puisse décider de signaler ou non une issue à l'équipe Cindy.",
+      "diagnosePromptWithoutSession": "Diagnostique cette erreur, s'il te plaît : trouve la cause et indique-moi comment la corriger.\n\nErreur : {{message}}\nDétails :\n{{details}}\n\nSi tu constates qu'il s'agit d'un problème lié à Cindy elle-même, dis-le-moi afin que je puisse décider de signaler ou non une issue à l'équipe Cindy.",
       "gatewayProxyTokenInvalid": "Les identifiants Cindy AI ne sont plus valides. Cliquez sur Réessayer. Si le problème se reproduit, déconnectez-vous puis reconnectez-vous",
       "gatewayProxyTokenInvalidNoRetry": "Les identifiants Cindy AI ne sont plus valides. Si le problème se reproduit, déconnectez-vous puis reconnectez-vous",
       "modelAccessDenied": "Le compte en amont ne peut pas accéder à ce modèle. Sélectionnez un autre modèle ou vérifiez l'accès auprès du fournisseur",
@@ -12469,9 +12470,9 @@
     },
     "interruptedResumeDialog": {
       "title": "Reprendre les sessions interrompues",
-      "description_one": "{{appName}} s'est fermé de façon inattendue et {{count}} session n'a pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
-      "description_many": "{{appName}} s'est fermé de façon inattendue et {{count}} sessions n'ont pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
-      "description_other": "{{appName}} s'est fermé de façon inattendue et {{count}} sessions n'ont pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
+      "description_one": "{{appName}} s'est fermée de façon inattendue et {{count}} session n'a pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
+      "description_many": "{{appName}} s'est fermée de façon inattendue et {{count}} sessions n'ont pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
+      "description_other": "{{appName}} s'est fermée de façon inattendue et {{count}} sessions n'ont pas abouti. Les sessions sélectionnées vérifieront la conversation et reprendront là où elles s'étaient arrêtées.",
       "selectAll": "Tout sélectionner",
       "selectedCount": "{{selected}} sur {{total}} sélectionnée(s)",
       "interruptedAgo": "interrompue il y a {{time}}",
@@ -12740,7 +12741,7 @@
         "ghPrCreate": "Créer une pull request",
         "ghPrEdit": "Modifier la pull request",
         "ghPrComment": "Commenter la pull request",
-        "ghPrReview": "Relire la pull request",
+        "ghPrReview": "Revue de la pull request",
         "ghPrMerge": "Fusionner la pull request",
         "ghPrClose": "Fermer la pull request",
         "ghPrReopen": "Rouvrir la pull request",
@@ -12881,8 +12882,8 @@
       "agentSwitch": {
         "label": "Passage de {{from}} à {{to}}",
         "toggleHint": "Voir le contexte de transfert",
-        "handoffTitle": "Transfert — le résumé du contexte envoyé au nouveau moteur lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
-        "handoffTitleEnglishSource": "Transfert — le résumé du contexte envoyé au nouveau moteur lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
+        "handoffTitle": "Transfert — le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
+        "handoffTitleEnglishSource": "Transfert — le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
         "fallbackBadge": "Repris à partir du résumé",
         "resumedBadge": "session reprise",
         "relocatedHere": "L'Agent s'exécute désormais sur cet ordinateur",
@@ -13115,16 +13116,16 @@
       "DEVICE_LINK_BUSY": "L'ordinateur distant est occupé. Veuillez réessayer dans un instant.",
       "REMOTE_DAEMON_CLOSED": "La connexion distante a été coupée, peut-être pendant une mise à jour. Ce tour est terminé. Renvoyez le message.",
       "REMOTE_LOCAL_ATTACHMENT_UNSUPPORTED": "Les pièces jointes locales (fichiers/images) ne sont pas accessibles dans les sessions distantes. Collez plutôt directement le contenu.",
-      "AUTO_REVIEW_UNAVAILABLE": "L'examen automatique n'a pas pu prendre de décision : les actions qui nécessitent un examen requièrent désormais votre confirmation. Passez cette tâche en accès complet si vous préférez ne pas être interrompu. Ce mode présente un risque plus élevé.",
-      "AUTO_REVIEW_UNAVAILABLE_WECHAT": "L'examen automatique n'a pas pu prendre de décision : les actions qui nécessitent un examen requièrent désormais votre confirmation. WeChat personnel ne peut pas utiliser l'accès complet. Confirmez directement cette action.",
-      "AUTO_REVIEW_CONFIRM_UNDELIVERED": "L'examen automatique était indisponible et la demande de confirmation n'a pas abouti. Il ne s'agit pas d'un refus de l'utilisateur.",
+      "AUTO_REVIEW_UNAVAILABLE": "La revue automatique n'a pas pu prendre de décision : les actions qui nécessitent une revue requièrent désormais votre confirmation. Passez cette tâche en accès complet si vous préférez ne pas être interrompu. Ce mode présente un risque plus élevé.",
+      "AUTO_REVIEW_UNAVAILABLE_WECHAT": "La revue automatique n'a pas pu prendre de décision : les actions qui nécessitent une revue requièrent désormais votre confirmation. WeChat personnel ne peut pas utiliser l'accès complet. Confirmez directement cette action.",
+      "AUTO_REVIEW_CONFIRM_UNDELIVERED": "La revue automatique était indisponible et la demande de confirmation n'a pas abouti. Il ne s'agit pas d'un refus de l'utilisateur.",
       "REMOTE_COMPAT_MODE_UNSUPPORTED": "Les tâches distantes ne peuvent pas utiliser la route de compatibilité de cet ordinateur. Passez à Cindy AI ou continuez dans une tâche locale.",
       "REMOTE_GATEWAY_ENDPOINT_UNAVAILABLE": "Les identifiants Cindy AI ne sont pas encore prêts (ils sont émis automatiquement après la connexion). Veuillez réessayer dans un instant ; si le problème persiste, vérifiez l'état de Cindy AI dans Paramètres → Fournisseurs de modèles.",
       "REMOTE_LOCAL_ONLY_PROVIDER": "Ce fournisseur de modèles est un service uniquement local (ex. Ollama) qu'une tâche SSH distante ne peut pas atteindre. Passez à la passerelle Cindy AI ou choisissez un fournisseur accessible depuis l'hôte distant.",
       "LOCAL_OLLAMA_NOT_READY": "Ollama local n'est pas prêt. Ouvrez Paramètres → Fournisseurs de modèles → Ollama.",
       "DEVICE_LINK_CONTROL_DISABLED": "Le contrôle de cet appareil est désactivé ; le message n'a pas été envoyé.",
       "DEVICE_LINK_MEDIA_TRANSFER_FAILED": "Échec du transfert de la pièce jointe ; le message n'a pas été envoyé. Veuillez réessayer.",
-      "MCP_APPROVAL_AUTO_BLOCKED": "L'examen d'approbation automatique a bloqué cet appel d'outil. Aucun refus manuel n'a été reçu.",
+      "MCP_APPROVAL_AUTO_BLOCKED": "La revue d'approbation automatique a bloqué cet appel d'outil. Aucun refus manuel n'a été reçu.",
       "MCP_APPROVAL_CONFIRMATION_TIMEOUT": "La demande d'autorisation a expiré sans décision confirmée. Un délai dépassé n'indique pas si vous avez cliqué sur un bouton.",
       "MCP_APPROVAL_CONFIRMATION_UNAVAILABLE": "La confirmation de l'autorisation n'a pas pu aboutir. Aucun refus manuel n'a été reçu.",
       "REMOTE_HOST_PROXY_FORWARD_UNAVAILABLE": "Ce modèle a besoin que cet ordinateur transfère les requêtes, ce que la connexion distante ne permet pas encore. Passez à Cindy AI ou utilisez ce modèle dans une tâche locale.",
@@ -13180,7 +13181,7 @@
     "turnChanges": {
       "title": "{{count}} fichiers modifiés",
       "partialTitle": "Les modifications de fichiers n'ont pas été entièrement capturées",
-      "review": "Examiner",
+      "review": "Vérifier",
       "undo": "Annuler",
       "undoAria": "Annuler les modifications de ce message",
       "undoPartialAria": "Annuler les modifications capturées avec exactitude dans ce message",
@@ -13193,15 +13194,15 @@
       "reapplyPartialSuccess": "Les modifications capturées avec exactitude ont été réappliquées ; les modifications non capturées ne l'ont pas été",
       "actionRunning": "Attendez la fin de la réponse en cours avant de modifier l'espace de travail",
       "gitUnavailable": "Git n'a pas été détecté. Installez Git, vérifiez qu'il figure dans le PATH du système, puis redémarrez Cindy pour profiter pleinement des fonctions Annuler et Réappliquer.",
-      "actionConflict": "L'espace de travail a changé : ce patch ne peut pas être appliqué en toute sécurité. Examinez d'abord les modifications actuelles",
+      "actionConflict": "L'espace de travail a changé : ce patch ne peut pas être appliqué en toute sécurité. Vérifiez d'abord les modifications actuelles",
       "actionUnavailable": "Ce message contient des modifications de fichiers qui ne peuvent pas être annulées en toute sécurité",
       "actionFailed": "Impossible d'appliquer les modifications. Réessayez",
       "partial": "Seules les modifications capturées avec exactitude sont affichées",
-      "partialNone": "Des fichiers ont été modifiés, mais leur contenu n'a pas pu être enregistré : ils ne peuvent donc pas être examinés ni annulés ici",
+      "partialNone": "Des fichiers ont été modifiés, mais leur contenu n'a pas pu être enregistré : ils ne peuvent donc pas être vérifiés ni annulés ici",
       "partialReversible": "Seules les modifications capturées avec exactitude peuvent être annulées ou réappliquées ; les modifications non capturées ne sont pas prises en charge",
       "partialActionHint": "Annuler ou réappliquer uniquement les modifications de fichiers capturées avec exactitude",
       "showMore": "Afficher {{count}} fichiers de plus",
-      "reviewRemaining": "Examiner {{count}} fichiers de plus",
+      "reviewRemaining": "Vérifier {{count}} fichiers de plus",
       "showLess": "Afficher moins"
     },
     "agentActions": {
@@ -13379,9 +13380,9 @@
       "testing": "Exécution des tests…",
       "checking": "Vérification du code…",
       "reviewingMemory": "Vérification de la mémoire…",
-      "reviewingFiles": "Examen des fichiers…",
+      "reviewingFiles": "Revue des fichiers…",
       "reviewingSources": "Vérification des sources web…",
-      "reviewingChecks": "Examen des résultats de vérification…",
+      "reviewingChecks": "Revue des résultats de vérification…",
       "replying": "Rédaction de la réponse…",
       "processing": "Traitement…",
       "organizingConversation": "Organisation de la conversation…",
@@ -13499,7 +13500,7 @@
     },
     "remoteDesktopConfirmation": {
       "title": "Confirmation requise sur l'ordinateur distant",
-      "description": "Ouvrez Cindy sur l'ordinateur distant pour examiner la demande et y répondre."
+      "description": "Ouvrez Cindy sur l'ordinateur distant pour vérifier la demande et y répondre."
     },
     "handoff": {
       "card": {
@@ -13608,7 +13609,7 @@
       "selectFolderFailed": "Impossible de sélectionner le dossier. Réessayez.",
       "projectsToggleExpand": "Développer toutes les sessions des projets",
       "projectsToggleCollapse": "Réduire toutes les sessions des projets",
-      "filterAria": "Paramètres de la barre latérale (statut : {{status}}, moteur : {{vendor}}, dernière activité : {{lastActivity}}, regrouper par : {{groupBy}}, trier par : {{sortBy}}, projets : {{projects}}, coéquipiers : {{creators}})",
+      "filterAria": "Paramètres de la barre latérale (statut : {{status}}, Harness : {{vendor}}, dernière activité : {{lastActivity}}, regrouper par : {{groupBy}}, trier par : {{sortBy}}, projets : {{projects}}, coéquipiers : {{creators}})",
       "organizeSidebar": "Paramètres de la barre latérale",
       "filterAllText": "tous",
       "filterSelectedProjects": "{{count}} sélectionnés",
@@ -13660,7 +13661,7 @@
         "priority": "D'abord celles qui attendent votre action, puis les non lues, puis celles en cours d'exécution, puis par date"
       },
       "filterStatusHeading": "Statut",
-      "filterAgentHeading": "Moteur",
+      "filterAgentHeading": "Harness",
       "filterLastActivityHeading": "Dernière activité",
       "filterGroupByHeading": "Regrouper par",
       "filterSortByHeading": "Trier par",
@@ -14572,7 +14573,7 @@
         "saveAria": "Enregistrer l'automatisation",
         "createAria": "Créer l'automatisation",
         "namePlaceholder": "Nommez cette automatisation",
-        "promptPlaceholder": "Exemple : Trouver les nouveaux plantages dans Sentry et résumer les principales régressions."
+        "promptPlaceholder": "Exemple : Trouve les nouveaux plantages dans Sentry et résume les principales régressions."
       },
       "executionMode": {
         "label": "Exécution",
@@ -14867,17 +14868,17 @@
         "nightly-test-heal": {
           "name": "Autoréparation nocturne des tests",
           "description": "Exécuter les tests chaque nuit et tenter des correctifs minimaux pour les échecs dans un worktree isolé",
-          "prompt": "Exécutez la suite de tests du projet. En cas d'échecs, tentez un correctif minimal dans un worktree isolé.\nContraintes :\n- Déterminez la commande de test standard à partir de la documentation du dépôt ou des scripts du package avant de lancer la suite complète\n- Ne corrigez que les problèmes étayés par des preuves d'échec claires ; privilégiez le changement le plus petit possible et évitez les refactorisations opportunistes\n- Relancez les tests concernés après correction pour confirmer qu'ils passent, et relisez le diff complet\n- Livrez les correctifs via le workflow du dépôt (par exemple, créez une branche et ouvrez une PR) ; ne commitez jamais directement sur la branche principale\n- Pour les échecs impossibles à corriger en toute sécurité, indiquez la cause, les fichiers suspects et les prochaines étapes suggérées"
+          "prompt": "Exécute la suite de tests du projet. En cas d'échecs, tente un correctif minimal dans un worktree isolé.\nContraintes :\n- Détermine la commande de test standard à partir de la documentation du dépôt ou des scripts du package avant de lancer la suite complète\n- Ne corrige que les problèmes étayés par des preuves d'échec claires ; privilégie le changement le plus petit possible et évite les refactorisations opportunistes\n- Relance les tests concernés après correction pour confirmer qu'ils passent, et fais la revue du diff complet\n- Livre les correctifs via le workflow du dépôt (par exemple, crée une branche et ouvre une PR) ; ne commite jamais directement sur la branche principale\n- Pour les échecs impossibles à corriger en toute sécurité, indique la cause, les fichiers suspects et les prochaines étapes suggérées"
         },
         "pr-gatekeeper": {
           "name": "Gardien des PR",
-          "description": "Pré-examiner chaque jour de semaine les nouvelles modifications des PR ouvertes et signaler les risques par gravité",
-          "prompt": "Examinez les PR ouvertes du dépôt et passez au crible leurs nouvelles modifications.\nContraintes :\n- Parcourez les PR ouvertes ayant reçu de nouveaux commits au cours des dernières 24 heures (le lundi, couvrez tout le week-end), en citant les numéros de PR, les chemins de fichiers et les diffs concrets\n- Concentrez-vous sur les problèmes d'exactitude, de sécurité, de perte de données et de compatibilité, classés par gravité\n- Ne signalez que les problèmes étayés par des preuves et décrivez le scénario d'échec ; ne pinaillez pas sur les préférences de style\n- Sauf autorisation explicite, produisez uniquement les conclusions de la revue ; ne commentez pas les PR et ne modifiez pas le code"
+          "description": "Faire chaque jour de semaine une pré-revue des nouvelles modifications des PR ouvertes et signaler les risques par gravité",
+          "prompt": "Passe en revue les PR ouvertes du dépôt et fais un premier tri de leurs nouvelles modifications.\nContraintes :\n- Parcours les PR ouvertes ayant reçu de nouveaux commits au cours des dernières 24 heures (le lundi, couvre tout le week-end), en citant les numéros de PR, les chemins de fichiers et les diffs concrets\n- Concentre-toi sur les problèmes d'exactitude, de sécurité, de perte de données et de compatibilité, classés par gravité\n- Ne signale que les problèmes étayés par des preuves et décris le scénario d'échec ; ne pinaille pas sur les préférences de style\n- Sauf autorisation explicite, produis uniquement les conclusions de la revue ; ne commente pas les PR et ne modifie pas le code"
         },
         "domain-radar": {
           "name": "Veille thématique",
           "description": "Collecter régulièrement les dernières actualités d'un sujet que vous suivez et fournir une synthèse argumentée",
-          "prompt": "Collectez les derniers développements concernant « {{topic}} » au cours des dernières 24 heures (le lundi, couvrez tout le week-end) et produisez une synthèse argumentée.\nContraintes :\n- Utilisez la recherche web, recoupez plusieurs sources avant de vous fier à une affirmation et citez le lien source pour chaque élément\n- Privilégiez les développements de fond (lancements, recherche, réglementation, discussions marquantes) ; écartez le discours marketing et les republications\n- Pour chaque élément, ajoutez une phrase expliquant pourquoi il compte, au lieu d'empiler des liens\n- Lorsque les informations sont rares ou les sources douteuses, dites-le honnêtement ; n'inventez jamais rien",
+          "prompt": "Collecte les derniers développements concernant « {{topic}} » au cours des dernières 24 heures (le lundi, couvre tout le week-end) et produis une synthèse argumentée.\nContraintes :\n- Utilise la recherche web, recoupe plusieurs sources avant de te fier à une affirmation et cite le lien source pour chaque élément\n- Privilégie les développements de fond (lancements, recherche, réglementation, discussions marquantes) ; écarte le discours marketing et les republications\n- Pour chaque élément, ajoute une phrase expliquant pourquoi il compte, au lieu d'empiler des liens\n- Lorsque les informations sont rares ou les sources douteuses, dis-le honnêtement ; n'invente jamais rien",
           "params": {
             "topic": {
               "label": "Sujet à suivre",
@@ -14888,7 +14889,7 @@
         "competitor-watch": {
           "name": "Veille concurrentielle",
           "description": "Récapitulatif hebdomadaire des mouvements produit et marché des concurrents, avec analyse d'impact",
-          "prompt": "Suivez l'activité de la semaine écoulée de ces concurrents : {{competitors}}.\nContraintes :\n- Utilisez la recherche web pour couvrir les mises à jour produit, les lancements, les changements de prix, les mouvements de marché et le ressenti des utilisateurs, en citant les sources\n- Distinguez les informations officielles des témoignages tiers ; signalez clairement les rumeurs non vérifiées\n- Pour chaque mise à jour importante, analysez ce qu'elle signifie pour nous et suggérez une réponse\n- S'il ne s'est rien passé de significatif, dites-le honnêtement au lieu de gonfler le rapport",
+          "prompt": "Suis l'activité de la semaine écoulée de ces concurrents : {{competitors}}.\nContraintes :\n- Utilise la recherche web pour couvrir les mises à jour produit, les lancements, les changements de prix, les mouvements de marché et le ressenti des utilisateurs, en citant les sources\n- Distingue les informations officielles des témoignages tiers ; signale clairement les rumeurs non vérifiées\n- Pour chaque mise à jour importante, analyse ce qu'elle signifie pour nous et suggère une réponse\n- S'il ne s'est rien passé de significatif, dis-le honnêtement au lieu de gonfler le rapport",
           "params": {
             "competitors": {
               "label": "Concurrents",
@@ -14899,12 +14900,12 @@
         "weekly-work-draft": {
           "name": "Rédacteur de rapport hebdomadaire",
           "description": "Compiler le travail de la semaine à partir des documents du répertoire de travail en un brouillon de rapport",
-          "prompt": "À partir des modifications apportées cette semaine aux documents, notes et travaux du répertoire de travail, compilez un brouillon de rapport hebdomadaire.\nContraintes :\n- N'utilisez comme preuves que les contenus présentant des traces de modification réelles dans le répertoire de travail, en citant les fichiers\n- Organisez-le en « Fait cette semaine / En cours / Semaine prochaine / Coordination nécessaire », de façon assez concise pour être soumis tel quel\n- Séparez les avancées de fond des tâches courantes et mettez en avant les résultats à valeur ajoutée\n- Laissez des espaces réservés avec des notes là où la matière manque, afin que l'utilisateur puisse les compléter"
+          "prompt": "À partir des modifications apportées cette semaine aux documents, notes et travaux du répertoire de travail, compile un brouillon de rapport hebdomadaire.\nContraintes :\n- N'utilise comme preuves que les contenus présentant des traces de modification réelles dans le répertoire de travail, en citant les fichiers\n- Organise-le en « Fait cette semaine / En cours / Semaine prochaine / Coordination nécessaire », de façon assez concise pour être soumis tel quel\n- Sépare les avancées de fond des tâches courantes et mets en avant les résultats à valeur ajoutée\n- Laisse des espaces réservés avec des notes là où la matière manque, afin que l'utilisateur puisse les compléter"
         },
         "knowledge-freshness": {
           "name": "Vérification de l'actualité de la base de connaissances",
           "description": "Contrôle mensuel des documents du répertoire de travail pour repérer les contenus obsolètes ou contradictoires",
-          "prompt": "Contrôlez l'état des documents du répertoire de travail et repérez les contenus à mettre à jour.\nContraintes :\n- Recherchez les informations obsolètes (dates périmées, liens morts, processus ou outils abandonnés), les contradictions et les doublons\n- Citez le chemin du fichier et l'emplacement de chaque problème, et expliquez votre raisonnement\n- Classez les suggestions en « mettre à jour / fusionner / supprimer » et produisez une liste de révisions\n- Produisez uniquement le rapport ; ne modifiez pas les documents"
+          "prompt": "Contrôle l'état des documents du répertoire de travail et repère les contenus à mettre à jour.\nContraintes :\n- Recherche les informations obsolètes (dates périmées, liens morts, processus ou outils abandonnés), les contradictions et les doublons\n- Cite le chemin du fichier et l'emplacement de chaque problème, et explique ton raisonnement\n- Classe les suggestions en « mettre à jour / fusionner / supprimer » et produis une liste de révisions\n- Produis uniquement le rapport ; ne modifie pas les documents"
         }
       }
     }
@@ -15138,7 +15139,7 @@
   },
   "issueAgent": {
     "command": {
-      "instruction": "Je souhaite envoyer un retour sur {{appName}}. Aidez-moi à en faire une issue GitHub claire : déterminez s'il s'agit d'un bug ou d'une suggestion, et ne demandez que ce qui manque réellement — ne suivez pas un questionnaire figé. Les suggestions ordinaires n'ont pas besoin d'une checklist de bug ; ignorez les questions sur le Harness, le modèle et l'effort de raisonnement lorsqu'elles ne sont pas pertinentes. Par défaut, résumez ou généralisez les citations et exemples que je fournis au lieu de recopier des informations permettant d'identifier une personne, une conversation ou un contexte professionnel. Les captures d'écran de cette conversation ne sont pas envoyées sur GitHub — n'écrivez jamais que des captures d'écran sont jointes ; décrivez plutôt ce qu'elles montraient. Avec mon accord, incluez des résumés de diagnostic expurgés ; n'incluez jamais de mots de passe, de jetons, d'adresses e-mail, de chemins personnels ni de fichiers sans rapport. Pour les demandes de fonctionnalité, décrivez le cas d'usage visible et la demande ; n'écrivez pas de chemins du dépôt, de plans d'implémentation ni de checklists d'acceptation, sauf si je le demande. Une fois les informations suffisantes, soumettez-les avec l'outil submit_github_issue via cindy_helper call_tool (category=feedback ; vous pouvez d'abord lancer list_tools pour vérifier les paramètres ; une carte de confirmation me sera présentée avant l'envoi). Aucun plugin ni compte GitHub n'est nécessaire : le bot officiel de Cindy est utilisé par défaut, et un compte GitHub fonctionnel n'apparaît que comme identité facultative dans la carte de confirmation. Après la création, indiquez-moi le numéro et le lien de l'issue, expliquez que Cindy est open source et proposez de m'aider à la reproduire, la corriger, la tester ou l'étendre à partir du code source. Si l'envoi échoue, indiquez-m'en honnêtement la raison.{{details}}",
+      "instruction": "Je souhaite envoyer un retour sur {{appName}}. Aide-moi à en faire une issue GitHub claire : détermine s'il s'agit d'un bug ou d'une suggestion, et ne demande que ce qui manque réellement — ne suis pas un questionnaire figé. Les suggestions ordinaires n'ont pas besoin d'une checklist de bug ; ignore les questions sur le Harness, le modèle et l'effort de raisonnement lorsqu'elles ne sont pas pertinentes. Par défaut, résume ou généralise les citations et exemples que je fournis au lieu de recopier des informations permettant d'identifier une personne, une conversation ou un contexte professionnel. Les captures d'écran de cette conversation ne sont pas envoyées sur GitHub — n'écris jamais que des captures d'écran sont jointes ; décris plutôt ce qu'elles montraient. Avec mon accord, inclus des résumés de diagnostic expurgés ; n'inclus jamais de mots de passe, de jetons, d'adresses e-mail, de chemins personnels ni de fichiers sans rapport. Pour les demandes de fonctionnalité, décris le cas d'usage visible et la demande ; n'écris pas de chemins du dépôt, de plans d'implémentation ni de checklists d'acceptation, sauf si je le demande. Une fois les informations suffisantes, soumets-les avec l'outil submit_github_issue via cindy_helper call_tool (category=feedback ; tu peux d'abord lancer list_tools pour vérifier les paramètres ; une carte de confirmation me sera présentée avant l'envoi). Aucun plugin ni compte GitHub n'est nécessaire : le bot officiel de Cindy est utilisé par défaut, et un compte GitHub fonctionnel n'apparaît que comme identité facultative dans la carte de confirmation. Après la création, indique-moi le numéro et le lien de l'issue, explique que Cindy est open source et propose de m'aider à la reproduire, la corriger, la tester ou l'étendre à partir du code source. Si l'envoi échoue, indique-m'en honnêtement la raison.{{details}}",
       "detailsPrefix": "\nMa description initiale : {{details}}"
     },
     "confirm": {
@@ -16466,13 +16467,13 @@
       "expired": "Proposition de skill expirée",
       "failed": "Échec de l'apprentissage",
       "cancel": "Annuler",
-      "review": "Examiner la proposition",
+      "review": "Vérifier la proposition",
       "fromConversation": "Distillée à partir de la session actuelle",
       "openSession": "Ouvrir la session d'apprentissage",
-      "continueHint": "Continuez la conversation dans cette session pour réviser la proposition ; appliquez-la via « Examiner la proposition » lorsqu'elle vous convient"
+      "continueHint": "Continuez la conversation dans cette session pour réviser la proposition ; appliquez-la via « Vérifier la proposition » lorsqu'elle vous convient"
     },
     "review": {
-      "ariaLabel": "Panneau d'examen de la proposition de skill",
+      "ariaLabel": "Panneau de revue de la proposition de skill",
       "title": "Proposition de skill : {{name}}",
       "errorTitle": "Impossible de charger la proposition",
       "redactionWarning": "Contenu potentiellement sensible détecté dans la sortie ({{categories}}). Veuillez examiner attentivement le diff avant de l'appliquer.",
@@ -17218,7 +17219,7 @@
       "wait": "Attendre l'amont",
       "personal": "Continuer avec une version personnelle",
       "retry": "Revérifier et relancer la recherche",
-      "count": "{{count}} PR potentiellement associées à examiner",
+      "count": "{{count}} PR potentiellement associées à vérifier",
       "kind": {
         "issue": "Issue",
         "pr": "PR"
@@ -17243,7 +17244,7 @@
         "timeout": "Le délai de recherche a expiré. Veuillez réessayer.",
         "invalidResponse": "GitHub a renvoyé un résultat incomplet ou illisible. Veuillez réessayer."
       },
-      "runtimeUnknown": "La version des sources en cours d'exécution est incertaine (par exemple, une version Dev modifiée). Les candidats sont conservés pour examen.",
+      "runtimeUnknown": "La version des sources en cours d'exécution est incertaine (par exemple, une version Dev modifiée). Les candidats sont conservés pour vérification.",
       "excludedIncluded": "{{count}} PR déjà présentes dans la version en cours d'exécution ont été exclues.",
       "limitedHint": "Seul un nombre limité de résultats a été vérifié. Affinez la demande pour une recherche plus précise.",
       "runtimeVersion": "Version en cours d'exécution : {{channel}} {{version}} · {{commit}}",
@@ -17502,7 +17503,7 @@
         "description": "Vérifiez les modifications en cours pour restaurer les options de test et de build personnel.",
         "action": "Vérifier et continuer",
         "failed": "Impossible de lancer les vérifications. Veuillez réessayer.",
-        "request": "Vérifiez les modifications en cours, puis restaurez les options de test et de build personnel et attendez que je choisisse l'étape suivante."
+        "request": "Vérifie les modifications en cours, puis restaure les options de test et de build personnel et attends que je choisisse l'étape suivante."
       },
       "title": "Modifications terminées — choisissez l'étape suivante",
       "description": "Poursuivez les modifications, essayez un build de test isolé ou générez votre programme d'installation personnel.",
@@ -17696,7 +17697,7 @@
       "errors": {
         "busy": "Une autre opération est en cours. Patientez, puis réessayez.",
         "dirty": "Les sources contiennent des modifications non commitées. Enregistrez-les avant de réessayer.",
-        "localMain": "La branche main locale des sources Cindy Make a divergé de la version cible. Examinez les différences avant de synchroniser.",
+        "localMain": "La branche main locale des sources Cindy Make a divergé de la version cible. Vérifiez les différences avant de synchroniser.",
         "localMainAhead": "La branche main locale des sources Cindy Make est en avance sur la version cible et ne peut pas être ramenée en arrière directement. Vérifiez la cible de synchronisation.",
         "unavailable": "Les sources ou l'enregistrement de l'opération sont indisponibles. Actualisez et réessayez.",
         "gitFailed": "Git n'a pas pu terminer l'opération. Veuillez réessayer.",
@@ -17823,7 +17824,7 @@
       },
       "dialog": {
         "title": "Proposer à Cindy",
-        "description": "Proposez cette modification sous forme de pull request sur le dépôt officiel de Cindy pour qu'elle soit examinée par les mainteneurs.",
+        "description": "Proposez cette modification sous forme de pull request sur le dépôt officiel de Cindy pour que les mainteneurs en fassent la revue.",
         "loading": "Préparation de cette modification…",
         "existing": "Vous avez déjà proposé cette modification (n° {{number}}). La proposer à nouveau la met à jour.",
         "reopen": "La proposition précédente n° {{number}} a été fermée. La proposer à nouveau en ouvre une nouvelle.",
@@ -17920,7 +17921,7 @@
         "forkArchived": "Le dépôt GitHub qui stocke votre version personnelle est archivé : GitHub n'accepte donc aucun envoi. Désarchivez-le sur GitHub, puis synchronisez à nouveau."
       },
       "doneCurrent": "Synchronisé",
-      "ahead": "Votre version personnelle repose sur une version officielle plus récente que le Cindy de cet ordinateur (provenant d'un autre ordinateur). Si le changement de version signale une incompatibilité, passez d'abord à la version originale et mettez à jour Cindy.",
+      "ahead": "Votre version personnelle repose sur une version officielle plus récente que la Cindy de cet ordinateur (provenant d'un autre ordinateur). Si le changement de version signale une incompatibilité, passez d'abord à la version originale et mettez à jour Cindy.",
       "abandon": {
         "action": "Abandonner cette combinaison",
         "title": "Abandonner la résolution de ce conflit ?",
@@ -17936,7 +17937,7 @@
         },
         "input": "La tâche qui traite le conflit attend votre réponse. Ouvrez-la pour répondre.",
         "interrupted": {
-          "task": "Cindy s'est fermé pendant le traitement du conflit. Ouvrez la tâche et écrivez « continuer » pour reprendre, ou abandonnez-la.",
+          "task": "Cindy s'est fermée pendant le traitement du conflit. Ouvrez la tâche et écrivez « continuer » pour reprendre, ou abandonnez-la.",
           "start": "La dernière synchronisation a été interrompue. Abandonnez-la, puis appuyez à nouveau sur Synchroniser."
         },
         "missing": "Modifications absentes du résultat : {{count}}. Demandez à la tâche de les réintégrer, ou utilisez quand même le résultat si vous n'en avez pas besoin.",
@@ -18032,8 +18033,8 @@
   "pluginTaskWriteAccess": {
     "autoTitle": "Activer l'approbation automatique",
     "autoMessage": "Autoriser « {{name}} » à utiliser l'approbation automatique ?",
-    "autoDetail": "Cindy examinera automatiquement les actions du coordinateur et des Workers. Les actions nécessitant une confirmation ou refusées entraînent toujours une pause. Ce n'est pas un accès complet. Ce choix est enregistré dans les paramètres IA du plugin, sans modifier les autorisations globales des autres tâches.",
-    "autoTaskDetail": "Cindy examinera automatiquement les actions du coordinateur et des Workers. Les actions nécessitant une confirmation ou refusées entraînent toujours une pause. Ce n'est pas un accès complet. Seules les autorisations de cette session changent ; les valeurs par défaut du plugin restent inchangées.",
+    "autoDetail": "Cindy soumettra automatiquement les actions du coordinateur et des Workers à une revue. Les actions nécessitant une confirmation ou refusées entraînent toujours une pause. Ce n'est pas un accès complet. Ce choix est enregistré dans les paramètres IA du plugin, sans modifier les autorisations globales des autres tâches.",
+    "autoTaskDetail": "Cindy soumettra automatiquement les actions du coordinateur et des Workers à une revue. Les actions nécessitant une confirmation ou refusées entraînent toujours une pause. Ce n'est pas un accès complet. Seules les autorisations de cette session changent ; les valeurs par défaut du plugin restent inchangées.",
     "title": "Autoriser l'IA de ce plugin à modifier des fichiers ?",
     "message": "Autoriser l'IA de « {{name}} » à modifier des fichiers et continuer ?",
     "detail": "L'autorisation IA du plugin passe à « Autoriser les modifications », y compris pour les tâches futures. Un répertoire de travail distinct n'est pas un bac à sable système ; les commandes restent soumises aux vérifications d'autorisation de Cindy. Vous pouvez revenir en lecture seule dans les paramètres IA du plugin.",
@@ -18090,7 +18091,7 @@
       "leadTime": "Combien de temps avant",
       "minutes": "{{count}} minutes avant l'expiration",
       "hours": "{{count}} heures avant l'expiration",
-      "hint": "Chaque règle utilise la carte qui expire le plus tôt. Ignorée lorsque tous les quotas sont pleins. S'exécute sur cet ordinateur tant que Cindy est ouvert.",
+      "hint": "Chaque règle utilise la carte qui expire le plus tôt. Ignorée lorsque tous les quotas sont pleins. S'exécute sur cet ordinateur tant que Cindy est ouverte.",
       "failed": "Impossible d'enregistrer. Réessayez.",
       "restore": "Rétablir les valeurs par défaut"
     }
