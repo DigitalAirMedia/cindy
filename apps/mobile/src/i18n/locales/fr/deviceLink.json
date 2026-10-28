@@ -8,18 +8,18 @@
     "recovered": "Restauré",
     "syncingHint": "Mise à jour du contenu depuis votre ordinateur."
   },
-  "syncFailed": "Échec de la synchronisation",
+  "syncFailed": "Échec de la synchro",
   "resync": "Resynchroniser",
   "resyncing": "Resynchronisation",
   "syncShort": "Synchroniser",
   "deviceUnresponsiveTitle": "Pas encore de réponse",
   "deviceUnresponsiveHint": "Aucune réponse reçue pour l'instant. Nouvelle tentative automatique.",
   "localNetwork": {
-    "title": "Réseau du téléphone indisponible",
+    "title": "Téléphone hors ligne",
     "hint": "Vérifiez le réseau de votre téléphone. La reconnexion se fera automatiquement dès son rétablissement."
   },
   "serviceConnection": {
-    "title": "Impossible de joindre le service",
+    "title": "Service injoignable",
     "hint": "Votre téléphone ne parvient pas à joindre le service pour le moment. Reconnexion automatique en cours."
   },
   "connectStep1": "Installez et ouvrez {{appName}} sur votre ordinateur",
@@ -44,7 +44,7 @@
   "tooManyConnectionsHint": "Trop d'appareils sont en ligne pour ce compte. Déconnectez un autre appareil et réessayez.",
   "versionMismatchTitle": "Version incompatible",
   "versionMismatchHint": "Cette version de l'app est incompatible avec le service. Installez la dernière version et réessayez.",
-  "unstableTitle": "La connexion ne cesse de se couper",
+  "unstableTitle": "Connexion instable",
   "unstableHint": "La connexion est instable. Vérifiez votre réseau et attendez que la connexion se rétablisse.",
   "relay": {
     "label": {

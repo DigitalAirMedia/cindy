@@ -56,14 +56,14 @@
       "queryDatabase": "Interroger la base de données",
       "ranCommand": "Exécuter une commande",
       "gitStatus": "Vérifier l'état de l'arbre de travail",
-      "gitDiff": "Voir les modifications du code",
+      "gitDiff": "Voir les modifications",
       "gitLog": "Voir l'historique des commits",
       "gitShow": "Voir le commit",
-      "gitAdd": "Indexer les modifications du code",
-      "gitCommit": "Commiter les modifications du code",
-      "gitFetch": "Récupérer les mises à jour distantes",
-      "gitPull": "Tirer les mises à jour distantes",
-      "gitPush": "Pousser les modifications du code",
+      "gitAdd": "Indexer les modifications",
+      "gitCommit": "Commiter les modifications",
+      "gitFetch": "Récupérer les mises à jour",
+      "gitPull": "Tirer les mises à jour",
+      "gitPush": "Pousser les modifications",
       "gitRebase": "Rebaser la branche",
       "gitMerge": "Fusionner la branche",
       "gitCherryPick": "Cherry-pick d'un commit",
@@ -120,7 +120,7 @@
       "ghApiCall": "Appeler l'API GitHub"
     },
     "status": {
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "done": "Terminé"
     }
   },

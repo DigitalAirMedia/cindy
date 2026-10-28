@@ -47,7 +47,7 @@
     "noHosts": "Aucun ordinateur compatible n'est disponible.",
     "noConversation": "Cet élément n'a actuellement aucune session à ouvrir.",
     "openFailed": "Impossible d'ouvrir la session",
-    "resolving": "Ouverture de la dernière session…",
+    "resolving": "Ouverture de la session…",
     "retry": "Réessayer",
     "hostCount": "{{count}} ordinateurs",
     "stale": "Ces éléments sont peut-être obsolètes. Actualisation impossible."
@@ -63,14 +63,14 @@
       "filterMetaWithUnavailable": "{{available}} disponibles · {{unavailable}} nécessitent votre attention",
       "showUnavailableReason": "Développez un appareil pour voir pourquoi il est indisponible",
       "emptyCopy": "Connectez-vous au même compte sur votre ordinateur, puis activez « Autoriser les appareils du même compte à contrôler cet ordinateur » dans Paramètres → Connexion à distance.",
-      "emptyTitle": "Aucun ordinateur à afficher pour l'instant",
+      "emptyTitle": "Aucun ordinateur à afficher",
       "hideUnavailableA11y": "Masquer les ordinateurs indisponibles",
       "showUnavailableA11y": "Afficher les ordinateurs indisponibles",
       "availableOnly": "Disponibles uniquement",
       "unavailableCount": "Indisponibles : {{count}}",
       "status": {
         "ready": "Contrôlable",
-        "busy": "En cours d'exécution",
+        "busy": "En cours",
         "offline": "Hors ligne",
         "remoteDisabled": "Contrôle à distance désactivé",
         "accessRevoked": "Accès révoqué",
@@ -109,11 +109,11 @@
       },
       "preview": {
         "permission": "En attente d'autorisation",
-        "planReview": "En attente de validation du plan",
+        "planReview": "Plan à valider",
         "answer": "En attente de votre réponse",
-        "attention": "En attente de votre action",
-        "automationRunning": "Automatisation en cours d'exécution",
-        "running": "En cours d'exécution"
+        "attention": "Action requise",
+        "automationRunning": "Automatisation en cours",
+        "running": "En cours"
       },
       "context": {
         "matchingTasks": "{{count}} sessions correspondantes",
@@ -207,7 +207,7 @@
           "copy": "Passez à Toutes ou Actives pour continuer à parcourir vos projets et sessions en cours."
         },
         "noSession": {
-          "title": "Aucune session pour l'instant",
+          "title": "Aucune session",
           "copy": "Créez ou poursuivez une session sur votre ordinateur et son projet apparaîtra ici."
         }
       },
@@ -294,7 +294,7 @@
     },
     "thisComputer": "Cet appareil",
     "allConversations": "Toutes les sessions",
-    "syncFailed": "Échec de la synchronisation",
+    "syncFailed": "Échec de la synchro",
     "requestFailed": "Échec de la requête",
     "loading": "Chargement des appareils disponibles",
     "untitled": "Session sans titre",
@@ -426,7 +426,7 @@
       "filterSelectedTeammates": "{{count}} sélectionné(s)"
     },
     "search": {
-      "placeholder": "Rechercher dans les titres ou le contenu…",
+      "placeholder": "Rechercher titres ou contenu…",
       "filterA11y": "Filtres de recherche",
       "filterAria": "Filtres et tri de la recherche (tri : {{sort}}, statut : {{status}}, Agent : {{agent}}, dernière activité : {{lastActivity}}, projets : {{projects}})",
       "filter": {
@@ -484,9 +484,9 @@
     "viewAllConversations": "Voir les {{count}} sessions",
     "viewAllRuns": "Voir les {{count}} exécutions",
     "preview": {
-      "needAttention": "{{count}} nécessitent votre attention",
+      "needAttention": "{{count}} à traiter",
       "waiting": "{{count}} en attente",
-      "automationRunning": "Automatisation en cours d'exécution",
+      "automationRunning": "Automatisation en cours",
       "totalRuns": "{{count}} exécutions au total",
       "runCount": "{{count}} exécutions",
       "nextRunMinutes": "Exécution dans {{count}} min",
@@ -564,7 +564,7 @@
       "eyebrow": "Automatisation",
       "title": "Automatisation",
       "emptyCopy": "Une fois la tâche exécutée, la session de chaque exécution apparaît ici.",
-      "emptyTitle": "Cette tâche n'a pas encore d'historique d'exécution"
+      "emptyTitle": "Aucune exécution pour cette tâche"
     },
     "projectScope": {
       "eyebrow": "Projet",
@@ -588,7 +588,7 @@
       "automationPrefix": "Automatisation",
       "sessionCount": "{{count}} sessions",
       "aggregate": "Groupées",
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "unread": "Non lues {{count}}"
     },
     "child": {
@@ -633,9 +633,9 @@
     "directUnavailable": "Cette conversation entre coéquipiers n'est plus disponible.",
     "unread": "Nouvelle réponse",
     "status": {
-      "queued": "Premiers pas",
-      "running": "En cours d'exécution",
-      "waiting": "En attente d'une réponse",
+      "queued": "Démarrage",
+      "running": "En cours",
+      "waiting": "Attend une réponse",
       "completed": "Terminé",
       "failed": "Échec",
       "cancelled": "Arrêté",
@@ -648,7 +648,7 @@
     "automation": {
       "unsavedTitle": "Abandonner les modifications ?",
       "unsavedBody": "Vos modifications n'ont pas été enregistrées.",
-      "discard": "Abandonner les modifications"
+      "discard": "Abandonner"
     },
     "openProfile": "Voir le profil de {{name}}",
     "switchCompanion": "Changer de coéquipier",
@@ -705,10 +705,10 @@
     "emptyEditor": "Rien pour l'instant.",
     "searchOptions": "Rechercher",
     "changed": "Modifié ailleurs. Vos modifications non enregistrées sont conservées.",
-    "discardAndReload": "Abandonner les modifications et recharger",
+    "discardAndReload": "Abandonner et recharger",
     "memoryEntries": "Mémoires enregistrées",
     "memorySearch": "Rechercher dans les mémoires",
-    "memoryEmpty": "Aucune mémoire pour l'instant",
+    "memoryEmpty": "Aucune mémoire",
     "memoryNoResults": "Aucune mémoire correspondante",
     "memoryDisabled": "La mémoire est désactivée. Votre coéquipier ne lira ni n'enregistrera de mémoires ; celles déjà enregistrées restent consultables et supprimables.",
     "memoryLoadFailed": "Impossible de charger les mémoires",
@@ -739,7 +739,7 @@
     "permissions": "Autorisations d'opération",
     "personalSkills": "Skills personnelles",
     "connections": "Skills et connexions référencées",
-    "save": "Enregistrer les modifications",
+    "save": "Enregistrer",
     "offline": "Reconnectez-vous à {{deviceName}} pour continuer. Vos modifications sont conservées.",
     "hostUpgrade": "Mettez à jour Cindy sur {{deviceName}} et réessayez, ou modifiez les paramètres de ce coéquipier depuis cet ordinateur.",
     "readFailed": "Impossible de confirmer l'état le plus récent. Actualisez avant de réessayer ; l'action a peut-être déjà abouti. Vos modifications sont conservées.",
@@ -773,7 +773,7 @@
     "showReplyTargetHint": "Au-dessus de la réponse d'un coéquipier, afficher celui de vos messages auquel elle répond. S'applique à tous les coéquipiers. Les réponses plus anciennes ne l'affichent pas.",
     "channels": "Plateformes de messagerie",
     "channelsEmpty": "Aucune plateforme de messagerie connectée",
-    "channelTasksEmpty": "Aucune tâche pour l'instant",
+    "channelTasksEmpty": "Aucune tâche",
     "channelPlatforms": {
       "telegram": "Telegram",
       "feishu": "Feishu",
@@ -884,7 +884,7 @@
     "stopDailyCheck": "Arrêter la vérification quotidienne",
     "openFailed": "Impossible d'ouvrir ce lien",
     "dailyCheckFailed": "Impossible d'enregistrer. Réessayez.",
-    "loadFailed": "Impossible de charger les tâches à faire",
+    "loadFailed": "Tâches non chargées",
     "outputs": "Productions",
     "outputMeta": "{{time}} · {{task}}",
     "source": {
@@ -898,12 +898,12 @@
   },
   "cloudCompanion": {
     "homeOffline": "L'ordinateur principal « {{device}} » est hors ligne",
-    "switchAction": "Continuer sur un autre ordinateur",
+    "switchAction": "Changer d'ordinateur",
     "composerHint": "L'ordinateur principal est hors ligne. Passez sur un autre ordinateur pour continuer.",
     "readOnlyNote": "Cette conversation est enregistrée dans le cloud et en lecture seule.",
     "empty": "Aucune conversation dans le cloud pour l'instant.",
     "loadFailed": "Impossible de charger la conversation du cloud pour le moment.",
-    "loadOlder": "Charger les messages précédents",
+    "loadOlder": "Messages précédents",
     "noTargets": "Aucun autre ordinateur n'est disponible. Ouvrez Cindy sur un autre ordinateur, connectez-vous au même compte et activez « Autoriser les appareils du même compte à contrôler cet ordinateur », puis réessayez.",
     "devicesFailed": "Impossible de charger vos ordinateurs pour le moment. Réessayez plus tard.",
     "preparing": "Préparation sur « {{device}} »…",

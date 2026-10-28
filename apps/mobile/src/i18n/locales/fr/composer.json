@@ -32,11 +32,11 @@
     "mediaCacheMiss": "Ce média n'est pas encore en cache sur votre téléphone. Rouvrez-le une fois votre ordinateur connecté",
     "mediaFetchCancelled": "Récupération du média distant annulée",
     "fileMenu": {
-      "openBrowser": "Ouvrir le navigateur de fichiers",
-      "sendToSession": "Envoyer dans la session",
+      "openBrowser": "Parcourir les fichiers",
+      "sendToSession": "Envoyer à la session",
       "copyPath": "Copier le chemin",
       "quickPreview": "Aperçu rapide",
-      "revealInBrowser": "Afficher dans le navigateur de fichiers",
+      "revealInBrowser": "Afficher dans les fichiers",
       "share": "Exporter / Partager",
       "folder": "Dossier",
       "file": "Fichier"
@@ -111,13 +111,13 @@
     "file": "Fichier",
     "fileCount": "{{count}} fichiers",
     "hint": "Choisissez une destination, puis ajoutez des instructions et envoyez.",
-    "search": "Rechercher des tâches et des compagnons",
+    "search": "Rechercher tâches et compagnons",
     "newTask": "Nouvelle tâche",
     "companions": "Compagnons",
     "tasks": "Tâches",
     "unavailable": "Impossible de recevoir des partages pour le moment",
-    "noCompanions": "Aucun compagnon pour l'instant",
-    "noTasks": "Aucune tâche pour l'instant",
+    "noCompanions": "Aucun compagnon",
+    "noTasks": "Aucune tâche",
     "retry": "Impossible de tout charger. Touchez pour réessayer."
   }
 }

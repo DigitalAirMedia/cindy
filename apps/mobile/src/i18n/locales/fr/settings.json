@@ -30,7 +30,7 @@
     },
     "saveFailed": "Échec de l'enregistrement du mode d'apparence. Le réglage précédent sera rétabli au redémarrage.",
     "userBubble": {
-      "title": "Couleur de mes bulles de message",
+      "title": "Couleur de mes bulles",
       "presets": "Couleur",
       "default": "Par défaut",
       "peach": "Premier jet",
@@ -49,7 +49,7 @@
       "saveFailed": "La couleur est appliquée pour l'instant mais n'a pas pu être enregistrée.",
       "retry": "Réessayer",
       "cancel": "Annuler",
-      "reset": "Rétablir la valeur par défaut",
+      "reset": "Réinitialiser",
       "apply": "Appliquer",
       "hex": "Valeur de couleur"
     }
@@ -103,12 +103,12 @@
   },
   "notifications": {
     "sectionTitle": "Notifications",
-    "taskDone": "Notifications des messages et des tâches",
+    "taskDone": "Messages et tâches",
     "taskDoneHint": "Soyez averti des messages de conversation et des tâches terminées, en échec ou qui attendent votre réponse.",
     "permissionDenied": "Autorisez les notifications de Cindy dans les paramètres du système.",
     "unregisterQueued": "Désactivé. La désinscription se terminera dès que vous serez de nouveau en ligne.",
-    "preview": "Afficher les aperçus des conversations",
-    "background": "Garder la conversation connectée en arrière-plan",
+    "preview": "Aperçus des conversations",
+    "background": "Rester connecté en arrière-plan",
     "backgroundActive": "Réception des messages en arrière-plan",
     "backgroundStop": "Arrêter la réception",
     "backgroundHint": "La connexion en arrière-plan fonctionne sans Google et affiche une notification permanente. Vous pouvez l'arrêter depuis cette notification.",
@@ -169,7 +169,7 @@
     "updateId": "ID de mise à jour",
     "updatedAt": "Mis à jour le",
     "channel": "Canal",
-    "runtime": "Environnement d'exécution",
+    "runtime": "Runtime",
     "otaMarker": "Marqueur OTA",
     "emergencyLaunch": "Lancement de secours",
     "emergencyLaunchYes": "Oui (l'OTA ne peut pas s'appliquer lors de cette exécution)",
@@ -182,11 +182,11 @@
     "view": "Voir",
     "openPrivacyPolicy": "Ouvrir la politique de confidentialité",
     "openUserAgreement": "Ouvrir le contrat d'utilisation",
-    "appFilingNumber": "Numéro d'enregistrement de l'application",
+    "appFilingNumber": "Numéro d'enregistrement",
     "analytics": "Statistiques d'utilisation",
     "analyticsHint": "Nous aide à comprendre les lancements et la fidélisation. Transmet des informations sur l'appareil (modèle, système d'exploitation, version de l'application) et un identifiant d'appareil, ainsi que l'ID de votre compte une fois connecté ; jamais les conversations, les fichiers ni les prompts.",
     "analyticsSaveFailed": "Impossible d'enregistrer ce réglage ; il pourrait être rétabli après un redémarrage.",
-    "analyticsReset": "Rétablir la valeur par défaut",
+    "analyticsReset": "Réinitialiser",
     "analyticsResetAction": "Réinitialiser"
   },
   "account": {
@@ -262,7 +262,7 @@
     "strictness": {
       "label": "Sévérité",
       "hint": "Un réglage plus strict écarte davantage de voix, mais peut aussi couper certains de vos mots dans les endroits bruyants.",
-      "restoreDefault": "Rétablir la valeur par défaut",
+      "restoreDefault": "Réinitialiser",
       "options": {
         "relaxed": "Souple",
         "standard": "Standard",
@@ -317,8 +317,8 @@
     "clearAccessibility": "Effacer le nom",
     "discardTitle": "Abandonner les modifications ?",
     "discardBody": "Vos modifications du nom de l'appareil n'ont pas été enregistrées.",
-    "discardConfirm": "Abandonner les modifications",
-    "keepEditing": "Continuer la modification"
+    "discardConfirm": "Abandonner",
+    "keepEditing": "Continuer l'édition"
   },
   "developer": {
     "title": "Développeur",

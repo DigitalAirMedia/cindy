@@ -13,12 +13,12 @@
     "kind": "Autorisation",
     "deny": "Refuser",
     "denyAccessibility": "Refuser la demande d'autorisation",
-    "alwaysAllow": "Toujours autoriser pour cette session",
+    "alwaysAllow": "Autoriser pour la session",
     "alwaysAllowAccessibility": "Toujours autoriser les demandes d'autorisation pour cette session",
     "alwaysAllowConfirm": "Confirmer l'autorisation pour cette session",
     "allowOnce": "Autoriser une fois",
     "allowOnceAccessibility": "Autoriser la demande d'autorisation une fois",
-    "allowOnceConfirm": "Confirmer l'autorisation unique",
+    "allowOnceConfirm": "Confirmer l'autorisation",
     "highRisk": "Risque élevé",
     "autoReviewUnavailable": "La revue automatique n'a pas pu aboutir. Confirmez si vous autorisez cette action.",
     "autoReviewReason": "La revue automatique nécessite votre décision : {{reason}}",
@@ -80,7 +80,7 @@
     "closeAnswer": "Fermer",
     "planReviewTitle": "Revue du plan de Claude",
     "planExpand": "Développer le plan",
-    "planEditHint": "Utilisez le mode édition pour ajuster le plan",
+    "planEditHint": "Ajustez le plan en mode édition",
     "planBrowseHint": "Touchez une section pour y accéder",
     "planEditToggle": "Modifier le plan",
     "planEditExit": "Quitter l'édition du plan",
@@ -93,7 +93,7 @@
     "planJumpTo": "Aller à la section du plan {{title}}",
     "planEmpty": "Le plan est vide.",
     "planApproveAccessibility": "Approuver et exécuter le plan",
-    "planApprove": "Approuver le plan de Claude et commencer à coder",
+    "planApprove": "Approuver le plan et coder",
     "planFeedbackLabel": "Retour sur le plan",
     "planFeedbackPlaceholder": "Indiquez à Claude quoi faire",
     "planFeedbackRequired": "Saisissez un retour avant d'envoyer.",
@@ -126,7 +126,7 @@
       "label": "Accès aux fichiers"
     },
     "plugin_setup": {
-      "title": "Configuration du plugin requise sur votre ordinateur",
+      "title": "Plugin à configurer sur l'ordinateur",
       "label": "Plugin"
     },
     "fallback": {
@@ -150,9 +150,9 @@
     "cancelAccessibility": "Annuler le retour en arrière",
     "confirm": "Confirmer le retour en arrière",
     "confirming": "Retour en arrière",
-    "titleLoading": "Vérification de l'impact du retour en arrière",
+    "titleLoading": "Vérification de l'impact",
     "titleDefault": "Revenir à ce message ?",
-    "titleEmpty": "Revenir en arrière dans la conversation uniquement",
+    "titleEmpty": "Revenir dans la conversation",
     "titleError": "Retour en arrière impossible",
     "detailLoading": "Lecture de l'aperçu du retour en arrière des fichiers depuis votre ordinateur.",
     "detailDefault": "Cette action restaure les fichiers ci-dessous et tronque la conversation après ce message.",
@@ -346,7 +346,7 @@
       "error": "Impossible de récupérer l'image. Réessayez.",
       "field": "Champ actif",
       "type": "Saisir",
-      "typeEnter": "Saisir et appuyer sur Entrée"
+      "typeEnter": "Saisir et valider"
     },
     "liveViewHint": "Voyez uniquement cette fenêtre en direct depuis ici. Les clics et la saisie restent limités à celle-ci.",
     "deviceCode": {
@@ -363,7 +363,7 @@
     "qr": {
       "open": "Ouvrir {{site}} ici",
       "openApp": "Ouvrir le lien {{site}} ici",
-      "share": "Enregistrer ou partager l'image",
+      "share": "Enregistrer ou partager",
       "copyLink": "Copier le lien",
       "copyText": "Copier le texte",
       "copied": "Copié.",
