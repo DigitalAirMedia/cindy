@@ -99,7 +99,7 @@
     "badge": "Bêta",
     "description": "Recevez en avance les prochaines mises à jour du client. Les mises à jour de contenu sont téléchargées lors de la prochaine recherche de mises à jour et prennent effet après un redémarrage de l'application.",
     "saveFailed": "Échec de l'enregistrement du réglage du canal bêta",
-    "unavailable": "Le canal bêta est indisponible — impossible de joindre le serveur de mises à jour bêta."
+    "unavailable": "Le canal bêta est indisponible : impossible de joindre le serveur de mises à jour bêta."
   },
   "notifications": {
     "sectionTitle": "Notifications",

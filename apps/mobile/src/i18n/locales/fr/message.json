@@ -108,8 +108,8 @@
     "agentSwitchViewHandoff": "{{label}}, voir le transfert",
     "sessionFallbackPill": "Repris à partir du résumé",
     "sessionResumedPill": "Session d'origine reprise",
-    "handoffContentDesc": "Transfert — le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
-    "handoffContentDescEnglishSource": "Transfert — le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
+    "handoffContentDesc": "Transfert : le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
+    "handoffContentDescEnglishSource": "Transfert : le résumé du contexte envoyé au nouveau Harness lors du changement (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
     "openDiagramDetail": "Ouvrir le détail du diagramme",
     "sessionChipFallback": "Une session",
     "messageChipFallback": "Message cité",
@@ -266,8 +266,8 @@
       "labelOverflow": "Contexte réorganisé, poursuite en cours",
       "labelTimeout": "Le dernier tour n'a pas répondu ; contexte réorganisé pour continuer",
       "labelStrip": "Images trop volumineuses retirées, poursuite en cours",
-      "handoffTitle": "Transfert — le résumé du contexte envoyé à la suite de cette conversation (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
-      "handoffTitleEnglishSource": "Transfert — le résumé du contexte envoyé à la suite de cette conversation (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)"
+      "handoffTitle": "Transfert : le résumé du contexte envoyé à la suite de cette conversation (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)",
+      "handoffTitleEnglishSource": "Transfert : le résumé du contexte envoyé à la suite de cette conversation (ne fait pas partie de la transcription de la conversation ; affiché uniquement ici)"
     },
     "compact": {
       "savedTokens": "{{tokens}} jetons économisés",
@@ -277,9 +277,9 @@
     },
     "goalComplete": "Objectif atteint · {{turns}} tours · durée {{duration}}",
     "goalResumed": "Consommation rétablie, poursuite de l'objectif",
-    "goalCapacityRetry": "Le service du modèle était saturé — nouvel essai de l'objectif",
+    "goalCapacityRetry": "Le service du modèle était saturé : nouvel essai de l'objectif",
     "autoResume": {
-      "separator": "Connexion interrompue — reprise automatique",
+      "separator": "Connexion interrompue : reprise automatique",
       "succeeded": "Reconnecté",
       "failed": "Échec de la reconnexion",
       "neutral": "Se reconnecter",
