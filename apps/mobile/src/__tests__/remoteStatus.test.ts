@@ -25,7 +25,7 @@ describe('remoteStatus', () => {
   it('localizes nested Harness errors without exposing the technical fallback', async () => {
     const previousLanguage = i18n.language;
     try {
-      for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko']) {
+      for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'fr']) {
         await i18n.changeLanguage(locale);
         const error = new DeviceLinkError('IPC_ERROR' as never, '[SSH_HARNESS_SWITCH_UNSUPPORTED] SSH diagnostic');
         expect(humanizeRemoteError(error)).toBe(i18n.t('session.remoteError.SSH_HARNESS_SWITCH_UNSUPPORTED'));
@@ -120,7 +120,7 @@ describe('remoteStatus', () => {
   it('localizes Stop connection recovery errors without dropping their structured classification', async () => {
     const previousLanguage = i18n.language;
     try {
-      for (const locale of ['en', 'ja', 'ko', 'zh-TW'] as const) {
+      for (const locale of ['en', 'ja', 'ko', 'zh-TW', 'fr'] as const) {
         await i18n.changeLanguage(locale);
         expect(describeRemoteError('[DEVICE_OFFLINE]')).toBe(i18n.t('session.menu.aiRenameOffline'));
         expect(describeRemoteError('[NOT_CONNECTED]')).toBe(i18n.t('session.screen.networkReconnecting'));

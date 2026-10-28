@@ -14,7 +14,7 @@
     "regions": ["na"],
     "systems": ["desktop"],
     "themes": ["light", "dark"],
-    "langs": ["zh-CN", "zh-TW", "en", "ja", "ko"]
+    "langs": ["zh-CN", "zh-TW", "en", "ja", "ko", "fr"]
   },
 
   "states": [
@@ -31,7 +31,8 @@
       { "id": "zh-tw-dark", "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "dark", "lang": "zh-TW" } },
       { "id": "en-dark",  "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "dark",  "lang": "en" } },
       { "id": "ja-light", "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "light", "lang": "ja" } },
-      { "id": "ko-dark",  "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "dark",  "lang": "ko" } }
+      { "id": "ko-dark",  "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "dark",  "lang": "ko" } },
+      { "id": "fr-dark",  "prefs": { "plat": "desk", "region": "na", "os": "desktop", "mode": "dark",  "lang": "fr" } }
     ],
     "noClip": [".qa-card-label", ".qa-section-title"],
     "persistence": {

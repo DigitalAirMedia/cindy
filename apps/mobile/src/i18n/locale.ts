@@ -4,13 +4,13 @@
  * 本模块保持零依赖(不 import expo / RN):偏好存储及其测试直接消费,
  * 读系统语言的 detectSystemLocale 在 systemLocale.ts。
  * 解析规则与 loginMessages.resolveLoginLocale 保持一致:zh-Hans/CN/SG → zh-CN，
- * zh-Hant/TW/HK/MO → zh-TW，ja / ko 前缀直取,其余兜底 en。
+ * zh-Hant/TW/HK/MO → zh-TW，ja / ko / fr 前缀直取,其余兜底 en。
  * 刻意用字符串前缀而非 Intl.Locale——Hermes 的 Intl 子集在各版本间能力不齐,
  * 前缀匹配对当前支持的语言足够且行为可预期。
  */
 
 /** UI 支持的具体语言。 */
-export const SUPPORTED_LOCALES = ["zh-CN", "zh-TW", "en", "ja", "ko"] as const;
+export const SUPPORTED_LOCALES = ["zh-CN", "zh-TW", "en", "ja", "ko", "fr"] as const;
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
 /** 用户偏好:'system' = 跟随系统语言,由本模块在运行时解析。 */
@@ -43,5 +43,6 @@ export function resolveSystemLocale(
   }
   if (tag.startsWith("ja")) return "ja";
   if (tag.startsWith("ko")) return "ko";
+  if (tag.startsWith("fr")) return "fr";
   return DEFAULT_LOCALE;
 }

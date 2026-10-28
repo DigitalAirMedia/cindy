@@ -12,7 +12,7 @@ import {
   type NewSessionLocale,
 } from "@/session/newSessionMessages";
 
-const LOCALES: NewSessionLocale[] = ["zh-CN", "zh-TW", "en", "ja", "ko"];
+const LOCALES: NewSessionLocale[] = ["zh-CN", "zh-TW", "en", "ja", "ko", "fr"];
 
 describe("newSessionMessages", () => {
   it("keeps the 5 locale catalogs key-aligned and non-empty", () => {
@@ -32,7 +32,8 @@ describe("newSessionMessages", () => {
     expect(resolveNewSessionLocale("zh-Hant-TW")).toBe("zh-TW");
     expect(resolveNewSessionLocale("ja-JP")).toBe("ja");
     expect(resolveNewSessionLocale("ko-KR")).toBe("ko");
-    expect(resolveNewSessionLocale("fr-FR")).toBe("en");
+    expect(resolveNewSessionLocale("fr-FR")).toBe("fr");
+    expect(resolveNewSessionLocale("de-DE")).toBe("en");
   });
 
   it("renders the current system language through the catalog", () => {

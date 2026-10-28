@@ -44,7 +44,7 @@ describe('languagePreferenceStore', () => {
   });
 
   it('存储里出现非法值时回退 system', async () => {
-    store.set(__testing.storageKey, 'fr');
+    store.set(__testing.storageKey, 'de');
     await expect(readLanguagePreference()).resolves.toBe('system');
   });
 });

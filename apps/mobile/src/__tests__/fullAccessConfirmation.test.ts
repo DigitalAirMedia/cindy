@@ -30,7 +30,7 @@ describe("getFullAccessConfirmationCopy", () => {
     expect(getFullAccessConfirmationCopy("zh-Hant-TW").title).toBe(
       "開啟完全訪問？",
     );
-    expect(getFullAccessConfirmationCopy("fr").title).toBe(
+    expect(getFullAccessConfirmationCopy("de").title).toBe(
       "Enable Full access?",
     );
   });

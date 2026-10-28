@@ -1925,6 +1925,552 @@
           "value": "Please wait…"
         }
       },
+      "fr": {
+        "back": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.back",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Retour"
+        },
+        "binding.emailSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.binding.emailSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Une adresse e-mail réelle et vérifiée est requise pour finaliser la connexion"
+        },
+        "binding.emailTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.binding.emailTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Vérifier un e-mail"
+        },
+        "binding.phoneSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.binding.phoneSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Un numéro de téléphone vérifié est requis pour finaliser la connexion"
+        },
+        "binding.phoneTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.binding.phoneTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Vérifier un numéro de téléphone"
+        },
+        "browserWaiting": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.browserWaiting",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Terminez la vérification dans votre navigateur"
+        },
+        "cancel": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.cancel",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Annuler"
+        },
+        "chooseAccount": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.chooseAccount",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Choisir une identité"
+        },
+        "chooseAccountSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.chooseAccountSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Sélectionnez l'identité personnelle ou d'organisation à utiliser"
+        },
+        "chooseMethod": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.chooseMethod",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Choisissez un mode de connexion"
+        },
+        "codePlaceholder": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.codePlaceholder",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Code à 6 chiffres"
+        },
+        "codeSentTo": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.codeSentTo",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Nous avons envoyé un code à {{identifier}}"
+        },
+        "completeSignIn": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.completeSignIn",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Finaliser la connexion"
+        },
+        "consentDialog.agree": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.consentDialog.agree",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Accepter"
+        },
+        "consentDialog.body": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.consentDialog.body",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Lisez et acceptez les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy> de Cindy pour continuer."
+        },
+        "consentDialog.disagree": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.consentDialog.disagree",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Plus tard"
+        },
+        "consentDialog.title": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.consentDialog.title",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Conditions d'utilisation et Politique de confidentialité"
+        },
+        "consentStatement": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.consentStatement",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "J'ai lu et j'accepte les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy>"
+        },
+        "continue": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.continue",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Continuer"
+        },
+        "deletion.completedCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.completedCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Votre compte de connexion Cindy a été supprimé."
+        },
+        "deletion.completedTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.completedTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Compte supprimé"
+        },
+        "deletion.dismissButton": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.dismissButton",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Compris"
+        },
+        "deletion.pendingCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.pendingCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression définitive programmée le {{date}}. Connectez-vous avant cette date pour l'annuler."
+        },
+        "deletion.pendingTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.pendingTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression du compte programmée"
+        },
+        "deletion.processingCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.processingCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "La période d'attente est terminée. Votre compte de connexion Cindy est en cours de suppression."
+        },
+        "deletion.processingTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status.processingTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression du compte en cours"
+        },
+        "emailPlaceholder": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.emailPlaceholder",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Saisissez votre e-mail"
+        },
+        "enterCode": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.enterCode",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Saisissez le code de vérification"
+        },
+        "enterpriseLogin": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.enterpriseLogin",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Se connecter avec votre identité professionnelle"
+        },
+        "enterpriseVia": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.enterpriseVia",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Authentification unique via {{name}}"
+        },
+        "errors.AUTH_SERVICE_UNAVAILABLE": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.errors.AUTH_SERVICE_UNAVAILABLE",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Le service de connexion est temporairement indisponible."
+        },
+        "errors.INVALID_CODE": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.errors.INVALID_CODE",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Le code de vérification est incorrect ou a expiré."
+        },
+        "errors.fallback": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.errors.fallback",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Échec de la connexion. Veuillez réessayer."
+        },
+        "invalidEmail": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.invalidEmail",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Veuillez saisir une adresse e-mail valide"
+        },
+        "invalidPhone": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.invalidPhone",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Veuillez saisir un numéro de téléphone valide"
+        },
+        "localModeDescription": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.localModeDescription",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Aucun compte Cindy requis. Les données restent sur cet appareil ; les modèles cloud, l'accès multi-appareils et les services de la marketplace ne sont pas disponibles."
+        },
+        "localModeEntry": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.localModeEntry",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Passer la connexion"
+        },
+        "orgDetected": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.orgDetected",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "{{email}} appartient à « {{org}} »"
+        },
+        "personalAccount": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.personalAccount",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Identité personnelle"
+        },
+        "personalDesc": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.personalDesc",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Envoyer un code de vérification à votre e-mail"
+        },
+        "personalLogin": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.personalLogin",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Se connecter avec un compte personnel"
+        },
+        "phonePlaceholder": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.phonePlaceholder",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Saisissez votre numéro de téléphone"
+        },
+        "preparing": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.preparing",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Connexion au service d'authentification"
+        },
+        "preparingSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.preparingSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Chargement des méthodes disponibles pour cette région"
+        },
+        "regionPill.cn": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.regionPill.cn",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "CN"
+        },
+        "regionPill.dev": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.regionPill.dev",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Dev"
+        },
+        "resendCode": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.resendCode",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Renvoyer le code"
+        },
+        "resendCountdown": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.resendCountdown",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Renvoi possible dans {{n}} secondes"
+        },
+        "retry": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.retry",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Réessayer"
+        },
+        "sendCode": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.sendCode",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Envoyer le code"
+        },
+        "signIn": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.signIn",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Se connecter"
+        },
+        "social.apple": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.social.apple",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Apple"
+        },
+        "social.google": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.social.google",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Google"
+        },
+        "social.wechat": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.social.wechat",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "WeChat"
+        },
+        "ssoEntry": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoEntry",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Se connecter avec le SSO d'entreprise"
+        },
+        "ssoOrgDetected": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoOrgDetected",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Choisissez une connexion d'authentification unique pour « {{org}} »"
+        },
+        "ssoOrgHint": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoOrgHint",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Vous ne connaissez pas l'identifiant de connexion de votre entreprise ? Demandez à votre administrateur"
+        },
+        "ssoOrgPlaceholder": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoOrgPlaceholder",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Identifiant d'entreprise, slug ou domaine"
+        },
+        "ssoOrgSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoOrgSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Saisissez un identifiant d'entreprise, un slug d'organisation ou un domaine vérifié pour continuer avec l'authentification unique"
+        },
+        "ssoOrgTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoOrgTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "SSO d'entreprise"
+        },
+        "ssoRequired": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoRequired",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Cette organisation exige une connexion SSO"
+        },
+        "ssoVerificationSubtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoVerificationSubtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "La première connexion nécessite de vérifier le contact renvoyé par votre fournisseur d'identité : {{target}}"
+        },
+        "ssoVerificationTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.ssoVerificationTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Vérifier votre identité professionnelle"
+        },
+        "subtitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.subtitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Choisissez un moyen sécurisé de vous connecter"
+        },
+        "title": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.title",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Bienvenue dans Cindy"
+        },
+        "unavailable": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.unavailable",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "La connexion est temporairement indisponible"
+        },
+        "verifying": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.verifying",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Vérification…"
+        },
+        "working": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "login.working",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Veuillez patienter…"
+        }
+      },
       "ja": {
         "back": {
           "provenance": {
@@ -7070,6 +7616,496 @@
             "source": "../../../apps/mobile/src/auth/loginMessages.ts"
           },
           "value": "Working…"
+        }
+      },
+      "fr": {
+        "accountDeletionCompletedCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionCompletedCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Votre compte de connexion Cindy a été supprimé."
+        },
+        "accountDeletionCompletedTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionCompletedTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Compte supprimé"
+        },
+        "accountDeletionDismiss": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionDismiss",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Compris"
+        },
+        "accountDeletionPendingCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionPendingCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression définitive programmée le {date}. Connectez-vous maintenant pour annuler la suppression."
+        },
+        "accountDeletionPendingTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionPendingTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression du compte programmée"
+        },
+        "accountDeletionProcessingCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionProcessingCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Votre compte de connexion Cindy est en cours de suppression et sera définitivement supprimé à la fin du traitement."
+        },
+        "accountDeletionProcessingTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.accountDeletionProcessingTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression du compte en cours"
+        },
+        "apple": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.apple",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Continuer avec Apple"
+        },
+        "back": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.back",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Retour"
+        },
+        "bindEmailSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.bindEmailSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Une adresse e-mail vérifiée est requise pour finaliser la connexion."
+        },
+        "bindEmailTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.bindEmailTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Vérifier votre e-mail"
+        },
+        "bindPhoneSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.bindPhoneSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Un numéro de téléphone vérifié est requis pour finaliser la connexion."
+        },
+        "bindPhoneTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.bindPhoneTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Vérifier votre téléphone"
+        },
+        "browserSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.browserSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Vous reviendrez automatiquement dans Cindy."
+        },
+        "browserTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.browserTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Terminez la connexion dans votre navigateur"
+        },
+        "cancel": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.cancel",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Annuler"
+        },
+        "chooseAccount": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.chooseAccount",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Choisir un compte"
+        },
+        "chooseAccountSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.chooseAccountSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Choisissez le compte personnel ou d'organisation à utiliser."
+        },
+        "chooseMethod": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.chooseMethod",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Choisissez un mode de connexion"
+        },
+        "codePlaceholder": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.codePlaceholder",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Code à 6 chiffres"
+        },
+        "codeSentTo": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.codeSentTo",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Nous avons envoyé un code à"
+        },
+        "configIssueAuthBaseUrl": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.configIssueAuthBaseUrl",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "L'adresse du service de connexion doit être une URL http(s)."
+        },
+        "configTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.configTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "La configuration de connexion est incomplète"
+        },
+        "consentAgree": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.consentAgree",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Accepter"
+        },
+        "consentDialogBody": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.consentDialogBody",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Lisez et acceptez les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy> de Cindy pour continuer."
+        },
+        "consentDialogTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.consentDialogTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Conditions d'utilisation et Politique de confidentialité"
+        },
+        "consentDisagree": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.consentDisagree",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Plus tard"
+        },
+        "consentStatement": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.consentStatement",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "J'ai lu et j'accepte les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy>"
+        },
+        "continue": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.continue",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Continuer"
+        },
+        "emailCode": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.emailCode",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Envoyer un code par e-mail"
+        },
+        "emailPlaceholder": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.emailPlaceholder",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Adresse e-mail"
+        },
+        "enterCode": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.enterCode",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Saisissez le code de vérification"
+        },
+        "enterpriseLogin": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.enterpriseLogin",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Se connecter avec votre identité professionnelle"
+        },
+        "errorFallback": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.errorFallback",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "La connexion n'a pas abouti. Veuillez réessayer."
+        },
+        "errors.AUTH_REQUEST_FAILED": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "authErrorMessages.AUTH_REQUEST_FAILED.fr",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Le service de connexion est temporairement indisponible."
+        },
+        "errors.INVALID_CODE": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "authErrorMessages.INVALID_CODE.fr",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Le code de vérification est incorrect ou a expiré."
+        },
+        "errors.NETWORK_ERROR": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "authErrorMessages.NETWORK_ERROR.fr",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Connexion impossible. Vérifiez votre réseau et réessayez."
+        },
+        "google": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.google",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Continuer avec Google"
+        },
+        "invalidEmail": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.invalidEmail",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Veuillez saisir une adresse e-mail valide"
+        },
+        "invalidPhone": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.invalidPhone",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Veuillez saisir un numéro de téléphone valide"
+        },
+        "orgDetected": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.orgDetected",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "{email} appartient à « {org} »"
+        },
+        "personalAccount": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.personalAccount",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Compte personnel"
+        },
+        "personalLogin": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.personalLogin",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Se connecter avec un compte personnel"
+        },
+        "phonePlaceholder": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.phonePlaceholder",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Numéro de téléphone"
+        },
+        "resendCode": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.resendCode",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Renvoyer le code"
+        },
+        "resendCountdown": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.resendCountdown",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Renvoi possible dans {n} s"
+        },
+        "retry": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.retry",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Réessayer"
+        },
+        "sendCode": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.sendCode",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Envoyer le code"
+        },
+        "signIn": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.signIn",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Se connecter"
+        },
+        "ssoEntry": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoEntry",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Se connecter avec le SSO d'entreprise"
+        },
+        "ssoOrgDetected": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoOrgDetected",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Choisissez une connexion d'authentification unique pour « {org} »"
+        },
+        "ssoOrgHint": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoOrgHint",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Vous ne connaissez pas l'identifiant de connexion de votre entreprise ? Demandez à votre administrateur."
+        },
+        "ssoOrgPlaceholder": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoOrgPlaceholder",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Identifiant d'entreprise, slug ou domaine"
+        },
+        "ssoOrgSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoOrgSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Saisissez un identifiant d'entreprise, un slug d'organisation ou un domaine vérifié pour continuer avec l'authentification unique."
+        },
+        "ssoOrgTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoOrgTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "SSO d'entreprise"
+        },
+        "ssoRequired": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoRequired",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Votre organisation exige le SSO d'entreprise."
+        },
+        "ssoVerificationSubtitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoVerificationSubtitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "La première connexion nécessite de vérifier le contact renvoyé par votre fournisseur d'identité : {target}."
+        },
+        "ssoVerificationTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.ssoVerificationTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Vérifier votre identité professionnelle"
+        },
+        "title": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.title",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Se connecter à Cindy"
+        },
+        "wechat": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.wechat",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Continuer avec WeChat"
+        },
+        "working": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "messages.fr.working",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Veuillez patienter…"
         }
       },
       "ja": {
@@ -13810,6 +14846,14 @@
         "source": "../../../apps/desktop/src/shared/locale.ts"
       },
       "value": "ko"
+    },
+    {
+      "provenance": {
+        "hash": "sha256:ac8a27903e9fb712b89b582fd67badf8f21182a6d973477e49dc07b8671daccb",
+        "locator": "SUPPORTED_LOCALES[5]",
+        "source": "../../../apps/desktop/src/shared/locale.ts"
+      },
+      "value": "fr"
     }
   ]
 }

@@ -400,6 +400,14 @@
           },
           "value": "Explore and understand code"
         },
+        "fr": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "newChat.createAgent.quickStarts.explore",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Explorer et comprendre du code"
+        },
         "ja": {
           "provenance": {
             "hash": "080d96878a334d7e306fa69ef8bb62d25009e112d6a7a33f17aed1638a33f86e",
@@ -459,6 +467,14 @@
             "source": "../../../apps/desktop/src/renderer/i18n/locales/en/common.json"
           },
           "value": "Build a feature, app, or tool"
+        },
+        "fr": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "newChat.createAgent.quickStarts.build",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Créer une fonctionnalité, une application ou un outil"
         },
         "ja": {
           "provenance": {
@@ -520,6 +536,14 @@
           },
           "value": "Review code and suggest changes"
         },
+        "fr": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "newChat.createAgent.quickStarts.review",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Faire une revue de code et suggérer des modifications"
+        },
         "ja": {
           "provenance": {
             "hash": "080d96878a334d7e306fa69ef8bb62d25009e112d6a7a33f17aed1638a33f86e",
@@ -579,6 +603,14 @@
             "source": "../../../apps/desktop/src/renderer/i18n/locales/en/common.json"
           },
           "value": "Fix issues and failures"
+        },
+        "fr": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "newChat.createAgent.quickStarts.fix",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Corriger des problèmes et des échecs"
         },
         "ja": {
           "provenance": {
@@ -841,6 +873,14 @@
         },
         "value": "Quick start"
       },
+      "fr": {
+        "provenance": {
+          "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+          "locator": "newChat.createAgent.quickStart",
+          "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+        },
+        "value": "Démarrage rapide"
+      },
       "ja": {
         "provenance": {
           "hash": "080d96878a334d7e306fa69ef8bb62d25009e112d6a7a33f17aed1638a33f86e",
@@ -915,6 +955,14 @@
         "source": "../../../apps/desktop/src/shared/locale.ts"
       },
       "value": "ko"
+    },
+    {
+      "provenance": {
+        "hash": "sha256:ac8a27903e9fb712b89b582fd67badf8f21182a6d973477e49dc07b8671daccb",
+        "locator": "SUPPORTED_LOCALES[5]",
+        "source": "../../../apps/desktop/src/shared/locale.ts"
+      },
+      "value": "fr"
     }
   ]
 }

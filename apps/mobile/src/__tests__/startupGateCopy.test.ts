@@ -54,10 +54,10 @@ rendered`, {
     expect(resetToDev).toHaveBeenCalledTimes(canResetToDev ? 1 : 0);
   });
 
-  it('renders invalid config through its message key for all five locales', () => {
+  it('renders invalid config through its message key for every locale', () => {
     const configIssues = getMobileConfigIssues({ EXPO_PUBLIC_CINDY_AUTH_BASE_URL: 'ftp://auth.example.invalid' });
     expect(configIssues).toHaveLength(1);
-    for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko'] as const) {
+    for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'fr'] as const) {
       const catalog = loginMessages[locale];
       const rendered = runInNewContext(`${configCode}
 rendered`, {

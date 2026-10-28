@@ -3,15 +3,15 @@ import { getLocales } from "expo-localization";
 import { getManualLocaleOverride } from "@/i18n/appLanguage";
 
 /**
- * 登录域多语文案 catalog(zh-CN/zh-TW/en/ja/ko)。
+ * 登录域多语文案 catalog(zh-CN/zh-TW/en/ja/ko/fr)。
  * 生效语言 = 设置里手动选择的语言(appLanguage override)优先,否则按系统
  * locale 解析:zh-Hant/TW/HK/MO → zh-TW，zh-Hans/CN/SG → zh-CN;
- * ja → ja,ko → ko,兜底 en。
+ * ja → ja,ko → ko,fr → fr,兜底 en。
  * catalog 必须保持单一 messages 常量、locale 块内联的普通对象字面量形态——
  * check-login-i18n-parity.mjs 靠结构化 tokenizer 静态提取 locale/key 集合,
  * 拆常量或改引用形态会让 parity 门失效。
  */
-export type LoginLocale = "zh-CN" | "zh-TW" | "en" | "ja" | "ko";
+export type LoginLocale = "zh-CN" | "zh-TW" | "en" | "ja" | "ko" | "fr";
 
 const messages = {
   "zh-TW": {
@@ -650,6 +650,140 @@ const messages = {
     retry: "다시 시도",
     configIssueAuthBaseUrl: "로그인 서비스 주소는 http(s) URL이어야 합니다.",
   },
+  fr: {
+    title: "Se connecter à Cindy",
+    phonePlaceholder: "Numéro de téléphone",
+    emailPlaceholder: "Adresse e-mail",
+    invalidEmail: "Veuillez saisir une adresse e-mail valide",
+    invalidPhone: "Veuillez saisir un numéro de téléphone valide",
+    continue: "Continuer",
+    apple: "Continuer avec Apple",
+    google: "Continuer avec Google",
+    wechat: "Continuer avec WeChat",
+    chooseMethod: "Choisissez un mode de connexion",
+    orgDetected: "{email} appartient à « {org} »",
+    enterpriseLogin: "Se connecter avec votre identité professionnelle",
+    personalLogin: "Se connecter avec un compte personnel",
+    emailCode: "Envoyer un code par e-mail",
+    ssoRequired: "Votre organisation exige le SSO d'entreprise.",
+    ssoEntry: "Se connecter avec le SSO d'entreprise",
+    consentStatement:
+      "J'ai lu et j'accepte les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy>",
+    consentDialogTitle: "Conditions d'utilisation et Politique de confidentialité",
+    consentDialogBody:
+      "Lisez et acceptez les <terms>Conditions d'utilisation</terms> et la <privacy>Politique de confidentialité</privacy> de Cindy pour continuer.",
+    consentAgree: "Accepter",
+    consentDisagree: "Plus tard",
+    ssoOrgTitle: "SSO d'entreprise",
+    ssoOrgSubtitle:
+      "Saisissez un identifiant d'entreprise, un slug d'organisation ou un domaine vérifié pour continuer avec l'authentification unique.",
+    ssoOrgPlaceholder: "Identifiant d'entreprise, slug ou domaine",
+    ssoOrgHint:
+      "Vous ne connaissez pas l'identifiant de connexion de votre entreprise ? Demandez à votre administrateur.",
+    ssoOrgDetected: "Choisissez une connexion d'authentification unique pour « {org} »",
+    realmConsentTitle: "Se connecter à la région de votre entreprise",
+    realmConsentPersonalTitle: "Connexion d'entreprise disponible",
+    realmConsentPersonalBodyCn: "Entreprise trouvée (Chine continentale).\nUtilisez le SSO ou votre compte personnel.",
+    realmConsentPersonalBodyGlobal: "Entreprise trouvée (région internationale).\nUtilisez le SSO ou votre compte personnel.",
+    realmConsentEnterpriseLogin: "SSO d'entreprise",
+    realmConsentContinuePersonal: "Continuer en personnel",
+    realmConsentBodyCn:
+      "Entreprise située en Chine continentale.\nContinuez pour y connecter Cindy.",
+    realmConsentBodyGlobal:
+      "Entreprise située en région internationale.\nContinuez pour y connecter Cindy.",
+    realmConsentAgree: "Continuer la connexion",
+    realmConsentDisagree: "Annuler",
+    ssoVerificationTitle: "Vérifier votre identité professionnelle",
+    ssoVerificationSubtitle:
+      "La première connexion nécessite de vérifier le contact renvoyé par votre fournisseur d'identité : {target}.",
+    enterCode: "Saisissez le code de vérification",
+    codeSentTo: "Nous avons envoyé un code à",
+    codePlaceholder: "Code à 6 chiffres",
+    signIn: "Se connecter",
+    resendCode: "Renvoyer le code",
+    captchaTitle: "Contrôle de sécurité",
+    captchaFailed: "Impossible de charger le contrôle de sécurité. Vérifiez votre réseau et réessayez.",
+    captchaRetry: "Réessayer",
+    captchaCancel: "Annuler",
+    resendCountdown: "Renvoi possible dans {n} s",
+    chooseAccount: "Choisir un compte",
+    chooseAccountSubtitle:
+      "Choisissez le compte personnel ou d'organisation à utiliser.",
+    personalAccount: "Compte personnel",
+    bindPhoneTitle: "Vérifier votre téléphone",
+    bindPhoneSubtitle:
+      "Un numéro de téléphone vérifié est requis pour finaliser la connexion.",
+    bindEmailTitle: "Vérifier votre e-mail",
+    bindEmailSubtitle:
+      "Une adresse e-mail vérifiée est requise pour finaliser la connexion.",
+    sendCode: "Envoyer le code",
+    back: "Retour",
+    cancel: "Annuler",
+    browserTitle: "Terminez la connexion dans votre navigateur",
+    browserSubtitle: "Vous reviendrez automatiquement dans Cindy.",
+    working: "Veuillez patienter…",
+    configTitle: "La configuration de connexion est incomplète",
+    accountDeletionPendingTitle: "Suppression du compte programmée",
+    accountDeletionProcessingTitle: "Suppression du compte en cours",
+    accountDeletionCompletedTitle: "Compte supprimé",
+    accountDeletionPendingCopy:
+      "Suppression définitive programmée le {date}. Connectez-vous maintenant pour annuler la suppression.",
+    accountDeletionProcessingCopy:
+      "Votre compte de connexion Cindy est en cours de suppression et sera définitivement supprimé à la fin du traitement.",
+    accountDeletionCompletedCopy:
+      "Votre compte de connexion Cindy a été supprimé.",
+    accountDeletionDismiss: "Compris",
+    accountDeletionSettingsAction: "Supprimer le compte",
+    accountDeletionScreenTitle: "Supprimer le compte",
+    accountDeletionLoading: "Vérification de l'état du compte…",
+    accountDeletionUnavailableTitle: "Cette action n'est pas disponible",
+    accountDeletionUnavailableCopy: "Revenez aux Paramètres et réessayez plus tard.",
+    accountDeletionVerifyTitle: "Vérifier la propriété du compte",
+    accountDeletionCodeSent:
+      "Nous avons envoyé un code à {target}. Il est valable 10 minutes.",
+    accountDeletionAcknowledgeA11y:
+      "Confirmer avoir compris les effets de la suppression du compte",
+    accountDeletionAcknowledgeCopy:
+      "Je comprends : ce téléphone sera déconnecté immédiatement ; les autres clients seront déconnectés lorsque leur session de connexion ne sera plus valide ; me reconnecter dans les 30 jours annule la suppression ; ensuite, le compte de connexion Cindy sera définitivement supprimé et ne pourra pas être récupéré.",
+    accountDeletionConfirmingA11y: "Confirmation de la suppression du compte",
+    accountDeletionConfirmA11y: "Confirmer la suppression du compte",
+    accountDeletionConfirming: "Confirmation en cours",
+    accountDeletionConfirm: "Supprimer le compte",
+    accountDeletionBeforeTitle: "Avant de supprimer votre compte",
+    accountDeletionImpactCurrentClient:
+      "Ce téléphone est déconnecté immédiatement. Les autres clients sont déconnectés lorsque leur session de connexion n'est plus valide.",
+    accountDeletionImpactGrace:
+      "Le compte entre dans une période d'attente de 30 jours. Vous reconnecter pendant cette période annule la suppression.",
+    accountDeletionImpactPermanent:
+      "À l'issue de la période d'attente, le compte de connexion Cindy est définitivement supprimé.",
+    accountDeletionAppleNotice:
+      "Si vous utilisez « Se connecter avec Apple », vous devrez peut-être aussi cesser d'utiliser Cindy dans les réglages de votre identifiant Apple.",
+    accountDeletionCodeWillSend: "Nous enverrons un code à {target}.",
+    accountDeletionSendingCode: "Envoi en cours",
+    accountDeletionErrorChallenge:
+      "Le code de vérification est incorrect ou a expiré. Réessayez.",
+    accountDeletionErrorAttempts:
+      "Trop de tentatives de vérification. Demandez un nouveau code.",
+    accountDeletionErrorRate: "Trop de requêtes. Réessayez plus tard.",
+    accountDeletionErrorPending:
+      "La suppression de ce compte est déjà programmée.",
+    accountDeletionErrorProcessing: "La suppression du compte est déjà en cours.",
+    accountDeletionErrorUnavailable: "Cette action est actuellement indisponible.",
+    accountDeletionErrorNetwork: "Vérifiez votre connexion et réessayez.",
+    accountDeletionErrorFallback:
+      "L'action n'a pas abouti. Réessayez plus tard.",
+    accountDeletionRestoredTitle: "Compte restauré",
+    accountDeletionRestoredCopy:
+      "Cette connexion a annulé la suppression du compte. Votre compte de connexion Cindy sera conservé.",
+    errorFallback: "La connexion n'a pas abouti. Veuillez réessayer.",
+    endpointGateTitle: "Impossible de charger la configuration du serveur",
+    endpointGateSubtitle:
+      "Vérifiez votre connexion réseau et réessayez ({reason})",
+    endpointGateResetToDev: "Revenir à Dev",
+    retry: "Réessayer",
+    configIssueAuthBaseUrl:
+      "L'adresse du service de connexion doit être une URL http(s).",
+  },
 } as const;
 
 export type LoginMessageKey = keyof (typeof messages)["zh-CN"];
@@ -664,7 +798,7 @@ export const loginMessages: Record<
 /**
  * 纯函数:BCP 47 languageTag → 登录 locale。
  * 中文按脚本/区域选择 zh-TW 或 zh-CN；zh-TW 仅影响客户端文案，不改变 auth wire locale;
- * ja / ko 前缀直取;其余兜底 en。大小写不敏感。
+ * ja / ko / fr 前缀直取;其余兜底 en。大小写不敏感。
  */
 export function resolveLoginLocale(
   languageTag: string | null | undefined,
@@ -678,6 +812,7 @@ export function resolveLoginLocale(
   }
   if (tag.startsWith("ja")) return "ja";
   if (tag.startsWith("ko")) return "ko";
+  if (tag.startsWith("fr")) return "fr";
   return "en";
 }
 
@@ -691,7 +826,7 @@ export function getLoginLanguage(): LoginLocale {
 
 /**
  * 透传给 auth server 的 ui locale。**钳制在旧值域 zh-CN | en**(与既有 catalog
- * 的 wire 行为逐字节一致):server 侧 ui_locale 对 ja/ko 的容忍度未验证,
+ * 的 wire 行为逐字节一致):server 侧 ui_locale 对 ja/ko/fr 的容忍度未验证,
  * 本支边界=只动文案层,不改发往服务端的取值〔lead 裁决 2026-07-20:钳制即本
  * 批次终态,放开为独立后续项已由 lead 登记跟踪〕。
  */
@@ -712,6 +847,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The verification code is invalid or expired.",
     ja: "認証コードが無効か、有効期限が切れています。",
     ko: "인증 코드가 유효하지 않거나 만료되었습니다.",
+    fr: "Le code de vérification est incorrect ou a expiré.",
   },
   INVALID_PARAMS: {
     "zh-CN": "输入内容格式不正确。",
@@ -719,6 +855,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Please check the information you entered.",
     ja: "入力内容の形式が正しくありません。",
     ko: "입력한 내용의 형식이 올바르지 않습니다.",
+    fr: "Vérifiez les informations saisies.",
   },
   RATE_LIMITED: {
     "zh-CN": "操作过于频繁，请稍后再试。",
@@ -726,6 +863,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Too many attempts. Please wait and try again.",
     ja: "操作が多すぎます。しばらく待ってから再試行してください。",
     ko: "요청이 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+    fr: "Trop de tentatives. Veuillez patienter et réessayer.",
   },
   SSO_LOGIN_REQUIRED: {
     "zh-CN": "该邮箱所属企业要求通过 SSO 登录。",
@@ -733,6 +871,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This organization requires SSO sign-in.",
     ja: "この組織は SSO ログインが必要です。",
     ko: "이 조직은 SSO 로그인이 필요합니다.",
+    fr: "Cette organisation exige une connexion SSO.",
   },
   INVALID_RESPONSE: {
     "zh-CN": "登录服务返回了无法识别的结果，请稍后重试。",
@@ -740,6 +879,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The sign-in service returned an unrecognized result. Try again later.",
     ja: "ログインサービスから認識できない結果が返されました。しばらくしてから再試行してください。",
     ko: "로그인 서비스에서 알 수 없는 결과를 반환했습니다. 잠시 후 다시 시도해 주세요.",
+    fr: "Le service de connexion a renvoyé un résultat non reconnu. Réessayez plus tard.",
   },
   AUTH_SERVICE_UNAVAILABLE: {
     "zh-CN": "登录服务暂不可用，请稍后重试。",
@@ -747,6 +887,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The sign-in service is temporarily unavailable. Try again later.",
     ja: "ログインサービスは一時的に利用できません。しばらくしてからお試しください。",
     ko: "로그인 서비스를 일시적으로 사용할 수 없습니다. 잠시 후 다시 시도해 주세요.",
+    fr: "Le service de connexion est temporairement indisponible. Réessayez plus tard.",
   },
   CAPTCHA_REQUIRED: {
     "zh-CN": "请先完成安全验证。",
@@ -754,6 +895,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Please complete the security check first.",
     ja: "先にセキュリティチェックを完了してください。",
     ko: "먼저 보안 확인을 완료해 주세요.",
+    fr: "Veuillez d'abord effectuer le contrôle de sécurité.",
   },
   CAPTCHA_INVALID: {
     "zh-CN": "安全验证未通过，请重试。",
@@ -761,6 +903,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Security check failed. Please try again.",
     ja: "セキュリティチェックに失敗しました。もう一度お試しください。",
     ko: "보안 확인에 실패했습니다. 다시 시도해 주세요.",
+    fr: "Échec du contrôle de sécurité. Veuillez réessayer.",
   },
   CAPTCHA_UNAVAILABLE: {
     "zh-CN": "安全验证服务暂不可用，请稍后再试。",
@@ -768,6 +911,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The security check is temporarily unavailable. Please try again later.",
     ja: "セキュリティチェックは一時的に利用できません。しばらくしてから再試行してください。",
     ko: "보안 확인 서비스를 일시적으로 사용할 수 없습니다. 잠시 후 다시 시도해 주세요.",
+    fr: "Le contrôle de sécurité est temporairement indisponible. Veuillez réessayer plus tard.",
   },
   INVALID_AUTH_CODE: {
     "zh-CN": "登录授权已过期，请重新发起。",
@@ -775,6 +919,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The authorization expired. Please start again.",
     ja: "ログインの認可の有効期限が切れました。もう一度やり直してください。",
     ko: "로그인 인증이 만료되었습니다. 다시 시도해 주세요.",
+    fr: "L'autorisation a expiré. Veuillez recommencer.",
   },
   INVALID_LOGIN_TICKET: {
     "zh-CN": "身份选择已过期，请重新登录。",
@@ -782,6 +927,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Account selection expired. Please sign in again.",
     ja: "アカウント選択の有効期限が切れました。再度ログインしてください。",
     ko: "계정 선택이 만료되었습니다. 다시 로그인해 주세요.",
+    fr: "La sélection du compte a expiré. Veuillez vous reconnecter.",
   },
   INVALID_BIND_TICKET: {
     "zh-CN": "绑定流程已过期，请重新登录。",
@@ -789,6 +935,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Verification expired. Please sign in again.",
     ja: "認証手続きの有効期限が切れました。再度ログインしてください。",
     ko: "인증 절차가 만료되었습니다. 다시 로그인해 주세요.",
+    fr: "La vérification a expiré. Veuillez vous reconnecter.",
   },
   STATE_MISMATCH: {
     "zh-CN": "登录状态校验失败，请重新登录。",
@@ -796,6 +943,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Sign-in state validation failed. Please try again.",
     ja: "ログイン状態の検証に失敗しました。もう一度お試しください。",
     ko: "로그인 상태 검증에 실패했습니다. 다시 시도해 주세요.",
+    fr: "Échec de la validation de l'état de connexion. Veuillez réessayer.",
   },
   REGION_MISMATCH: {
     "zh-CN": "客户端区域与登录服务不匹配。",
@@ -803,6 +951,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This app does not match the authentication region.",
     ja: "このアプリはログインサービスのリージョンと一致しません。",
     ko: "이 앱은 로그인 서비스 지역과 일치하지 않습니다.",
+    fr: "Cette application ne correspond pas à la région d'authentification.",
   },
   NETWORK_ERROR: {
     "zh-CN": "网络连接失败，请检查网络后重试。",
@@ -810,6 +959,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Could not connect. Check your network and try again.",
     ja: "ネットワークに接続できません。接続を確認してから再試行してください。",
     ko: "네트워크에 연결할 수 없습니다. 네트워크를 확인한 후 다시 시도해 주세요.",
+    fr: "Connexion impossible. Vérifiez votre réseau et réessayez.",
   },
   REQUEST_TIMEOUT: {
     "zh-CN": "登录请求超时，请重试。",
@@ -817,6 +967,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The sign-in request timed out. Please try again.",
     ja: "ログイン要求がタイムアウトしました。もう一度お試しください。",
     ko: "로그인 요청 시간이 초과되었습니다. 다시 시도해 주세요.",
+    fr: "La demande de connexion a expiré. Veuillez réessayer.",
   },
   USER_CANCELLED: {
     "zh-CN": "已取消登录。",
@@ -824,6 +975,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Sign-in was cancelled.",
     ja: "ログインをキャンセルしました。",
     ko: "로그인이 취소되었습니다.",
+    fr: "La connexion a été annulée.",
   },
   SOCIAL_PROVIDER_NOT_CONFIGURED: {
     "zh-CN": "该登录方式尚未完成配置。",
@@ -831,6 +983,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This sign-in method is not configured yet.",
     ja: "このログイン方法はまだ設定されていません。",
     ko: "이 로그인 방법은 아직 설정되지 않았습니다.",
+    fr: "Ce mode de connexion n'est pas encore configuré.",
   },
   SOCIAL_PROVIDER_UNAVAILABLE: {
     "zh-CN": "当前设备无法使用该登录方式。",
@@ -838,6 +991,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This sign-in method is unavailable on this device.",
     ja: "このデバイスではこのログイン方法を利用できません。",
     ko: "이 기기에서는 이 로그인 방법을 사용할 수 없습니다.",
+    fr: "Ce mode de connexion n'est pas disponible sur cet appareil.",
   },
   AUTH_REQUEST_FAILED: {
     "zh-CN": "登录服务暂时不可用，请稍后重试。",
@@ -845,6 +999,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "The sign-in service is temporarily unavailable.",
     ja: "ログインサービスは一時的に利用できません。しばらくしてからお試しください。",
     ko: "로그인 서비스를 일시적으로 사용할 수 없습니다. 잠시 후 다시 시도해 주세요.",
+    fr: "Le service de connexion est temporairement indisponible.",
   },
   ACCOUNT_UNAVAILABLE: {
     "zh-CN": "当前账号不可用，已退出登录。",
@@ -852,6 +1007,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This account is unavailable. You have been signed out.",
     ja: "このアカウントは利用できません。ログアウトしました。",
     ko: "이 계정을 사용할 수 없습니다. 로그아웃되었습니다.",
+    fr: "Ce compte n'est pas disponible. Vous avez été déconnecté.",
   },
   ORG_SSO_NOT_FOUND: {
     "zh-CN": "未找到该企业，或该企业未启用 SSO 登录。",
@@ -859,6 +1015,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Company not found, or it has no SSO connection enabled.",
     ja: "会社が見つからないか、SSO ログインが有効になっていません。",
     ko: "회사를 찾을 수 없거나 SSO 로그인이 활성화되어 있지 않습니다.",
+    fr: "Entreprise introuvable, ou aucune connexion SSO n'est activée pour elle.",
   },
   ORG_REALM_AMBIGUOUS: {
     "zh-CN": "该企业标识同时存在于两个区域，请联系企业管理员处理。",
@@ -866,6 +1023,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "This enterprise identifier exists in both regions. Contact your administrator.",
     ja: "この企業識別子は両方の地域に存在します。管理者にお問い合わせください。",
     ko: "이 기업 식별자가 두 지역에 모두 존재합니다. 관리자에게 문의하세요.",
+    fr: "Cet identifiant d'entreprise existe dans les deux régions. Contactez votre administrateur.",
   },
   ORG_REALM_UNAVAILABLE: {
     "zh-CN": "暂时无法确认企业所在区域，请检查网络后重试。",
@@ -873,6 +1031,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Cindy cannot verify the enterprise region right now. Check your connection and retry.",
     ja: "企業の地域を現在確認できません。ネットワークを確認して再試行してください。",
     ko: "현재 기업 지역을 확인할 수 없습니다. 네트워크를 확인한 후 다시 시도하세요.",
+    fr: "Cindy ne peut pas vérifier la région de l'entreprise pour le moment. Vérifiez votre connexion et réessayez.",
   },
   SSO_EMAIL_REQUIRED: {
     "zh-CN": "该企业身份未提供有效邮箱，请联系企业管理员检查 IdP 配置。",
@@ -880,6 +1039,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Your work identity did not provide a valid email. Ask your admin to check the IdP configuration.",
     ja: "企業 ID に有効なメールアドレスが提供されていません。管理者に IdP 設定の確認をご依頼ください。",
     ko: "기업 신원에 유효한 이메일이 제공되지 않았습니다. 관리자에게 IdP 설정 확인을 요청하세요.",
+    fr: "Votre identité professionnelle n'a pas fourni d'e-mail valide. Demandez à votre administrateur de vérifier la configuration de l'IdP.",
   },
   INVALID_SSO_VERIFICATION_TICKET: {
     "zh-CN": "企业身份验证已过期，请重新发起 SSO 登录。",
@@ -887,6 +1047,7 @@ export const authErrorMessages: Record<string, Record<LoginLocale, string>> = {
     en: "Work identity verification expired. Start SSO sign-in again.",
     ja: "企業 ID の確認期限が切れました。再度 SSO ログインを開始してください。",
     ko: "기업 신원 확인이 만료되었습니다. SSO 로그인을 다시 시작하세요.",
+    fr: "La vérification de l'identité professionnelle a expiré. Relancez la connexion SSO.",
   },
 };
 

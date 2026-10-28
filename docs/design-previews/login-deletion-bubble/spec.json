@@ -31,7 +31,8 @@
    "zh-TW",
    "en",
    "ja",
-   "ko"
+   "ko",
+   "fr"
   ]
  },
  "states": [
@@ -190,6 +191,16 @@
      "os": "ios",
      "mode": "light",
      "lang": "ko"
+    }
+   },
+   {
+    "id": "pad-port-light-fr",
+    "prefs": {
+     "plat": "pad-portrait",
+     "region": "cn",
+     "os": "ios",
+     "mode": "light",
+     "lang": "fr"
     }
    }
   ],

@@ -32,7 +32,8 @@
       "zh-TW",
       "en",
       "ja",
-      "ko"
+      "ko",
+      "fr"
     ]
   },
   "states": [
@@ -2103,6 +2104,16 @@
           "os": "ios",
           "mode": "dark",
           "lang": "zh-CN"
+        }
+      },
+      {
+        "id": "phone-global-ios-dark-fr",
+        "prefs": {
+          "plat": "phone",
+          "region": "global",
+          "os": "ios",
+          "mode": "dark",
+          "lang": "fr"
         }
       }
     ],

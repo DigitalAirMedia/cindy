@@ -193,6 +193,7 @@ it('resolves cached join notices in the current language without fetching the ro
     for (const [locale, expected] of [
       ['en', 'Taylor joined the group'], ['ja', 'Taylorさんがグループに参加しました'],
       ['ko', 'Taylor 님이 그룹에 참여했습니다'], ['zh-TW', 'Taylor加入了群聊'], ['zh-CN', 'Taylor加入了群聊'],
+      ['fr', 'Taylor a rejoint le groupe'],
     ]) {
       await i18n.changeLanguage(locale);
       expect(resolveRemoteText(row.item.display.preview!, i18n.language)).toBe(expected);

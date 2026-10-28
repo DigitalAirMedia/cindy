@@ -334,6 +334,64 @@
           "value": "Account deletion in progress"
         }
       },
+      "fr": {
+        "completedCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).completedCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Votre compte de connexion Cindy a été supprimé."
+        },
+        "completedTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).completedTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Compte supprimé"
+        },
+        "dismissButton": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).dismissButton",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Compris"
+        },
+        "pendingCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).pendingCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression définitive programmée le {{date}}. Connectez-vous avant cette date pour l'annuler."
+        },
+        "pendingTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).pendingTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression du compte programmée"
+        },
+        "processingCopy": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).processingCopy",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "La période d'attente est terminée. Votre compte de connexion Cindy est en cours de suppression."
+        },
+        "processingTitle": {
+          "provenance": {
+            "hash": "sha256:123fe8561e3b7fe6a87d8cff0b07909ac6557a0f4785b7d40b2b9ae6dbc92a8f",
+            "locator": "accountDeletion.status(fr).processingTitle",
+            "source": "../../../apps/desktop/src/renderer/i18n/locales/fr/common.json"
+          },
+          "value": "Suppression du compte en cours"
+        }
+      },
       "ja": {
         "completedCopy": {
           "provenance": {
@@ -824,6 +882,64 @@
             "source": "../../../apps/mobile/src/auth/loginMessages.ts"
           },
           "value": "Account deletion in progress"
+        }
+      },
+      "fr": {
+        "completedCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).completedCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Votre compte de connexion Cindy a été supprimé."
+        },
+        "completedTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).completedTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Compte supprimé"
+        },
+        "dismissButton": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).dismissButton",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Compris"
+        },
+        "pendingCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).pendingCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression définitive programmée le {date}. Connectez-vous maintenant pour annuler la suppression."
+        },
+        "pendingTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).pendingTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression du compte programmée"
+        },
+        "processingCopy": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).processingCopy",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Votre compte de connexion Cindy est en cours de suppression et sera définitivement supprimé à la fin du traitement."
+        },
+        "processingTitle": {
+          "provenance": {
+            "hash": "sha256:76102a45537a10a3cf3dec6a79b291beac519171c78ca9db67ade9ea3509234c",
+            "locator": "accountDeletion*(fr).processingTitle",
+            "source": "../../../apps/mobile/src/auth/loginMessages.ts"
+          },
+          "value": "Suppression du compte en cours"
         }
       },
       "ja": {
@@ -1406,6 +1522,14 @@
         "source": "../../../apps/desktop/src/shared/locale.ts"
       },
       "value": "ko"
+    },
+    {
+      "provenance": {
+        "hash": "sha256:ac8a27903e9fb712b89b582fd67badf8f21182a6d973477e49dc07b8671daccb",
+        "locator": "SUPPORTED_LOCALES[5]",
+        "source": "../../../apps/desktop/src/shared/locale.ts"
+      },
+      "value": "fr"
     }
   ]
 }

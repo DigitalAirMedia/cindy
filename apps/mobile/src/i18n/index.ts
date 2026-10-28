@@ -19,6 +19,7 @@ import zhCNCommon from "./locales/zh-CN";
 import zhTWCommon from "./locales/zh-TW";
 import jaCommon from "./locales/ja";
 import koCommon from "./locales/ko";
+import frCommon from "./locales/fr";
 import { DEFAULT_LOCALE } from "./locale";
 import { detectSystemLocale } from "./systemLocale";
 
@@ -38,6 +39,7 @@ const resources = {
   "zh-TW": { common: zhTWCommon },
   ja: { common: jaCommon },
   ko: { common: koCommon },
+  fr: { common: frCommon },
 } as const;
 
 // 同步 init —— 没有 backend / detector / suspense,i18n.init 立即返回。

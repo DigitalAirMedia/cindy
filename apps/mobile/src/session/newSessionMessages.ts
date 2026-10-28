@@ -26,6 +26,10 @@ const messages = {
     showHiddenDirectories: "숨김 폴더 표시",
     emptyDirectory: "표시할 하위 폴더가 없습니다.",
   },
+  fr: {
+    showHiddenDirectories: "Afficher les dossiers masqués",
+    emptyDirectory: "Aucun dossier à afficher.",
+  },
 } as const;
 
 export type NewSessionMessageKey = keyof (typeof messages)["zh-CN"];

@@ -12,7 +12,7 @@
     "regions": ["cn", "global", "dev"],
     "systems": ["mac"],
     "themes": ["light", "dark"],
-    "langs": ["zh-CN", "zh-TW", "en", "ja", "ko"]
+    "langs": ["zh-CN", "zh-TW", "en", "ja", "ko", "fr"]
   },
   "states": [
     { "id": "identifier", "via": [{ "expect": "identifier" }] },
@@ -98,7 +98,8 @@
       { "id": "cn-dark-ja", "prefs": { "plat": "desk", "region": "cn", "os": "mac", "mode": "dark", "lang": "ja" } },
       { "id": "global-light-en", "prefs": { "plat": "desk", "region": "global", "os": "mac", "mode": "light", "lang": "en" } },
       { "id": "global-dark-ko", "prefs": { "plat": "desk", "region": "global", "os": "mac", "mode": "dark", "lang": "ko" } },
-      { "id": "dev-light-zh-TW", "prefs": { "plat": "desk", "region": "dev", "os": "mac", "mode": "light", "lang": "zh-TW" } }
+      { "id": "dev-light-zh-TW", "prefs": { "plat": "desk", "region": "dev", "os": "mac", "mode": "light", "lang": "zh-TW" } },
+      { "id": "global-dark-fr", "prefs": { "plat": "desk", "region": "global", "os": "mac", "mode": "dark", "lang": "fr" } }
     ],
     "noClip": [".lp-title", ".lp-subtitle"],
     "inputs": [

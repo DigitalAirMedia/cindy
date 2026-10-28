@@ -23,7 +23,7 @@ import {
 } from "@/auth/loginMessages";
 import { LOGIN_CONSENT_DIALOG } from "@/auth/loginSkinLayout";
 
-const LOCALES: LoginLocale[] = ["zh-CN", "zh-TW", "en", "ja", "ko"];
+const LOCALES: LoginLocale[] = ["zh-CN", "zh-TW", "en", "ja", "ko", "fr"];
 
 describe("loginMessages 5 语 catalog", () => {
   it("catalog 覆盖全部 5 个 locale", () => {
@@ -154,15 +154,17 @@ describe("resolveLoginLocale 系统 locale 解析", () => {
     }
   });
 
-  it("ja / ko 前缀直取", () => {
+  it("ja / ko / fr 前缀直取", () => {
     expect(resolveLoginLocale("ja")).toBe("ja");
     expect(resolveLoginLocale("ja-JP")).toBe("ja");
     expect(resolveLoginLocale("ko")).toBe("ko");
     expect(resolveLoginLocale("ko-KR")).toBe("ko");
+    expect(resolveLoginLocale("fr")).toBe("fr");
+    expect(resolveLoginLocale("fr-FR")).toBe("fr");
   });
 
   it("其余与缺失 → 兜底 en", () => {
-    for (const tag of ["en-US", "fr-FR", "de", "", undefined, null]) {
+    for (const tag of ["en-US", "es-ES", "de", "", undefined, null]) {
       expect(resolveLoginLocale(tag), String(tag)).toBe("en");
     }
   });
@@ -183,6 +185,7 @@ describe("loginText / authErrorText 按系统 locale 取文案", () => {
       ["zh-Hant-TW", "zh-CN"],
       ["ja-JP", "en"],
       ["ko-KR", "en"],
+      ["fr-FR", "en"],
       ["en-US", "en"],
     ];
     for (const [tag, expected] of expectations) {
