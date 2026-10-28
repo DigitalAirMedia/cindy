@@ -7,7 +7,7 @@
 import { DEEP_LINK_URL_PREFIX } from '../shared/deepLinkSchemes';
 import { LOGIN_CALLBACK_CHIBI } from './assets/loginCallbackAssets';
 
-export type OAuthResultPageLang = 'zh' | 'zh-TW' | 'en' | 'ja' | 'ko';
+export type OAuthResultPageLang = 'zh' | 'zh-TW' | 'en' | 'ja' | 'ko' | 'fr';
 
 /** Receipt is not token-exchange success. The authoritative result stays in the cloud card. */
 export function getRemoteOAuthCallbackCopy(lang: OAuthResultPageLang): { title: string; body: string } {
@@ -17,6 +17,7 @@ export function getRemoteOAuthCallbackCopy(lang: OAuthResultPageLang): { title: 
     en: { title: 'Authorization callback received', body: 'Return to Cindy to check the authorization result on the remote device.' },
     ja: { title: '認証コールバックを受信しました', body: 'Cindy に戻り、リモートデバイスの認証結果を確認してください。' },
     ko: { title: '인증 콜백을 받았습니다', body: 'Cindy로 돌아가 원격 기기의 인증 결과를 확인하세요.' },
+    fr: { title: "Rappel d'autorisation reçu", body: "Revenez dans Cindy pour vérifier le résultat de l'autorisation sur l'appareil distant." },
   }[lang];
 }
 export type OAuthResultPageVariant = 'success' | 'warning' | 'error';
@@ -70,6 +71,7 @@ export const OAUTH_RESULT_HTML_LANG: Record<OAuthResultPageLang, string> = {
   en: 'en',
   ja: 'ja',
   ko: 'ko',
+  fr: 'fr',
 };
 
 /** Selects the first supported language in browser preference order. */
@@ -86,6 +88,7 @@ export function pickOAuthResultPageLang(acceptLanguage: string | undefined): OAu
     }
     if (primary.startsWith('ja')) return 'ja';
     if (primary.startsWith('ko')) return 'ko';
+    if (primary.startsWith('fr')) return 'fr';
     if (primary.startsWith('en')) return 'en';
   }
   return 'en';
@@ -103,6 +106,8 @@ function returnLabel(lang: OAuthResultPageLang, brandName: string): string {
       return `${brandName} に戻る`;
     case 'ko':
       return `${brandName}(으)로 돌아가기`;
+    case 'fr':
+      return `Revenir à ${brandName}`;
   }
 }
 
@@ -169,6 +174,15 @@ export function getProviderOAuthResultCopy(
         missingCodeBody: `${providerName} 인증 코드를 받지 못했습니다. ${brandName}(으)로 돌아가 다시 시도하세요.`,
         invalidStateBody: `인증 검증에 실패했습니다. ${brandName}(으)로 돌아가 연결을 다시 시작하세요.`,
         exchangeFailedBody: `${providerName} 연결 중 오류가 발생했습니다. ${brandName}(으)로 돌아가 다시 시도하세요.`,
+      };
+    case 'fr':
+      return {
+        successTitle: 'Autorisation terminée',
+        successBody: `${providerName} est maintenant connecté à ${brandName}. Vous pouvez revenir dans l'application pour continuer.`,
+        errorTitle: 'Autorisation non terminée',
+        missingCodeBody: `Aucun code d'autorisation n'a été reçu de ${providerName}. Revenez dans ${brandName} et réessayez.`,
+        invalidStateBody: `La validation de l'autorisation a échoué. Revenez dans ${brandName} et relancez la connexion.`,
+        exchangeFailedBody: `Une erreur s'est produite lors de la connexion à ${providerName}. Revenez dans ${brandName} et réessayez.`,
       };
     default:
       return {
@@ -254,6 +268,18 @@ const GHOST_OAUTH_PAGE_STRINGS: Record<OAuthResultPageLang, GhostOAuthResultCopy
       internal: '콜백 처리 중 오류가 발생했습니다. {brand}(으)로 돌아가 다시 시도하세요.',
     },
   },
+  fr: {
+    successTitle: 'Autorisation réussie',
+    successBody: 'Vous pouvez fermer cette page et revenir dans {brand}.',
+    errorTitle: "Échec de l'autorisation",
+    errors: {
+      'provider-error': "Le serveur d'autorisation a renvoyé une erreur : {detail}",
+      'invalid-callback':
+        'Le rappel est incomplet ou sa validation a échoué. Revenez dans {brand} et réessayez.',
+      internal:
+        "Une erreur s'est produite lors du traitement du rappel. Revenez dans {brand} et réessayez.",
+    },
+  },
 };
 
 /** Ghost OAuth 回调页文案(占位符原样返回,替换责任在调用方)。 */
@@ -296,6 +322,11 @@ export function getOAuthNeutralResultCopy(
       return {
         title: '추가 작업 필요',
         body: `${brandName}로 돌아가 현재 워크스페이스 설치를 완료하세요.`,
+      };
+    case 'fr':
+      return {
+        title: 'Action requise',
+        body: `Revenez dans ${brandName} et terminez l'installation dans l'espace de travail actuel.`,
       };
     default:
       return {

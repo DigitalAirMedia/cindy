@@ -52,7 +52,7 @@ function isPageKind(value: string | null): value is PageKind {
 }
 
 function isLang(value: string | null): value is OAuthResultPageLang {
-  return value === 'zh' || value === 'en' || value === 'ja' || value === 'ko';
+  return value === 'zh' || value === 'en' || value === 'ja' || value === 'ko' || value === 'fr';
 }
 
 function isTheme(value: string | null): value is OAuthResultPageTheme {
@@ -150,6 +150,7 @@ function renderToolbar(
       ['en', 'English'],
       ['ja', '日本語'],
       ['ko', '한국어'],
+      ['fr', 'Français'],
     ] as const
   )
     .map(

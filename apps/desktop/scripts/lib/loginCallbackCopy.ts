@@ -28,6 +28,7 @@ export const OAUTH_LANG_TO_APP_LOCALES: Record<OAuthResultPageLang, string[]> = 
   en: ['en'],
   ja: ['ja'],
   ko: ['ko'],
+  fr: ['fr'],
 };
 
 /** 页面语言全集,与 OAUTH_LANG_TO_APP_LOCALES 保持同源。 */

@@ -13,11 +13,12 @@ import {
   type OAuthResultPageLang,
 } from '../oauthResultPage';
 
-const ALL_OAUTH_LANGS: OAuthResultPageLang[] = ['zh', 'zh-TW', 'en', 'ja', 'ko'];
+const ALL_OAUTH_LANGS: OAuthResultPageLang[] = ['zh', 'zh-TW', 'en', 'ja', 'ko', 'fr'];
 
 describe('OAuth result page language and copy', () => {
   it('uses the first supported browser language and falls back to English', () => {
-    expect(pickOAuthResultPageLang('fr-FR,ja;q=0.8,en;q=0.7')).toBe('ja');
+    expect(pickOAuthResultPageLang('de-DE,ja;q=0.8,en;q=0.7')).toBe('ja');
+    expect(pickOAuthResultPageLang('fr-FR,en;q=0.7')).toBe('fr');
     expect(pickOAuthResultPageLang('zh-TW,zh;q=0.9')).toBe('zh-TW');
     expect(pickOAuthResultPageLang('de-DE')).toBe('en');
     expect(pickOAuthResultPageLang(undefined)).toBe('en');
@@ -41,7 +42,7 @@ describe('OAuth result page language and copy', () => {
 
   it('honors browser preference order over Traditional Chinese recognition', () => {
     expect(pickOAuthResultPageLang('ja,zh-TW;q=0.9')).toBe('ja');
-    expect(pickOAuthResultPageLang('fr-FR,zh-Hant;q=0.8,en;q=0.5')).toBe('zh-TW');
+    expect(pickOAuthResultPageLang('de-DE,zh-Hant;q=0.8,en;q=0.5')).toBe('zh-TW');
   });
 
   it('maps every callback language to a BCP 47 html lang value', () => {
