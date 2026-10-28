@@ -1,7 +1,7 @@
 {
   "$schema": "./glossary.schema.json",
   "version": 1,
-  "locales": ["en", "zh-CN", "zh-TW", "ja", "ko"],
+  "locales": ["en", "zh-CN", "zh-TW", "ja", "ko", "fr"],
   "sourceLocale": "en",
   "punctuationExempt": ["desktop:settings.help.qnaFeedbackBodyTemplate"],
   "terms": [
@@ -421,7 +421,8 @@
         "zh-CN": "活跃",
         "zh-TW": "活躍",
         "ja": "アクティブ",
-        "ko": "활성"
+        "ko": "활성",
+        "fr": "actif"
       },
       "checkCase": false,
       "alsoAllowed": {
@@ -727,7 +728,8 @@
         "zh-CN": "Agent",
         "zh-TW": "Agent",
         "ja": "Agent",
-        "ko": "Agent"
+        "ko": "Agent",
+        "fr": "Agent"
       },
       "forbidden": {
         "zh-CN": [
@@ -756,7 +758,8 @@
         "zh-CN": "作者",
         "zh-TW": "作者",
         "ja": "作成者",
-        "ko": "작성자"
+        "ko": "작성자",
+        "fr": "auteur"
       },
       "checkCase": false,
       "forbidden": {
@@ -791,7 +794,8 @@
         "zh-CN": "自动化",
         "zh-TW": "自動化",
         "ja": "自動化",
-        "ko": "자동화"
+        "ko": "자동화",
+        "fr": "automatisation"
       },
       "alsoAllowed": {
         "zh-CN": [
@@ -825,7 +829,8 @@
         "zh-CN": "余额",
         "zh-TW": "餘額",
         "ja": "残高",
-        "ko": "잔액"
+        "ko": "잔액",
+        "fr": "solde"
       },
       "checkCase": false,
       "forbidden": {
@@ -852,7 +857,8 @@
         "zh-CN": "对话",
         "zh-TW": "對話",
         "ja": "チャット",
-        "ko": "채팅"
+        "ko": "채팅",
+        "fr": "conversation"
       },
       "checkCase": false,
       "forbidden": {
@@ -869,7 +875,8 @@
         "zh-CN": "协同",
         "zh-TW": "協同",
         "ja": "協同",
-        "ko": "협업"
+        "ko": "협업",
+        "fr": "collaboration"
       },
       "checkCase": false,
       "forbidden": {
@@ -897,7 +904,8 @@
         "zh-CN": "收起",
         "zh-TW": "收起",
         "ja": "折りたたむ",
-        "ko": "접기"
+        "ko": "접기",
+        "fr": "Réduire"
       },
       "checkCase": false,
       "forbidden": {
@@ -935,7 +943,8 @@
         "zh-CN": "点数",
         "zh-TW": "點數",
         "ja": "クレジット",
-        "ko": "크레딧"
+        "ko": "크레딧",
+        "fr": "crédits"
       },
       "checkCase": false,
       "alsoAllowed": {
@@ -1040,7 +1049,8 @@
         "zh-CN": "目录",
         "zh-TW": "目錄",
         "ja": "ディレクトリ",
-        "ko": "디렉터리"
+        "ko": "디렉터리",
+        "fr": "répertoire"
       },
       "checkCase": false,
       "forbidden": {},
@@ -1054,7 +1064,8 @@
         "zh-CN": "关闭",
         "zh-TW": "關閉",
         "ja": "閉じる",
-        "ko": "닫기"
+        "ko": "닫기",
+        "fr": "Fermer"
       },
       "checkCase": false,
       "forbidden": {
@@ -1089,7 +1100,8 @@
         "zh-CN": "推理强度",
         "zh-TW": "推理強度",
         "ja": "推論強度",
-        "ko": "추론 강도"
+        "ko": "추론 강도",
+        "fr": "effort de raisonnement"
       },
       "forbidden": {
         "zh-CN": ["思考强度", "思考深度", "推理深度", "努力程度", "推理力度"],
@@ -1106,7 +1118,8 @@
         "zh-CN": "Issue",
         "zh-TW": "Issue",
         "ja": "Issue",
-        "ko": "이슈"
+        "ko": "이슈",
+        "fr": "issue"
       },
       "checkCase": false,
       "forbidden": {
@@ -1180,7 +1193,8 @@
         "zh-CN": "隐私政策",
         "zh-TW": "隱私政策",
         "ja": "プライバシーポリシー",
-        "ko": "개인정보 처리방침"
+        "ko": "개인정보 처리방침",
+        "fr": "Politique de confidentialité"
       },
       "checkCase": false,
       "forbidden": {
@@ -1213,7 +1227,8 @@
         "zh-CN": "插件",
         "zh-TW": "插件",
         "ja": "プラグイン",
-        "ko": "플러그인"
+        "ko": "플러그인",
+        "fr": "plugin"
       },
       "forbidden": {
         "zh-CN": ["Plugin", "plugin"],
@@ -1241,7 +1256,8 @@
         "zh-CN": "项目",
         "zh-TW": "專案",
         "ja": "プロジェクト",
-        "ko": "프로젝트"
+        "ko": "프로젝트",
+        "fr": "projet"
       },
       "forbidden": {
         "zh-CN": ["Project"],
@@ -1258,7 +1274,8 @@
         "zh-CN": "供应商",
         "zh-TW": "供應商",
         "ja": "プロバイダー",
-        "ko": "제공자"
+        "ko": "제공자",
+        "fr": "fournisseur"
       },
       "alsoAllowed": {
         "zh-CN": [
@@ -1303,7 +1320,8 @@
         "zh-CN": "Proxy",
         "zh-TW": "Proxy",
         "ja": "プロキシ",
-        "ko": "프록시"
+        "ko": "프록시",
+        "fr": "proxy"
       },
       "forbidden": {
         "zh-CN": [
@@ -1329,7 +1347,8 @@
         "zh-CN": "配额",
         "zh-TW": "配額",
         "ja": "クォータ",
-        "ko": "할당량"
+        "ko": "할당량",
+        "fr": "quota"
       },
       "checkCase": false,
       "forbidden": {
@@ -1361,7 +1380,8 @@
         "zh-CN": "运行中",
         "zh-TW": "執行中",
         "ja": "実行中",
-        "ko": "실행 중"
+        "ko": "실행 중",
+        "fr": "en cours d'exécution"
       },
       "checkCase": false,
       "alsoAllowed": {
@@ -1409,7 +1429,8 @@
         "zh-CN": "任务",
         "zh-TW": "任務",
         "ja": "セッション",
-        "ko": "세션"
+        "ko": "세션",
+        "fr": "session"
       },
       "checkCase": false,
       "forbidden": {
@@ -1489,7 +1510,8 @@
         "zh-CN": "Agent 会话",
         "zh-TW": "Agent 會話",
         "ja": "Agent セッション",
-        "ko": "Agent 세션"
+        "ko": "Agent 세션",
+        "fr": "session Agent"
       },
       "checkCase": false,
       "forbidden": {
@@ -1549,7 +1571,8 @@
         "zh-CN": "技能",
         "zh-TW": "技能",
         "ja": "スキル",
-        "ko": "스킬"
+        "ko": "스킬",
+        "fr": "skill"
       },
       "alsoAllowed": {
         "zh-CN": [
@@ -1583,7 +1606,8 @@
         "zh-CN": "SkillHub",
         "zh-TW": "SkillHub",
         "ja": "SkillHub",
-        "ko": "SkillHub"
+        "ko": "SkillHub",
+        "fr": "SkillHub"
       },
       "forbidden": {
         "ja": ["スキルハブ"],
@@ -1611,7 +1635,8 @@
         "zh-CN": "Subagent",
         "zh-TW": "Subagent",
         "ja": "サブエージェント",
-        "ko": "하위 에이전트"
+        "ko": "하위 에이전트",
+        "fr": "sous-Agent"
       },
       "forbidden": {
         "zh-CN": [
@@ -1637,7 +1662,8 @@
         "zh-CN": "任务",
         "zh-TW": "任務",
         "ja": "スレッド",
-        "ko": "스레드"
+        "ko": "스레드",
+        "fr": "fil"
       },
       "checkCase": false,
       "alsoAllowed": {
@@ -1680,7 +1706,8 @@
         "zh-CN": "用量",
         "zh-TW": "用量",
         "ja": "使用量",
-        "ko": "사용량"
+        "ko": "사용량",
+        "fr": "consommation"
       },
       "forbidden": {
         "zh-CN": ["使用情况", "使用表现"],
@@ -1760,7 +1787,8 @@
         "zh-CN": "Worker",
         "zh-TW": "Worker",
         "ja": "Worker",
-        "ko": "Worker"
+        "ko": "Worker",
+        "fr": "Worker"
       },
       "forbidden": {},
       "note": "Orca 协同角色名，五语统一保留英文。这里只钉大小写形态：首字母大写 Worker。小写 worker 由 guard 的大小写规则单独覆盖（desktop 26:13 混用、mobile 一律小写）。"
@@ -1786,7 +1814,8 @@
         "zh-CN": "工作目录",
         "zh-TW": "工作目錄",
         "ja": "作業ディレクトリ",
-        "ko": "작업 디렉터리"
+        "ko": "작업 디렉터리",
+        "fr": "répertoire de travail"
       },
       "checkCase": false,
       "forbidden": {
@@ -1803,7 +1832,8 @@
         "zh-CN": "worktree",
         "zh-TW": "worktree",
         "ja": "worktree",
-        "ko": "worktree"
+        "ko": "worktree",
+        "fr": "worktree"
       },
       "checkCase": false,
       "forbidden": {
@@ -1940,7 +1970,8 @@
         "zh-CN": "任务",
         "zh-TW": "任務",
         "ja": "タスク",
-        "ko": "작업"
+        "ko": "작업",
+        "fr": "tâche"
       },
       "checkCase": false,
       "note": "指 Agent 正在执行的一件活，与 Session（也叫「任务」）同名。**同一句里同时出现两者时必须消解歧义**：task 一侧优先动词化（\"当前任务正在运行\" / \"执行完成\"），确需名词时用「执行」或「作业」——\"当前任务正在执行任务\" 这类写法一律不可接受。不同句、语境清晰时沿用「任务」（现状 104 处）。定时任务（Schedule）与后台作业各有限定词，不歧义。判定规则见 docs/product-rules/task-and-conversation-naming.md §3。"
@@ -1953,7 +1984,8 @@
         "zh-CN": "消息",
         "zh-TW": "訊息",
         "ja": "メッセージ",
-        "ko": "메시지"
+        "ko": "메시지",
+        "fr": "message"
       },
       "checkCase": false,
       "forbidden": {
@@ -1980,7 +2012,8 @@
         "zh-CN": "轮",
         "zh-TW": "輪",
         "ja": "ターン",
-        "ko": "턴"
+        "ko": "턴",
+        "fr": "tour"
       },
       "checkCase": false,
       "note": "一次提问到一次回答结束。**内部概念，不作为界面术语**：面向用户一律说「消息」，只在确实要强调一次完整往返时说「一轮」（如「上一轮」）。不要引入「轮次」作为界面用词。"

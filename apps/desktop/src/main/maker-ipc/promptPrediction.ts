@@ -125,6 +125,7 @@ function buildPredictionPrompt(
     en: "Match the user's language. The user types in English.",
     ja: "Match the user's language. The user types in Japanese.",
     ko: "Match the user's language. The user types in Korean.",
+    fr: "Match the user's language. The user types in French.",
   };
   const wdLine = workingDir
     ? `Current working directory: ${escapeReferenceData(workingDir)}`

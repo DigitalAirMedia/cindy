@@ -7,6 +7,7 @@ export const TITLE_LANGUAGE_BY_LOCALE: Record<SupportedLocale, string> = {
   en: 'English',
   ja: 'Japanese',
   ko: 'Korean',
+  fr: 'French',
 };
 
 function escapeReferenceData(value: string): string {

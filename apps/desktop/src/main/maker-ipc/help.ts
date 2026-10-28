@@ -73,6 +73,7 @@ const LOCALE_NAME: Record<HelpLocale, string> = {
   en: 'English',
   ja: 'Japanese',
   ko: 'Korean',
+  fr: 'French',
 };
 
 type HelpOneShotTarget = {
@@ -107,7 +108,7 @@ async function isHelpSessionAgentDispatchAllowed(
 }
 
 function normalizeLocale(locale: unknown): HelpLocale {
-  return locale === 'zh-CN' || locale === 'zh-TW' || locale === 'en' || locale === 'ja' || locale === 'ko'
+  return locale === 'zh-CN' || locale === 'zh-TW' || locale === 'en' || locale === 'ja' || locale === 'ko' || locale === 'fr'
     ? locale
     : 'en';
 }

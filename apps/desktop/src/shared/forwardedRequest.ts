@@ -4,6 +4,7 @@ import zhCN from '../renderer/i18n/locales/zh-CN/common.json';
 import zhTW from '../renderer/i18n/locales/zh-TW/common.json';
 import ja from '../renderer/i18n/locales/ja/common.json';
 import ko from '../renderer/i18n/locales/ko/common.json';
+import fr from '../renderer/i18n/locales/fr/common.json';
 export { verifiedOwnerRequestText } from '@cindy/maker-shared/auto-review-intent';
 
 // The same locale resources serve persisted text and host task context.
@@ -13,6 +14,7 @@ const FORWARDED_REQUEST_COPY = {
   'zh-TW': zhTW.forwardedRequest,
   ja: ja.forwardedRequest,
   ko: ko.forwardedRequest,
+  fr: fr.forwardedRequest,
 } satisfies Record<SupportedLocale, typeof en.forwardedRequest>;
 
 /** Host-owned source evidence. It describes authorship, never execution permission. */

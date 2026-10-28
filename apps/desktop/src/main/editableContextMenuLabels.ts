@@ -66,4 +66,13 @@ export const EDITABLE_CONTEXT_MENU_LABELS: Record<SupportedLocale, EditableConte
     pasteAsPlainText: '서식 없이 붙여넣기',
     selectAll: '모두 선택',
   },
+  fr: {
+    undo: 'Annuler',
+    redo: 'Rétablir',
+    cut: 'Couper',
+    copy: 'Copier',
+    paste: 'Coller',
+    pasteAsPlainText: 'Coller en texte brut',
+    selectAll: 'Tout sélectionner',
+  },
 };

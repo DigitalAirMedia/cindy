@@ -155,6 +155,26 @@ export const ENDPOINT_MANIFEST_DIALOG_COPY: Record<
     offlineButton: '지난 설정으로 시작',
     quitButton: 'Cindy 종료',
   },
+  fr: {
+    networkTitle: 'Cindy n’a pas pu se connecter',
+    configTitle: 'Cindy n’a pas pu démarrer',
+    networkBody:
+      'Cindy n’a pas pu se connecter à ses services au démarrage. Vérifiez que cet appareil est en ligne, puis relancez. Si vous utilisez un proxy ou un réseau d’entreprise, essayez de changer de réseau.',
+    configBody:
+      'Cindy n’a pas pu terminer son démarrage pour le moment. Réessayez plus tard. Si le problème persiste, contactez l’assistance.',
+    errorLine: 'Erreur : {{error}}',
+    diagnosticsHint: 'Si vous avez besoin d’aide, copiez les diagnostics dans votre message à l’assistance.',
+    copyDiagnosticsButton: 'Copier les diagnostics',
+    copiedHint: 'Diagnostics copiés. Collez-les dans votre message à l’assistance.',
+    copyFailedHint: 'Impossible de copier les diagnostics. Réessayez.',
+    noSavedConfigurationHint:
+      'Cet appareil n’a encore aucune configuration enregistrée : Cindy doit se reconnecter avant de pouvoir démarrer.',
+    offlineHint:
+      'Vous pouvez aussi démarrer hors ligne avec la dernière configuration récupérée par Cindy ({{savedAt}}). Les fonctionnalités qui nécessitent une connexion réseau seront indisponibles.',
+    retryButton: 'Relancer Cindy',
+    offlineButton: 'Utiliser la dernière configuration',
+    quitButton: 'Quitter Cindy',
+  },
 };
 
 export interface EndpointManifestDialogInput {

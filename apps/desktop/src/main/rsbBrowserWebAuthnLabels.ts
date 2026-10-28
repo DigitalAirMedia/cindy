@@ -68,4 +68,14 @@ export const RSB_BROWSER_WEBAUTHN_LABELS: Record<
     unknownRelyingParty: '이 웹사이트',
     touchIdPromptReason: '$1에서 본인 확인',
   },
+  fr: {
+    title: "Choisir une clé d'accès",
+    message: "Choisissez une clé d'accès pour {{relyingPartyId}}",
+    detail:
+      "Cindy transmet uniquement votre choix à l'authentificateur ; le secret de la clé d'accès reste dans l'authentificateur.",
+    cancel: "Annuler la connexion par clé d'accès",
+    unknownAccount: "Clé d'accès {{index}}",
+    unknownRelyingParty: 'ce site web',
+    touchIdPromptReason: 'confirmer votre identité sur $1',
+  },
 };

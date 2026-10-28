@@ -23,6 +23,8 @@ import jaCommon from './locales/ja/common.json';
 import jaAiRename from './locales/ja/aiRename.json';
 import koCommon from './locales/ko/common.json';
 import koAiRename from './locales/ko/aiRename.json';
+import frCommon from './locales/fr/common.json';
+import frAiRename from './locales/fr/aiRename.json';
 import { GHOST_OFFICIAL_ID_PREFIX } from '../../shared/ghost';
 import { DEFAULT_LOCALE } from '../../shared/locale';
 import { getEffectiveLocale } from '../lib/localePreference';
@@ -87,6 +89,16 @@ const resources = {
       },
     },
     aiRename: koAiRename,
+  },
+  fr: {
+    common: {
+      ...frCommon,
+      chatgptAuthRecovery: {
+        ...frCommon.chatgptAuthRecovery,
+        devWriteBlocked: 'Les versions de développement partagent par défaut la connexion ChatGPT de cet ordinateur en lecture seule : elles ne peuvent ni lancer OAuth ni modifier ses identifiants. Pour tester OAuth, exécutez : pnpm restart:desktop:remote -- --isolated-auth --isolated. Le script n’active l’écriture qu’après avoir vérifié le bac à sable ; inutile de définir des variables d’environnement manuellement.',
+      },
+    },
+    aiRename: frAiRename,
   },
 } as const;
 

@@ -295,9 +295,10 @@ export function makeExemptChecker(list) {
  *  - 省略号:zh-CN 140:44、ja 138:46、ko 138:46,三语一致以「…」为主流 → 全部适用。
  *    **en 同样适用**——不是靠现状数据,而是 DESIGN.md §11 Voice & Content 明文规定
  *    英文也用省略号字符「…」而非三个半角点。原先漏掉 en,等于让门禁替既有违规背书。
+ *    **fr 同样适用**——新增法语时即按同一规范统一使用「…」(维护者在 #7729 中确认)。
  */
 export const HALFWIDTH_PUNCT_LOCALES = new Set(['zh-CN', 'zh-TW']);
-export const ELLIPSIS_LOCALES = new Set(['en', 'zh-CN', 'zh-TW', 'ja', 'ko']);
+export const ELLIPSIS_LOCALES = new Set(['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'fr']);
 
 /**
  * 中文正文里的半角标点。两种形态:
