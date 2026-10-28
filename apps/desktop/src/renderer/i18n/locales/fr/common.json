@@ -227,7 +227,7 @@
     "cancelSharing": "Arrêter le partage",
     "cancelTitle": "Arrêter le partage ?",
     "leaveShort": "Quitter",
-    "joinTab": "Rejoindre une tâche partagée",
+    "joinTab": "Rejoindre la tâche",
     "joinedEmptyTitle": "Aucune tâche partagée rejointe",
     "joinedEmptyHint": "Ouvrez un lien d'invitation envoyé par un coéquipier pour rejoindre une tâche partagée.",
     "joinedLoadFailed": "Impossible de charger les tâches partagées que vous avez rejointes. Réessayez.",
@@ -256,7 +256,7 @@
     "runsOnHostDevice": "S'exécute sur l'ordinateur de l'hôte",
     "remoteHostOfflineNote": "Le partage prend fin automatiquement si l'ordinateur de l'hôte reste hors ligne. Pour reprendre, l'hôte doit relancer le partage et envoyer un nouveau lien d'invitation.",
     "waitingHost": "En attente de la réponse de l'hôte. Vous pouvez continuer à envoyer des messages.",
-    "join": "Rejoindre une tâche partagée",
+    "join": "Rejoindre la tâche",
     "login": "Connectez-vous à Cindy pour rejoindre une tâche.",
     "invitation": "Lien ou code d'invitation",
     "dismiss": "Fermer la boîte de dialogue",
@@ -650,7 +650,7 @@
       "usage": "{{used}} / {{total}} sessions occupées par {{devices}} appareils ; l'appareil le plus chargé en occupe {{largest}}.",
       "applyHint": "Les modifications s'appliquent immédiatement. Abaisser une limite bloque uniquement les nouvelles sessions ; les sessions existantes continuent. Les relais de groupe sont comptabilisés pour l'appareil directement connecté.",
       "save": "Enregistrer",
-      "reset": "Rétablir les valeurs par défaut",
+      "reset": "Réinitialiser",
       "saved": "Limites de sessions à distance enregistrées",
       "retry": "Recharger",
       "loading": "Chargement…"
@@ -1095,7 +1095,7 @@
     "beingViewed": "Votre bureau est visionné à distance",
     "controlledByDevice": "{{name}} contrôle votre bureau",
     "viewedByDevice": "{{name}} visionne votre bureau",
-    "disconnect": "Se déconnecter",
+    "disconnect": "Déconnecter",
     "disconnectChoiceDetail": "La déconnexion met fin à cette session de bureau à distance ; l'appareil pourra se reconnecter plus tard.",
     "disconnectRevoke": "Révoquer aussi l'accès de cet appareil",
     "disconnectRevokeHint": "Il ne pourra plus se connecter à cette machine tant que vous ne l'aurez pas rétabli dans Paramètres → Connexion à distance.",
@@ -1135,13 +1135,13 @@
     "reconnecting": "Reconnexion…",
     "connectionTimeout": "Délai de connexion dépassé. Vérifiez votre réseau et que l'ordinateur est en ligne, puis reconnectez-vous.",
     "connectionBusy": "Un autre appareil est connecté à ce bureau à distance. Quittez le bureau à distance sur cet appareil, puis réessayez de vous connecter.",
-    "takeoverConnection": "Prendre la main sur la connexion",
+    "takeoverConnection": "Prendre la main",
     "connectionBusyTakeover": "Un autre appareil est connecté à ce bureau. Prendre la main déconnectera cet appareil.",
     "remoteDisabled": "Sur l'ordinateur distant, ouvrez Paramètres de Cindy → Contrôle à distance et activez le contrôle à distance.",
     "accessRevoked": "L'accès à cet ordinateur a été révoqué.",
     "directConnection": "Directement vers l'ordinateur",
     "videoRelay": "Relais vidéo via le serveur",
-    "screenshotRelay": "Relais de captures d'écran via le serveur",
+    "screenshotRelay": "Relais de captures via le serveur",
     "shortcut": {
       "open": "Ouvrir le bureau à distance",
       "checking": "Vérification du bureau à distance…",
@@ -1202,7 +1202,7 @@
       "resolutionHint": "Les changements de résolution s'appliquent au moniteur distant réel."
     },
     "settingUnsupported": "Cet ordinateur ne prend pas encore en charge ce paramètre",
-    "privacyScreen": "Écran de confidentialité de l'ordinateur",
+    "privacyScreen": "Écran de confidentialité",
     "privacyScreenHint": "Masque les écrans de l'ordinateur. Cliquez ou appuyez sur une touche de l'ordinateur, puis confirmez pour vous déconnecter. Le verrouillage à la sortie s'applique s'il est activé.",
     "privacyActive": "L'écran de confidentialité est activé. Cliquez ou appuyez sur une touche de l'ordinateur, puis confirmez pour vous déconnecter. Le verrouillage à la sortie s'applique s'il est activé.",
     "privacyFailed": "Impossible d'activer l'écran de confidentialité. Les écrans de l'ordinateur sont peut-être encore visibles.",
@@ -1217,7 +1217,7 @@
     "clipboardSyncPermission": "La synchronisation du presse-papiers nécessite l'accès au collage. Autorisez-le, puis revenez à cette fenêtre pour reprendre.",
     "clipboardSyncWaiting": "Le presse-papiers de l'ordinateur distant n'est pas disponible pour le moment (il est peut-être verrouillé). La synchronisation reprendra automatiquement.",
     "lockingOnExit": "Verrouillage de l'ordinateur…",
-    "lockOnExit": "Verrouiller l'ordinateur à la sortie",
+    "lockOnExit": "Verrouiller à la sortie",
     "lockOnExitHint": "Verrouille l'ordinateur lorsque vous quittez le bureau à distance. Se reconnecter ou changer d'app ne le verrouille pas.",
     "lockOnExitFailed": "Impossible de confirmer le verrouillage de l'ordinateur. Vérifiez-le avant de le laisser sans surveillance.",
     "nativeResolution": "Native",
@@ -1369,13 +1369,13 @@
       "error": "Erreur",
       "input": "Saisie",
       "done": "Terminé",
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "networkReconnecting": "({{attempt}}/{{maxAttempts}}) Connexion interrompue, reconnexion…",
       "callingTool": "Appel d'un outil…",
       "updatingTasks": "Mise à jour des tâches",
-      "awaitingPermission": "En attente d'autorisation",
-      "awaitingQuestion": "En attente de votre réponse",
-      "awaitingPlan": "En attente de validation du plan",
+      "awaitingPermission": "Autorisation requise",
+      "awaitingQuestion": "Attend votre réponse",
+      "awaitingPlan": "Plan à valider",
       "permissionPromptTitle": "Confirmer l'autorisation",
       "permissionPromptTitleWithTool": "Autoriser {{toolName}} ?",
       "allowOnce": "Autoriser une fois",
@@ -1625,7 +1625,7 @@
       "updatedDays_other": "Mis à jour il y a {{n}} jours",
       "tasks": "Tâches",
       "tokenUnit": "jetons",
-      "noTasksToday": "Aucune tâche aujourd'hui pour l'instant",
+      "noTasksToday": "Aucune tâche aujourd'hui",
       "tabUnread": "Non lues",
       "tabOngoing": "En cours",
       "tabUsage": "Consommation du jour",
@@ -1633,7 +1633,7 @@
       "noOngoing": "Aucune tâche en cours",
       "allTasks": "Toutes les tâches",
       "collapseTasks": "Réduire",
-      "activityRunning": "En cours d'exécution",
+      "activityRunning": "En cours",
       "activityWaiting": "Réponse requise",
       "activityCompleted": "Terminée",
       "activityError": "Action requise",
@@ -1646,7 +1646,7 @@
       "moreTasks_one": "{{n}} autre tâche",
       "moreTasks_many": "{{n}} autres tâches",
       "moreTasks_other": "{{n}} autres tâches",
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "openApp": "Ouvrir Cindy",
       "remoteControlTitle": "Contrôle à distance actif",
       "remoteControlBody": "D'autres appareils accèdent à Cindy sur cet ordinateur.",
@@ -1712,7 +1712,7 @@
     "title": "Paramètres",
     "search": {
       "ariaLabel": "Rechercher dans les paramètres",
-      "placeholder": "Rechercher dans les paramètres",
+      "placeholder": "Rechercher un paramètre",
       "resultsLabel": "Résultats de recherche dans les paramètres",
       "noResults": "Aucun paramètre trouvé. Essayez un autre mot-clé.",
       "clear": "Effacer la recherche"
@@ -1720,7 +1720,7 @@
     "back": "Retour",
     "defaults": {
       "customizedBadge": "Personnalisé",
-      "restore": "Rétablir la valeur par défaut",
+      "restore": "Réinitialiser",
       "restored": "Paramètres par défaut rétablis",
       "restoreFailed": "Impossible de rétablir les valeurs par défaut."
     },
@@ -1803,7 +1803,7 @@
         "limit": "La configuration SSH est trop imbriquée ou trop volumineuse pour que Cindy puisse la lire en toute sécurité. Les derniers hôtes chargés avec succès restent affichés."
       },
       "empty": {
-        "title": "Aucune machine distante pour l'instant.",
+        "title": "Aucune machine distante.",
         "hint": "Cliquez sur « Ajouter » pour en enregistrer une, ou sur l'icône d'actualisation pour importer depuis ~/.ssh/config."
       },
       "status": {
@@ -1818,7 +1818,7 @@
         "add": "Ajouter",
         "reload": "Recharger ~/.ssh/config",
         "connect": "Se connecter",
-        "disconnect": "Se déconnecter",
+        "disconnect": "Déconnecter",
         "remove": "Retirer",
         "expand": "Afficher la configuration de l'Agent",
         "collapse": "Masquer la configuration de l'Agent",
@@ -1833,7 +1833,7 @@
       },
       "edit": {
         "title": "Modifier {{id}}",
-        "submit": "Enregistrer les modifications",
+        "submit": "Enregistrer",
         "connectionFieldsReadOnly": "Les détails de connexion issus de la configuration SSH sont ici en lecture seule. Le nom d'affichage, la connexion automatique et Agent Proxy restent modifiables.",
         "authenticationFromSshConfig": "L'authentification provient de la configuration SSH."
       },
@@ -2080,7 +2080,7 @@
         "refreshed": "Thèmes locaux actualisés"
       },
       "font": {
-        "reset": "Rétablir la valeur par défaut",
+        "reset": "Réinitialiser",
         "title": "Polices",
         "defaultPreset": "Par défaut",
         "presets": "Préréglages",
@@ -2538,7 +2538,7 @@
       "harnessChecking": "Vérification…",
       "harnessCheckFailed": "Impossible de rechercher des mises à jour. Ouvrez le menu pour réessayer.",
       "harnessUpdateAvailable": "Mise à jour disponible",
-      "harnessCheck": "Rechercher des mises à jour",
+      "harnessCheck": "Vérifier les mises à jour",
       "harnessCheckedAt": "Dernière vérification : {{time}}",
       "logsDirLabel": "Répertoire des journaux",
       "openLogsDir": "Ouvrir",
@@ -2743,9 +2743,9 @@
         "download": "Téléchargement…",
         "verify": "Vérification…",
         "activate": "Basculement…",
-        "update": "Mettre à jour depuis le GitHub de Pi",
-        "restore": "Restaurer la version de Cindy",
-        "check": "Rechercher des mises à jour",
+        "update": "Mettre à jour via GitHub",
+        "restore": "Restaurer la version Cindy",
+        "check": "Vérifier les mises à jour",
         "releaseNotes": "Notes de version de Pi",
         "checkedAt": "Dernière vérification : {{time}}",
         "updateTitle": "Mettre à jour Pi vers {{version}} ?",
@@ -2869,7 +2869,7 @@
           "codexRealtimeUnsupported": "La connexion Codex ne peut pas être utilisée pour la reconnaissance vocale en temps réel. Choisissez un service ASR pris en charge."
         },
         "manageProviders": "Ouvrir les fournisseurs de modèles",
-        "reset": "Rétablir la valeur par défaut"
+        "reset": "Réinitialiser"
       },
       "historyToggle": {
         "show": "Afficher l'historique récent",
@@ -3065,7 +3065,7 @@
       },
       "history": {
         "label": "Transcriptions récentes",
-        "empty": "Aucune transcription pour le moment.",
+        "empty": "Aucune transcription.",
         "copy": "Copier",
         "delete": "Supprimer",
         "copyAria": "Copier la transcription",
@@ -3827,7 +3827,7 @@
           },
           "contextLimitRoute": "Actuellement {{tokens}} jetons · 1 K = 1 000 jetons",
           "contextLimitOverWindow": "Supérieur à la fenêtre déclarée par le fournisseur ; les requêtes peuvent échouer.",
-          "restoreDefault": "Restaurer la valeur par défaut",
+          "restoreDefault": "Réinitialiser",
           "engines": "Prise en charge des Harness",
           "enginesHint": "Le mode de compatibilité convertit les requêtes. Il est désactivé par défaut et peut être activé si nécessaire.",
           "engineUnsupported": "Non pris en charge",
@@ -4306,8 +4306,8 @@
       "modeAria": "Mode des points de restauration des fichiers",
       "modes": {
         "off": "Désactivé",
-        "existingGit": "Projets Git existants uniquement",
-        "allProjects": "Inclure les nouveaux projets vides"
+        "existingGit": "Projets Git existants",
+        "allProjects": "Inclure les projets vides"
       },
       "toggleAria": "Mode des points de restauration des fichiers",
       "saveFailed": "Impossible d'enregistrer le paramètre de sécurité Git"
@@ -4446,7 +4446,7 @@
         "title": "Répertoire de travail des nouvelles conversations",
         "hint": "Utilisé pour la première conversation WeChat et après /new. Le modifier ne déplace pas le contexte actuel.",
         "managed": "Utiliser un répertoire géré par Cindy",
-        "reset": "Restaurer la valeur par défaut",
+        "reset": "Réinitialiser",
         "unavailable": "Le répertoire sélectionné est indisponible. Les nouvelles conversations utilisent temporairement un répertoire géré par Cindy."
       },
       "unbind": {
@@ -5313,7 +5313,7 @@
         "title": "Navigateur cible de l'automatisation",
         "description": "Choisissez le navigateur que l'Agent pilote réellement pendant l'automatisation. L'état de connexion est indépendant entre les deux modes.",
         "defaultTag": "Par défaut",
-        "resetToDefault": "Rétablir la valeur par défaut",
+        "resetToDefault": "Réinitialiser",
         "toggleFailed": "Échec du changement de navigateur cible",
         "health": {
           "ready": "Le contrôle du navigateur intégré est connecté.",
@@ -5528,7 +5528,7 @@
       "loadFailed": "Échec du chargement de la liste des outils",
       "scopePicker": {
         "ariaLabel": "Changer la portée des paramètres des outils intégrés",
-        "userDefault": "Valeurs par défaut des nouvelles sessions",
+        "userDefault": "Par défaut (nouvelles sessions)",
         "userDefaultDescription": "Utilisées par les nouvelles sessions sans paramètres de projet spécifiques"
       },
       "source": {
@@ -5896,7 +5896,7 @@
         "noOtherDevices": "Aucun autre appareil",
         "hostCount": "{{count}} hôte(s)",
         "hostsConnected": "{{count}} connecté(s)",
-        "noHosts": "Aucun hôte pour l'instant"
+        "noHosts": "Aucun hôte"
       },
       "revokeConfirm": {
         "title": "Révoquer l'accès ?",
@@ -6997,7 +6997,7 @@
         "bodyBuiltinRestart": "Un problème est survenu avec l'enregistrement de vérification d'installation de ce plugin intégré. Redémarrez Cindy pour une récupération automatique. Aucune autre action n'est nécessaire."
       },
       "install": "Installer depuis un fichier…",
-      "empty": "Aucun plugin installé pour l'instant",
+      "empty": "Aucun plugin installé",
       "emptyHint": "Installez-en depuis le marketplace, ou importez un fichier .cindy depuis le menu ci-dessus",
       "legacyRecovery": {
         "title": "Des plugins d'une ancienne version attendent d'être restaurés",
@@ -7370,7 +7370,7 @@
         "loading": "Chargement des tâches en arrière-plan…",
         "loadFailed": "Impossible de charger les tâches en arrière-plan",
         "empty": "Aucune tâche en arrière-plan",
-        "statusRunning": "En cours d'exécution",
+        "statusRunning": "En cours",
         "statusIdle": "Inactive",
         "statusArchived": "Archivée",
         "lastActive": "Dernière activité {{time}}",
@@ -7396,8 +7396,8 @@
         "orphanedBanner": "Le plugin est désinstallé, mais ses données de travail sont conservées. Réinstaller le plugin rétablit automatiquement l'accès.",
         "softLimitWarning": "L'espace utilisé par la bibliothèque dépasse le seuil conseillé ({{limit}}). Envisagez de faire du tri ou de la déplacer vers un autre disque.",
         "changeLocation": "Changer d'emplacement…",
-        "revertDefault": "Rétablir l'emplacement par défaut",
-        "unbind": "Oublier l'emplacement personnalisé",
+        "revertDefault": "Emplacement par défaut",
+        "unbind": "Oublier l'emplacement",
         "relocateConfirmTitle": "Déplacer la bibliothèque ?",
         "relocateConfirmDescription": "Toutes les données de travail seront copiées vers le nouvel emplacement et vérifiées élément par élément ; l'ancien dossier est conservé 14 jours pour permettre un retour en arrière. Les grosses bibliothèques peuvent prendre quelques minutes : évitez d'utiliser le plugin pendant le déplacement.",
         "relocateConfirmText": "Lancer le déplacement",
@@ -7507,7 +7507,7 @@
         "disabled": "Cette organisation n'a pas activé la publication par les membres. Contactez un administrateur.",
         "loadFailed": "Impossible de charger vos publications",
         "startFailed": "Impossible de lancer la publication",
-        "empty": "Aucune publication pour l'instant",
+        "empty": "Aucune publication",
         "unknownPlugin": "Plugin",
         "uploading": "Publication en cours",
         "badge": {
@@ -7611,7 +7611,7 @@
         "retry": "Réessayer",
         "lastUsed": "Dernier appel",
         "last7Days": "Appels des 7 derniers jours",
-        "never": "Aucun appel pour l'instant",
+        "never": "Aucun appel",
         "clearTitle": "Effacer les enregistrements d'utilisation de ce plugin ?",
         "clearDescription": "Supprime les enregistrements d'appels et les liens de session de ce compte sur cet ordinateur. Les nouveaux appels repartent d'un historique vierge. Les totaux partagés déjà reçus par le serveur ne sont pas retirés.",
         "downloadExplanation": "Nombre cumulé de demandes d'URL de téléchargement. Chaque URL de paquet émise avec succès compte une fois, y compris pour les mises à jour, réinstallations et nouvelles tentatives qui demandent une nouvelle URL. Il ne s'agit pas du nombre d'installations réussies.",
@@ -7679,7 +7679,7 @@
         "versionFacts": "État de la version",
         "publishing": "Publication",
         "latestSubmission": "Dernière soumission",
-        "noSubmission": "Aucune soumission pour l'instant",
+        "noSubmission": "Aucune soumission",
         "marketVersion": "Publiée · {{version}}",
         "market": {
           "not_listed": "Non référencé",
@@ -7947,7 +7947,7 @@
         "agentNotes": "Instructions pour les Agents",
         "agentNotesPlaceholder": "ex. : C'est l'adresse personnelle du patron. Ne jamais l'utiliser pour un envoi groupé",
         "events": "Chronologie",
-        "eventsEmpty": "Aucun événement pour le moment",
+        "eventsEmpty": "Aucun événement",
         "eventDeleteAria": "Supprimer l'événement",
         "eventDatePlaceholder": "2026-07-07",
         "eventTextPlaceholder": "Ce qui s'est passé",
@@ -7958,7 +7958,7 @@
         "groupAddPlaceholder": "Ajouter à un groupe…",
         "discardChanges": "Annuler les modifications",
         "save": "Enregistrer",
-        "identitiesEmpty": "Aucune identité pour le moment",
+        "identitiesEmpty": "Aucune identité",
         "relations": "Liens",
         "relationsEmpty": "Aucun lien pour le moment (organisations / personnes liées)",
         "relationAddAria": "Ajouter un lien",
@@ -8499,7 +8499,7 @@
   },
   "todaySpend": {
     "openCodexUsage": "Ouvrir les limites de consommation Codex",
-    "resetPendingSegment": "{{label}} en cours de réinitialisation",
+    "resetPendingSegment": "{{label}} se réinitialise",
     "openClaudeUsage": "Ouvrir la page de consommation Claude",
     "unit": {
       "day": "j",
@@ -8598,7 +8598,7 @@
     "usedPercent": "Utilisé : {{percent}} %",
     "remainingPercent": "Restant : {{percent}} %",
     "resetIn": "Réinitialisation dans {{duration}}",
-    "resetPending": "En attente de la mise à jour de la réinitialisation",
+    "resetPending": "En attente de mise à jour",
     "resetAt": "Réinitialisation {{at}}",
     "noWindows": "Aucune donnée de fenêtre de quota disponible",
     "limitRejected": "Limite du forfait atteinte ; des requêtes peuvent être refusées",
@@ -8671,7 +8671,7 @@
         "remoteDisabled": "Contrôle à distance non autorisé",
         "unsupported": "Mise à jour de Cindy requise",
         "error": "Lecture impossible",
-        "noData": "Aucune donnée pour le moment"
+        "noData": "Aucune donnée"
       },
       "partial": "Certains ordinateurs n'ont pas pu être lus pour l'instant ; les totaux peuvent donc être sous-estimés. Vérifiez l'état de chaque appareil dans la liste des appareils."
     },
@@ -8713,7 +8713,7 @@
         "totalInRange": "Jetons ({{range}})",
         "share": "Part",
         "today": "Aujourd'hui",
-        "hitRate": "Taux de succès du cache",
+        "hitRate": "Succès du cache",
         "models": "Modèles"
       }
     },
@@ -8722,14 +8722,14 @@
       "subtitle": "30 derniers jours",
       "col": {
         "model": "Modèle",
-        "total": "Total des jetons",
+        "total": "Jetons totaux",
         "totalInRange": "Jetons ({{range}})",
         "share": "Part",
         "input": "Entrée",
         "output": "Sortie",
-        "cacheRead": "Lecture du cache",
-        "cacheCreate": "Écriture du cache",
-        "hitRate": "Taux de succès du cache"
+        "cacheRead": "Cache lu",
+        "cacheCreate": "Cache écrit",
+        "hitRate": "Succès du cache"
       }
     },
     "tasks": {
@@ -8740,7 +8740,7 @@
         "task": "Session",
         "model": "Modèle actuel",
         "provider": "Fournisseur actuel",
-        "tokens": "Total des jetons",
+        "tokens": "Jetons totaux",
         "context": "Contexte utilisé",
         "lastActive": "Dernière activité"
       },
@@ -8873,18 +8873,18 @@
         "terminal": "Exécuter des commandes et afficher leur sortie"
       },
       "kinds": {
-        "fileBrowser": "Explorateur de fichiers",
+        "fileBrowser": "Fichiers",
         "browser": "Navigateur",
         "terminal": "Terminal",
         "review": "Revue",
         "subagents": "Sous-Agent",
-        "backgroundTasks": "Tâches en arrière-plan",
+        "backgroundTasks": "Tâches de fond",
         "resourceUsage": "Moniteur d'activité",
         "collaboration": "Équipe",
         "unknown": "Onglet inconnu",
         "ghostPanel": "Panneau de plugin",
         "pluginView": "Vue de plugin",
-        "pluginTask": "Page de tâche de plugin"
+        "pluginTask": "Tâche de plugin"
       },
       "controls": {
         "showAria": "Afficher la barre latérale",
@@ -8933,7 +8933,7 @@
     "browser": {
       "newTab": "Nouvel onglet",
       "audible": "Lecture audio en cours",
-      "urlPlaceholder": "Saisissez une URL ou une recherche",
+      "urlPlaceholder": "URL ou recherche",
       "goBack": "Précédent",
       "goForward": "Suivant",
       "goBackUnavailable": "Aucune page précédente",
@@ -9003,7 +9003,7 @@
       "fileCount_one": "{{count}} fichier",
       "fileCount_many": "{{count}} de fichiers",
       "fileCount_other": "{{count}} fichiers",
-      "emptyTitle": "Aucune modification pour le moment",
+      "emptyTitle": "Aucune modification",
       "emptyDesc": "Cette session n'a encore modifié aucun fichier. Les modifications de l'Agent apparaîtront ici.",
       "emptyDescGit": "Le worktree git actuel ne contient aucune modification indexée ou non indexée.",
       "filterEmptyTitle": "Aucune modification pour ce filtre",
@@ -9079,7 +9079,7 @@
       },
       "sourceDropdownAria": "Sélectionner la source de la revue",
       "lastTurnEmpty": {
-        "title": "Aucune modification de fichier pour le moment",
+        "title": "Aucune modification de fichier",
         "desc": "Le dernier diff n'est plus disponible.",
         "action": "Voir le diff de branche"
       },
@@ -9302,7 +9302,7 @@
       "collapseAllAria": "Réduire tous les fichiers"
     },
     "subagents": {
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "finished": "Terminés",
       "empty": "Aucun sous-Agent dans cette tâche pour l'instant",
       "emptyDetail": "Les sous-Agents créés pendant l'exécution de cette tâche resteront disponibles ici.",
@@ -9375,7 +9375,7 @@
       "transcriptUnavailable": "Ce Harness n'a pas encore exposé de transcription complète de l'enfant à Cindy. Les résultats renvoyés et l'activité du cycle de vie restent disponibles.",
       "tool": {
         "fallbackName": "Outil",
-        "running": "En cours d'exécution…",
+        "running": "En cours…",
         "failed": "Échec",
         "input": "Entrée",
         "result": "Résultat",
@@ -9414,7 +9414,7 @@
       }
     },
     "backgroundTasks": {
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "completed": "Terminées",
       "empty": "Aucune tâche en arrière-plan dans cette session pour l'instant",
       "stop": "Arrêter",
@@ -9422,7 +9422,7 @@
       "back": "Retour",
       "progressSummary": "{{done}}/{{total}} Agents",
       "tokens": "{{value}} jetons",
-      "noProgress": "Aucun détail de progression pour l'instant"
+      "noProgress": "Aucun détail de progression"
     },
     "resourceUsage": {
       "sections": {
@@ -9555,7 +9555,7 @@
       "title": "Déplacer dans le dossier Applications",
       "message": "Déplacer {{appName}} dans le dossier Applications vous offre une meilleure expérience, y compris les mises à jour automatiques.",
       "move": "Déplacer (recommandé)",
-      "later": "Pas maintenant"
+      "later": "Plus tard"
     },
     "agentInstall": {
       "title": "Mettre à jour {{appName}} vers {{version}} ?",
@@ -9761,7 +9761,7 @@
       "invitation": {
         "title": "Voulez-vous que je suive vos sessions ?",
         "start": "Commencer le suivi",
-        "notNow": "Pas maintenant"
+        "notNow": "Plus tard"
       }
     },
     "remoteSettings": {
@@ -9828,7 +9828,7 @@
       "pin": "Épingler en haut",
       "unpin": "Désépingler",
       "pinned": "Épinglés",
-      "needsAttention": "Requiert votre attention",
+      "needsAttention": "Action requise",
       "duplicate": "Dupliquer le coéquipier",
       "moreActions": "Plus d'actions pour {{name}}",
       "sectionExpand": "Développer les coéquipiers",
@@ -9877,7 +9877,7 @@
       "addToGroup": "Ajouter au groupe",
       "export": "Exporter"
     },
-    "emptyTitle": "Aucun coéquipier pour l'instant",
+    "emptyTitle": "Aucun coéquipier",
     "emptyDescription": "Créez un coéquipier avec un rôle clair, puis connectez les outils et canaux dont il a besoin.",
     "sessions": "tâches",
     "open": "Ouvrir",
@@ -9924,7 +9924,7 @@
       "disabledHint": "Désactivée. Les mémoires ne sont ni lues ni enregistrées.",
       "aboutMe": "Ce que vous savez de moi",
       "search": "Rechercher dans les mémoires",
-      "empty": "Aucune mémoire pour l'instant",
+      "empty": "Aucune mémoire",
       "noResults": "Aucune mémoire correspondante",
       "loadFailed": "Impossible de charger les mémoires",
       "types": {
@@ -9949,13 +9949,13 @@
       "deleted": "Supprimée",
       "deleteFailed": "Impossible de supprimer la mémoire",
       "changedTitle": "{{name}} vient de mettre à jour cette mémoire",
-      "useLatest": "Utiliser la dernière version",
-      "keepMine": "Conserver mes modifications",
+      "useLatest": "Dernière version",
+      "keepMine": "Conserver les miennes",
       "saveFailed": "Non enregistré",
       "unsavedTitle": "Modifications non enregistrées",
       "unsavedDescription": "Quitter supprimera ces modifications de la mémoire.",
-      "discard": "Abandonner les modifications",
-      "continueEditing": "Continuer la modification"
+      "discard": "Abandonner",
+      "continueEditing": "Continuer l'édition"
     },
     "profileSaveFailed": "Impossible d'enregistrer les paramètres du coéquipier. Aucune modification n'a été appliquée.",
     "modelLabel": "Modèle",
@@ -10008,7 +10008,7 @@
       "retrying": "Pas encore démarrée : nouvelle tentative…",
       "status": {
         "queued": "Démarrage",
-        "waiting": "En attente d'une réponse",
+        "waiting": "Attend une réponse",
         "running": "En cours",
         "completed": "Terminée",
         "failed": "Échec",
@@ -10099,7 +10099,7 @@
       "unavailableDescription": "Elle a peut-être été supprimée. Revenez à Coéquipiers pour ouvrir une autre conversation de groupe ou un autre coéquipier.",
       "sidebar": {
         "title": "Conversations de groupe",
-        "empty": "Aucun message pour l'instant",
+        "empty": "Aucun message",
         "preview": "{{name}} : {{text}}",
         "previewYou": "Vous : {{text}}",
         "sharedReplyYou": "Vous avez partagé une réponse de fil",
@@ -10115,7 +10115,7 @@
         "planWaitingAnonymous": "Répartition du travail en pause, en attente de votre action"
       },
       "create": {
-        "title": "Nouvelle conversation de groupe",
+        "title": "Nouveau groupe",
         "description": "Réunissez quelques coéquipiers dans un groupe. Dites quelque chose et ils interviendront ensemble.",
         "namePlaceholder": "ex. Week-end à la campagne",
         "nameRequired": "Saisissez un nom de groupe",
@@ -10125,7 +10125,7 @@
         "selectedCount_other": "{{count}} sélectionnés, {{max}} maximum",
         "minMembers": "Choisissez au moins {{min}} coéquipiers",
         "notEnoughBots": "Il vous faut au moins {{min}} coéquipiers disponibles pour démarrer une conversation de groupe. Ajoutez d'abord un coéquipier.",
-        "submit": "Créer la conversation de groupe",
+        "submit": "Créer le groupe",
         "failed": "Impossible de créer la conversation de groupe. Réessayez dans un instant."
       },
       "memberStatus": {
@@ -10150,7 +10150,7 @@
         "divisionDescription": "L'organisateur répartit d'abord le travail, puis les coéquipiers s'en chargent étape par étape",
         "divisionDescriptionSteps": "Suivez les étapes que vous rédigez ou laissez l'organisateur répartir le travail ; les coéquipiers s'en chargent étape par étape",
         "divisionBusy": "Une répartition du travail est en cours. Terminez-la ou arrêtez-la avant d'en lancer une autre.",
-        "divisionTag": "Répartition du travail",
+        "divisionTag": "Répartition",
         "removeDivision": "Retirer la répartition du travail",
         "placeholderDivision": "Décrivez ce qu'il faut accomplir. L'organisateur répartira d'abord le travail…",
         "placeholderDivisionSteps": "Indiquez qui fait quoi (@A rédige un plan, @B le réalise), ou seulement l'objectif pour que l'organisateur répartisse le travail…",
@@ -10192,7 +10192,7 @@
         "stepFailed": "{{name}} n'a pas terminé",
         "retryStep": "Réessayer l'étape",
         "retryFailed": "Impossible de réessayer cette étape. Réessayez.",
-        "endPlan": "Terminer la répartition du travail",
+        "endPlan": "Terminer la répartition",
         "planDone_one": "L'étape est terminée",
         "planDone_many": "Les {{count}} étapes sont terminées",
         "planDone_other": "Les {{count}} étapes sont terminées",
@@ -10236,11 +10236,11 @@
         "nameSaveFailed": "Impossible d'enregistrer le nom du groupe. Le nom précédent a été conservé.",
         "membersSaveFailed": "Impossible de mettre à jour les membres. Réessayez.",
         "replyMode": "Quand personne n'est @mentionné",
-        "replyModeAll": "Tout le monde peut répondre",
-        "replyModeMentioned": "Seuls les @mentionnés répondent",
+        "replyModeAll": "Tout le monde",
+        "replyModeMentioned": "Sur @mention",
         "replyModeNote": "Les coéquipiers qui n'ont rien à ajouter restent silencieux. Chaque tour comprend jusqu'à 3 passages et 10 messages, puis attend que vous cliquiez sur « Poursuivre la discussion ».",
         "replyModeSaveFailed": "Impossible d'enregistrer le paramètre de réponse. Réessayez.",
-        "delete": "Supprimer la conversation de groupe",
+        "delete": "Supprimer le groupe",
         "deleteNote": "Seuls cette conversation de groupe et ses messages sont supprimés. Les coéquipiers, leur mémoire et leurs conversations privées ne sont pas affectés.",
         "deleteConfirmTitle": "Supprimer « {{name}} » ?",
         "deleteFailed": "Impossible de supprimer la conversation de groupe. Réessayez dans un instant.",
@@ -10250,12 +10250,12 @@
         "speakingModeAutoNote": "Sans mention ou avec @Tout le monde : réflexion simultanée au premier passage, puis réponses une par une. Les coéquipiers mentionnés répondent dans l'ordre des mentions.",
         "speakingModeSequentialNote": "Un seul coéquipier parle à la fois, et chacun voit les réponses précédentes.",
         "speakingModeSaveFailed": "Impossible d'enregistrer l'ordre de parole. Réessayez.",
-        "setOrganizer": "Désigner comme organisateur",
+        "setOrganizer": "Nommer organisateur",
         "setOrganizerNamed": "Désigner {{name}} comme organisateur",
         "organizerNote": "L'organisateur décide qui réalise chaque étape. Par défaut, il s'agit du premier coéquipier.",
         "organizerSaveFailed": "Impossible de changer l'organisateur. Réessayez.",
         "projectDir": "Dossier du projet",
-        "projectDirNone": "Aucun sélectionné",
+        "projectDirNone": "Aucune sélection",
         "projectDirChoose": "Choisir un dossier",
         "projectDirChange": "Changer de dossier",
         "projectDirClear": "Effacer le dossier",
@@ -10708,7 +10708,7 @@
       "empty": "Aucune conversation dans le cloud pour le moment",
       "loadFailed": "Impossible de charger la conversation cloud",
       "reload": "Recharger la conversation",
-      "loadOlder": "Charger les messages précédents",
+      "loadOlder": "Messages précédents",
       "unknownDevice": "un autre ordinateur",
       "loadingDevices": "Chargement de vos ordinateurs…",
       "devicesFailed": "Impossible de charger vos ordinateurs",
@@ -10852,7 +10852,7 @@
           "running": "Réponse en cours",
           "failed": "Échec de la dernière réponse"
         },
-        "noActivity": "Aucun message pour le moment",
+        "noActivity": "Aucun message",
         "messageCount_one": "{{count}} message dans le contexte",
         "messageCount_many": "{{count}} messages dans le contexte",
         "messageCount_other": "{{count}} messages dans le contexte",
@@ -11101,7 +11101,7 @@
     "projects": {
       "title": "Projets liés",
       "description": "Consulter les ressources du projet au besoin. Lier un projet n'attribue pas ses sessions et ne lance aucun travail en arrière-plan.",
-      "empty": "Aucun projet lié pour le moment.",
+      "empty": "Aucun projet lié.",
       "choose": "Choisir un projet",
       "add": "Ajouter",
       "remove": "Retirer {{name}}",
@@ -11440,7 +11440,7 @@
       "noSubdirs": "Aucun sous-dossier ici",
       "doubleClickHint": "Double-cliquez pour ouvrir",
       "tabExisting": "Projets existants",
-      "tabBrowse": "Parcourir les dossiers",
+      "tabBrowse": "Parcourir",
       "existingEmpty": "Aucun projet sur cette machine pour le moment : parcourez les dossiers pour en ajouter un.",
       "existingLoading": "Chargement des projets…",
       "confirmCreate": {
@@ -11510,7 +11510,7 @@
         "output": "Sortie",
         "cacheRead": "Lecture du cache",
         "cacheCreate": "Écriture du cache",
-        "free": "Gratuit pour une durée limitée",
+        "free": "Gratuit temporairement",
         "discount": "Économisez {{percent}} %",
         "perMillion": "Tarif standard du modèle",
         "fixedFx": "Estimation au taux fixe de 1 USD = 6,7 CNY",
@@ -11519,7 +11519,7 @@
       },
       "trigger": {
         "currentAndNext": "Actuel : {{current}}\nProchain message : {{next}}",
-        "placeholder": "Sélectionner un modèle",
+        "placeholder": "Choisir un modèle",
         "loading": "Chargement du modèle…",
         "unresolved": "Détails du modèle indisponibles",
         "aria": "Sélectionner un modèle. Actuel : {{model}}",
@@ -11601,7 +11601,7 @@
         "recommended": "Recommandé",
         "recommendedConfig": "Configuration recommandée",
         "customized": "Personnalisé",
-        "reset": "Rétablir la configuration recommandée",
+        "reset": "Réinitialiser",
         "fastTip": "Rapide · vitesse prioritaire · consomme davantage de quota",
         "effortEndFast": "Plus rapide",
         "effortEndSmart": "Plus intelligent",
@@ -11633,11 +11633,11 @@
             "description": "Autorise la lecture et l'écriture dans l'espace de travail et demande confirmation avant d'utiliser des autorisations plus élevées, l'accès réseau ou des chemins hors de l'espace de travail."
           },
           "acceptEdits": {
-            "label": "Accepter automatiquement les modifications",
+            "label": "Modifications acceptées",
             "description": "Accepte automatiquement les demandes de modification de fichiers pour limiter les confirmations répétées. Les commandes ou autorisations plus risquées restent soumises à la politique d'autorisation sous-jacente."
           },
           "auto": {
-            "label": "Revue automatique",
+            "label": "Revue auto",
             "description": "Autorise la lecture et l'écriture dans l'espace de travail et soumet automatiquement les demandes d'élévation à une revue ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation. Cela réduit les interruptions, mais des erreurs sont possibles."
           },
           "bypassPermissions": {
@@ -11651,7 +11651,7 @@
             "description": "Autorise la lecture et l'écriture dans l'espace de travail et demande confirmation avant d'utiliser des autorisations plus élevées, l'accès réseau ou des chemins hors de l'espace de travail."
           },
           "auto": {
-            "label": "Revue automatique",
+            "label": "Revue auto",
             "description": "Exécute automatiquement les commandes dans le bac à sable protégé de l'espace de travail. Les actions qui franchissent les limites du bac à sable sont soumises à un relecteur automatique ; les actions à haut risque peuvent tout de même être refusées ou nécessiter une confirmation."
           },
           "bypassPermissions": {
@@ -11665,7 +11665,7 @@
             "description": "Les outils en lecture seule s'exécutent directement ; l'écriture de fichiers, l'exécution de commandes et les outils MCP demandent confirmation à chaque fois."
           },
           "auto": {
-            "label": "Revue automatique",
+            "label": "Revue auto",
             "description": "Les écritures dans l'espace de travail et les commandes sûres s'exécutent automatiquement ; les écritures hors de l'espace de travail, les commandes risquées et les outils MCP demandent toujours confirmation."
           },
           "bypassPermissions": {
@@ -11709,8 +11709,8 @@
       "noMatch": "Aucune branche correspondante"
     },
     "folderPicker": {
-      "selectFolder": "Sélectionner un dossier",
-      "selectProject": "Sélectionner un projet",
+      "selectFolder": "Choisir un dossier",
+      "selectProject": "Choisir un projet",
       "projects": "Projets",
       "noProjects": "Aucun projet",
       "recent": "Récents",
@@ -12249,7 +12249,7 @@
         "shell": "Commande en arrière-plan"
       },
       "status": {
-        "running": "En cours d'exécution",
+        "running": "En cours",
         "completed": "Terminé",
         "failed": "Échec",
         "stopped": "Arrêté"
@@ -12267,7 +12267,7 @@
       "runningFor": "En cours depuis {{duration}}",
       "startedAt": "Démarré à {{time}}",
       "recentOutput": "Sortie récente · mise à jour il y a {{time}}",
-      "noOutputYet": "Aucune sortie pour l'instant"
+      "noOutputYet": "Aucune sortie"
     },
     "planPill": {
       "step": "Étape {{current}} sur {{total}}",
@@ -12575,7 +12575,7 @@
       "noText": "(aucun texte de commentaire)"
     },
     "quote": {
-      "addToChat": "Ajouter à la conversation",
+      "addToChat": "Citer",
       "remove": "Retirer la citation",
       "selectionCount_one": "{{count}} sélection",
       "selectionCount_many": "{{count}} sélections",
@@ -12707,14 +12707,14 @@
         "queryDatabase": "Interroger la base de données",
         "ranCommand": "Exécuter une commande",
         "gitStatus": "Vérifier l'état de l'arbre de travail",
-        "gitDiff": "Voir les modifications du code",
+        "gitDiff": "Voir les modifications",
         "gitLog": "Voir l'historique des commits",
         "gitShow": "Voir le commit",
-        "gitAdd": "Indexer les modifications du code",
-        "gitCommit": "Commiter les modifications du code",
-        "gitFetch": "Récupérer les mises à jour distantes",
-        "gitPull": "Tirer les mises à jour distantes",
-        "gitPush": "Pousser les modifications du code",
+        "gitAdd": "Indexer les modifications",
+        "gitCommit": "Commiter les modifications",
+        "gitFetch": "Récupérer les mises à jour",
+        "gitPull": "Tirer les mises à jour",
+        "gitPush": "Pousser les modifications",
         "gitRebase": "Rebaser la branche",
         "gitMerge": "Fusionner la branche",
         "gitCherryPick": "Cherry-pick d'un commit",
@@ -12796,7 +12796,7 @@
         "model": "Modèle",
         "effort": "Effort de raisonnement",
         "permissionMode": "Mode d'autorisation",
-        "running": "En cours d'exécution",
+        "running": "En cours",
         "idle": "Inactif"
       },
       "context": {
@@ -13247,14 +13247,14 @@
         "queued": "En file d'attente",
         "pending": "En attente",
         "start": "Démarrage",
-        "running": "En cours d'exécution",
-        "progress": "En cours d'exécution",
+        "running": "En cours",
+        "progress": "En cours",
         "done": "Terminé",
         "completed": "Terminé",
         "failed": "Échec",
         "error": "Échec",
         "stopped": "Arrêté",
-        "killed": "Interrompu de force"
+        "killed": "Arrêt forcé"
       }
     },
     "credentialSwitchWait": {
@@ -13360,7 +13360,7 @@
       "menuTitle": "Fenêtre de contexte de la tâche",
       "triggerLabel": "Fenêtre de contexte de la tâche, actuellement {{window}}",
       "menuHint": "Concerne uniquement cette tâche. S'applique à partir du prochain message.",
-      "optionDefault": "Valeur par défaut du modèle",
+      "optionDefault": "Défaut du modèle",
       "optionPercent": "{{percent}} %",
       "inputPrice": "entrée {{price}}/M",
       "remoteUnsupported": "L'appareil contrôlé ne permet pas de modifier la fenêtre de contexte de cette tâche",
@@ -13580,11 +13580,11 @@
       "viewStyleCard": "Cartes",
       "viewStyleListWide": "Liste",
       "card": {
-        "awaitingPermission": "En attente d'autorisation",
-        "awaitingQuestion": "En attente de votre réponse",
-        "awaitingPlan": "En attente de validation du plan",
-        "awaitingPluginSetup": "En attente de configuration du plugin",
-        "awaitingInputHandoff": "En attente de transfert de saisie"
+        "awaitingPermission": "Autorisation requise",
+        "awaitingQuestion": "Attend votre réponse",
+        "awaitingPlan": "Plan à valider",
+        "awaitingPluginSetup": "Plugin à configurer",
+        "awaitingInputHandoff": "Saisie manuelle requise"
       },
       "showAllSessions": "Afficher les {{count}}",
       "allSessions": "Toutes les sessions",
@@ -13600,8 +13600,8 @@
       "dialogueSettingsAria": "Organiser les conversations (tri : {{sortBy}})",
       "dialogueSortHeading": "Trier par",
       "dialogueSort": {
-        "recency": "Plus récentes d'abord",
-        "time": "Plus anciennes d'abord",
+        "recency": "Plus récentes",
+        "time": "Plus anciennes",
         "title": "Titre"
       },
       "projects": "Projets",
@@ -13676,7 +13676,7 @@
         "custom": "Faites glisser les lignes de projet avec la souris pour les réorganiser. Les sessions qu'ils contiennent suivent toujours le tri ci-dessus."
       },
       "filterCreatorsHeading": "Coéquipiers",
-      "filterCreatorsAny": "Toutes les sources",
+      "filterCreatorsAny": "Toutes sources",
       "filterSelectedCreators": "{{count}} sélectionnés",
       "filterProjectsHeading": "Projets",
       "filterAllProjects": "Tous les projets",
@@ -13778,7 +13778,7 @@
         "cancel": "Annuler"
       },
       "dialogueAction": {
-        "search": "Rechercher dans ce groupe de conversations",
+        "search": "Rechercher dans le groupe",
         "restoreAll": "Tout restaurer",
         "remoteBulkUnavailable": "Les actions groupées ne sont pas encore prises en charge pour les groupes contenant des sessions distantes"
       },
@@ -14284,7 +14284,7 @@
     },
     "search": {
       "open": "Rechercher",
-      "placeholder": "Rechercher dans les titres ou le contenu…",
+      "placeholder": "Rechercher titres ou contenu…",
       "clear": "Effacer la recherche",
       "empty": "Saisissez du texte pour rechercher dans les titres et le contenu des sessions",
       "searching": "Recherche…",
@@ -14298,17 +14298,17 @@
         "both": "Titre + contenu"
       },
       "source": {
-        "titleOnly": "Correspondance dans le titre",
-        "keyword": "Correspondance par mot-clé",
-        "semantic": "Correspondance sémantique",
-        "keywordAndSemantic": "Correspondance par mot-clé + sémantique",
-        "content": "Correspondance dans le contenu"
+        "titleOnly": "Dans le titre",
+        "keyword": "Par mot-clé",
+        "semantic": "Sémantique",
+        "keywordAndSemantic": "Mot-clé + sémantique",
+        "content": "Dans le contenu"
       },
       "sortAria": "Tri des résultats de recherche : {{sort}}",
       "sort": {
         "relevance": "Pertinence",
-        "activityDesc": "Activité la plus récente",
-        "activityAsc": "Activité la plus ancienne"
+        "activityDesc": "Activité récente",
+        "activityAsc": "Activité ancienne"
       },
       "filterAria": "Filtres et tri de la recherche (tri : {{sort}}, statut : {{status}}, Agent : {{agent}}, dernière activité : {{lastActivity}}, projets : {{projects}})",
       "filter": {
@@ -14335,7 +14335,7 @@
         "active": "Active",
         "paused": "En pause",
         "expired": "Ponctuelle",
-        "running": "En cours d'exécution"
+        "running": "En cours"
       },
       "summary": {
         "hourly": "Toutes les heures",
@@ -14395,7 +14395,7 @@
       "loadFailed": "Échec du chargement : {{error}}"
     },
     "empty": {
-      "promptHeading": "Aucune automatisation pour l'instant",
+      "promptHeading": "Aucune automatisation",
       "promptDescription": "Créez une automatisation cron pour exécuter votre prompt selon une planification."
     },
     "template": {
@@ -14497,7 +14497,7 @@
     "detail": {
       "manualTrigger": "Déclenchement manuel",
       "recentRuns": "EXÉCUTIONS RÉCENTES · {{count}}",
-      "noRunsHeading": "Aucune exécution pour l'instant",
+      "noRunsHeading": "Aucune exécution",
       "noRunsHint": "Cliquez sur Exécuter maintenant ou attendez le prochain déclenchement planifié.",
       "runsLoadFailed": "Échec du chargement : {{error}}",
       "menu": {
@@ -14509,7 +14509,7 @@
     },
     "runs": {
       "status": {
-        "running": "En cours d'exécution",
+        "running": "En cours",
         "success": "Réussie",
         "failed": "Échec",
         "aborted": "Abandonnée",
@@ -14933,7 +14933,7 @@
     },
     "mine": {
       "refresh": "Actualiser",
-      "emptyTitle": "Aucune issue soumise pour l'instant",
+      "emptyTitle": "Aucune issue soumise",
       "emptyTitleUnverified": "Impossible de trouver vos issues pour le moment",
       "startIssueChat": "Démarrer une nouvelle session avec /issue",
       "statusUnknown": "Statut inconnu",
@@ -15386,7 +15386,7 @@
       "loadingMore": "Chargement…",
       "catalogEmpty": "Aucun skill dans cette catégorie",
       "local": "Skills locaux",
-      "localEmpty": "Aucun skill local pour l'instant",
+      "localEmpty": "Aucun skill local",
       "installed": "Installé",
       "globalScope": "Global",
       "sourceSkillhub": "SkillHub",
@@ -16950,8 +16950,8 @@
     "noTriggers": "Aucun déclencheur défini",
     "unsavedTitle": "Modifications non enregistrées",
     "unsavedDescription": "Si vous quittez, ces modifications de la routine seront perdues.",
-    "discard": "Abandonner les modifications",
-    "continueEditing": "Continuer la modification",
+    "discard": "Abandonner",
+    "continueEditing": "Continuer l'édition",
     "title": "Routines",
     "add": "Ajouter une routine",
     "back": "Retour aux routines",
@@ -16997,7 +16997,7 @@
     "weekday": "Jour de la semaine",
     "status": {
       "queued": "En file d'attente",
-      "running": "En cours d'exécution",
+      "running": "En cours",
       "success": "Terminée",
       "failed": "Échec",
       "interrupted": "Interrompue",
@@ -17063,7 +17063,7 @@
       "weekly": "Hebdomadaire",
       "dailyHint": "Tous les jours à 3:30",
       "weeklyHint": "Le lundi à 3:30",
-      "runNow": "Passer en revue maintenant",
+      "runNow": "Lancer la revue",
       "history": "Historique",
       "empty": "Rien n'a encore été passé en revue. Dès qu'il y aura de nouvelles conversations, la première revue s'exécutera selon la planification.",
       "manual": "Lancée par vous",
@@ -18001,7 +18001,7 @@
     "conflict": "Les étiquettes ont été modifiées ailleurs. Rechargez et réessayez.",
     "favoritesFull": "Sept étiquettes favorites au maximum sont autorisées.",
     "alreadyExists": "Une étiquette portant ce nom existe déjà.",
-    "empty": "Aucune étiquette pour l'instant.",
+    "empty": "Aucune étiquette.",
     "red": "Rouge",
     "orange": "Orange",
     "yellow": "Jaune",
@@ -18054,16 +18054,16 @@
     "verificationUnavailable": "Impossible de vérifier l'autorisation du groupe. Réessayez une fois la connexion rétablie."
   },
   "codexResets": {
-    "retryReset": "Relancer la réinitialisation",
+    "retryReset": "Réessayer",
     "retryPending": "Le résultat de la réinitialisation n'est pas confirmé. Relancez la même demande.",
     "confirmRetryTitle": "Relancer la réinitialisation Codex ?",
     "confirmRetryBody": "Relancer la réinitialisation déjà confirmée pour {{account}} avec la même demande. Cela n'utilisera pas une autre réinitialisation.",
-    "title": "Réinitialisations des limites d'utilisation",
+    "title": "Réinitialisations des limites",
     "available": "Disponibles : {{count}}",
     "fullReset": "Réinitialisation complète",
     "expiresAt": "Expire {{at}}",
     "expiryUnknown": "Expiration non indiquée",
-    "useReset": "Utiliser une réinitialisation",
+    "useReset": "Réinitialiser",
     "availableAtLimit": "Disponible lorsque vous atteignez une limite d'utilisation",
     "noCredit": "Aucune réinitialisation disponible",
     "detailsUnavailable": "Certains détails de réinitialisation ne sont pas disponibles",
@@ -18078,7 +18078,7 @@
     "resetFailed": "Impossible de confirmer le résultat de la réinitialisation. Actualisez la consommation pour vérifier si les limites ont été rétablies.",
     "limitAction": "Utiliser une réinitialisation · {{count}} disponible(s)",
     "autoUse": {
-      "label": "Utilisation automatique",
+      "label": "Utilisation auto",
       "rules": "Règles d'utilisation automatique",
       "lowQuota": "Utiliser quand le quota hebdomadaire passe sous 1 %",
       "resetDistance": "Délai avant la réinitialisation du quota",
@@ -18094,7 +18094,7 @@
       "hours": "{{count}} heures avant l'expiration",
       "hint": "Chaque règle utilise la carte qui expire le plus tôt. Ignorée lorsque tous les quotas sont pleins. S'exécute sur cet ordinateur tant que Cindy est ouverte.",
       "failed": "Impossible d'enregistrer. Réessayez.",
-      "restore": "Rétablir les valeurs par défaut"
+      "restore": "Réinitialiser"
     }
   },
   "mcpApps": {
