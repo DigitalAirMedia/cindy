@@ -35,25 +35,25 @@ export interface BotRemoteMemoryRequest {
   primitives: readonly string[];
 }
 
-const text = (fallback: string, cn: string, tw: string, ja: string, ko: string): RemoteLocalizedText =>
-  ({ fallback, translations: { 'zh-CN': cn, 'zh-TW': tw, ja, ko } });
+const text = (fallback: string, cn: string, tw: string, ja: string, ko: string, fr: string): RemoteLocalizedText =>
+  ({ fallback, translations: { 'zh-CN': cn, 'zh-TW': tw, ja, ko, fr } });
 export const memoryCopy = {
-  memories: text('Saved Memories', '已存记忆', '已存記憶', '保存した記憶', '저장된 기억'),
-  search: text('Search memories', '搜索记忆', '搜尋記憶', '記憶を検索', '기억 검색'),
+  memories: text('Saved Memories', '已存记忆', '已存記憶', '保存した記憶', '저장된 기억', 'Mémoires enregistrées'),
+  search: text('Search memories', '搜索记忆', '搜尋記憶', '記憶を検索', '기억 검색', 'Rechercher dans les mémoires'),
   types: {
-    user: text('About you', '关于你', '關於你', 'あなたについて', '나에 대해'),
-    feedback: text('Your preferences', '你的要求', '你的要求', 'あなたの要望', '요청 사항'),
-    project: text('Projects', '项目', '專案', 'プロジェクト', '프로젝트'),
-    reference: text('References', '参考', '參考', '参考', '참고'),
+    user: text('About you', '关于你', '關於你', 'あなたについて', '나에 대해', 'À votre sujet'),
+    feedback: text('Your preferences', '你的要求', '你的要求', 'あなたの要望', '요청 사항', 'Vos préférences'),
+    project: text('Projects', '项目', '專案', 'プロジェクト', '프로젝트', 'Projets'),
+    reference: text('References', '参考', '參考', '参考', '참고', 'Références'),
   } satisfies Record<BotMemoryType, RemoteLocalizedText>,
-  edit: text('Edit', '编辑', '編輯', '編集', '편집'),
-  title: text('Title', '标题', '標題', 'タイトル', '제목'),
-  body: text('Content', '内容', '內容', '内容', '내용'),
-  remove: text('Delete Memory', '删除记忆', '刪除記憶', '記憶を削除', '기억 삭제'),
-  removeTitle: text('Delete this memory?', '删除这条记忆？', '刪除這條記憶？', 'この記憶を削除しますか？', '이 기억을 삭제할까요?'),
-  delete: text('Delete', '删除', '刪除', '削除', '삭제'),
-  saved: text('Memory saved', '记忆已保存', '記憶已儲存', '記憶を保存しました', '기억을 저장했습니다'),
-  deleted: text('Memory deleted', '记忆已删除', '記憶已刪除', '記憶を削除しました', '기억을 삭제했습니다'),
+  edit: text('Edit', '编辑', '編輯', '編集', '편집', 'Modifier'),
+  title: text('Title', '标题', '標題', 'タイトル', '제목', 'Titre'),
+  body: text('Content', '内容', '內容', '内容', '내용', 'Contenu'),
+  remove: text('Delete Memory', '删除记忆', '刪除記憶', '記憶を削除', '기억 삭제', 'Supprimer la mémoire'),
+  removeTitle: text('Delete this memory?', '删除这条记忆？', '刪除這條記憶？', 'この記憶を削除しますか？', '이 기억을 삭제할까요?', 'Supprimer cette mémoire ?'),
+  delete: text('Delete', '删除', '刪除', '削除', '삭제', 'Supprimer'),
+  saved: text('Memory saved', '记忆已保存', '記憶已儲存', '記憶を保存しました', '기억을 저장했습니다', 'Mémoire enregistrée'),
+  deleted: text('Memory deleted', '记忆已删除', '記憶已刪除', '記憶を削除しました', '기억을 삭제했습니다', 'Mémoire supprimée'),
 };
 const removeBody = (name: string, title: string) => text(
   `${name} will no longer refer to “${title}”.`,
@@ -61,6 +61,7 @@ const removeBody = (name: string, title: string) => text(
   `${name}之後不會再參考「${title}」。`,
   `${name}は今後「${title}」を参照しません。`,
   `${name}은(는) 앞으로 “${title}”을(를) 참고하지 않습니다.`,
+  `${name} ne fera plus référence à « ${title} ».`,
 );
 
 /** `parseRemoteResourceRef` rejects longer ids; long teammate ids use a digest segment (fits a 128-char id). */

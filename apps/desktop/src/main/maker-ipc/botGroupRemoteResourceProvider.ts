@@ -53,17 +53,18 @@ import { botGroupActivityAt, projectBotGroupExecutionFailures } from '@cindy/mak
 const FALLBACK_MESSAGES = 20;
 const FALLBACK_MESSAGE_CHARS = 280;
 
-type Locale = 'en' | 'zh-CN' | 'zh-TW' | 'ja' | 'ko';
+type Locale = 'en' | 'zh-CN' | 'zh-TW' | 'ja' | 'ko' | 'fr';
 type Copy = Record<Locale, string>;
 
 const COPY = {
-  title: { en: 'Group chats', 'zh-CN': '群聊', 'zh-TW': '群聊', ja: 'グループチャット', ko: '그룹 채팅' },
+  title: { en: 'Group chats', 'zh-CN': '群聊', 'zh-TW': '群聊', ja: 'グループチャット', ko: '그룹 채팅', fr: 'Discussions de groupe' },
   planning: {
     en: '{name} is splitting the work…',
     'zh-CN': '{name}正在安排…',
     'zh-TW': '{name}正在安排…',
     ja: '{name} が役割分担を考えています…',
     ko: '{name} 님이 역할을 나누는 중…',
+    fr: '{name} répartit le travail…',
   },
   proposed: {
     en: '{name}: plan ready, waiting for you',
@@ -71,6 +72,7 @@ const COPY = {
     'zh-TW': '{name}：安排好了，等你開始',
     ja: '{name}：分担が決まりました。開始を待っています',
     ko: '{name}: 분담을 정했어요. 시작을 기다려요',
+    fr: '{name} : plan prêt, en attente de votre part',
   },
   running: {
     en: 'Step {step}/{total} · {name} is working',
@@ -78,6 +80,7 @@ const COPY = {
     'zh-TW': '分工 {step}/{total} · {name}正在做',
     ja: '分担 {step}/{total} · {name} が作業中',
     ko: '분담 {step}/{total} · {name} 작업 중',
+    fr: 'Étape {step}/{total} · {name} travaille',
   },
   stepDone: {
     en: '{name} is done — continue when ready',
@@ -85,6 +88,7 @@ const COPY = {
     'zh-TW': '{name}做完了，等你繼續',
     ja: '{name} が完了しました。続行を待っています',
     ko: '{name} 님이 끝냈어요. 계속을 기다려요',
+    fr: '{name} a terminé, continuez quand vous voulez',
   },
   stepFailed: {
     en: "{name} didn't finish",
@@ -92,6 +96,7 @@ const COPY = {
     'zh-TW': '{name}沒做完',
     ja: '{name} は完了できませんでした',
     ko: '{name} 님이 끝내지 못했어요',
+    fr: '{name} n\'a pas terminé',
   },
   lastMessage: {
     en: '{name}: {text}',
@@ -99,6 +104,7 @@ const COPY = {
     'zh-TW': '{name}：{text}',
     ja: '{name}：{text}',
     ko: '{name}: {text}',
+    fr: '{name} : {text}',
   },
   memberJoined: {
     en: '{name} joined the group',
@@ -106,6 +112,7 @@ const COPY = {
     'zh-TW': '{name}加入了群聊',
     ja: '{name}さんがグループに参加しました',
     ko: '{name} 님이 그룹에 참여했습니다',
+    fr: '{name} a rejoint le groupe',
   },
   sharedReplyYou: {
     en: 'You shared a thread reply',
@@ -113,6 +120,7 @@ const COPY = {
     'zh-TW': '你貼回了一則話題回覆',
     ja: 'スレッドの返信を共有しました',
     ko: '스레드 답글을 공유했습니다',
+    fr: 'Vous avez partagé une réponse du fil',
   },
   sharedReply: {
     en: '{name} shared a thread reply',
@@ -120,6 +128,7 @@ const COPY = {
     'zh-TW': '{name} 貼回了一則話題回覆',
     ja: '{name} がスレッドの返信を共有しました',
     ko: '{name} 님이 스레드 답글을 공유했습니다',
+    fr: '{name} a partagé une réponse du fil',
   },
 } satisfies Record<string, Copy>;
 

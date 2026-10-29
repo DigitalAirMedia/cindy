@@ -121,7 +121,7 @@ describe('opaque teammate settings actions', () => {
     expect(resume.confirmation?.title).toMatchObject({ fallback: 'Resume Teammate' });
     expect(resume.confirmation?.body).not.toEqual(restart.confirmation?.body);
     expect(resume.confirmation?.body).toMatchObject({ translations: { 'zh-CN': expect.stringContaining('恢复后伙伴重新接收消息') } });
-    for (const locale of ['zh-CN', 'zh-TW', 'ja', 'ko']) expect((resume.confirmation?.body as { translations: Record<string, string> }).translations[locale]).toBeTruthy();
+    for (const locale of ['zh-CN', 'zh-TW', 'ja', 'ko', 'fr']) expect((resume.confirmation?.body as { translations: Record<string, string> }).translations[locale]).toBeTruthy();
   });
   it('does not misreport shelf failure as an empty shelf', async () => {
     const f = fixture(); vi.mocked(f.deps.skills).mockRejectedValue(new Error('unavailable'));

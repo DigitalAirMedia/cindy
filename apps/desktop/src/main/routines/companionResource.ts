@@ -8,8 +8,8 @@ import { RemoteResourceRegistryError } from '../device-link/remoteResourceRegist
 import { getBotRemoteResourceSource } from '../localDb/ipc/bots.js';
 import { isBotVisibleRemotely } from '../localDb/ipc/botRemoteVisibility.js';
 
-const text = (fallback: string, zh: string, tw: string, ja: string, ko: string): RemoteText => ({ fallback, translations: { 'zh-CN': zh, 'zh-TW': tw, ja, ko } });
-const title = text('Routines', '例行任务', '例行任務', 'ルーティン', '루틴');
+const text = (fallback: string, zh: string, tw: string, ja: string, ko: string, fr: string): RemoteText => ({ fallback, translations: { 'zh-CN': zh, 'zh-TW': tw, ja, ko, fr } });
+const title = text('Routines', '例行任务', '例行任務', 'ルーティン', '루틴', 'Routines');
 const ref = (id: string) => ({ collectionId: 'routines', kind: 'routine', id: `bot:${id}` });
 function parseId(id: string): { botId: string; routineId?: string } {
   const parts = id.split('/');
@@ -47,7 +47,7 @@ export async function getBotRoutineRemoteResource(id: string): Promise<RemoteRes
           : trigger.kind === 'once' ? { kind: trigger.kind, at: trigger.at } : { kind: trigger.kind, sourceId: trigger.sourceId, eventType: trigger.eventType }),
     }));
     return { ...base, blocks: [{ id: 'routines', primitive: 'routine-list', fallbackMarkdown: items.map((r) => r.name).join('\n') || '—', data: { items } }],
-      actions: [{ id: 'routine-create', label: text('New Routine', '新例行任务', '新例行任務', '新しいルーティン', '새 루틴') }] };
+      actions: [{ id: 'routine-create', label: text('New Routine', '新例行任务', '新例行任務', '新しいルーティン', '새 루틴', 'Nouvelle routine') }] };
   }
   const routine = routines.find((r) => r.id === routineId);
   if (!routine && routineId !== 'new') throw new RemoteResourceRegistryError('NOT_FOUND', 'Automation unavailable');
@@ -63,13 +63,13 @@ export async function getBotRoutineRemoteResource(id: string): Promise<RemoteRes
     sources: sources.slice(0, 64).map((s) => ({ id: s.id, name: s.name, status: s.status, events: s.events.slice(0, 32).map((e) => ({ type: e.type, name: e.name, fields: e.fields.slice(0, 64) })) })),
     history: history.slice(0, 20).map((r) => ({ id: r.id, status: r.status, createdAt: r.createdAt, finishedAt: r.finishedAt, resultText: r.resultText?.slice(0, 2000), error: r.error?.slice(0, 1000) })),
   };
-  return { ...base, display: { title: routine?.name ?? text('New Routine', '新例行任务', '新例行任務', '新しいルーティン', '새 루틴') }, revision: String(routine?.revision ?? 0),
+  return { ...base, display: { title: routine?.name ?? text('New Routine', '新例行任务', '新例行任務', '新しいルーティン', '새 루틴', 'Nouvelle routine') }, revision: String(routine?.revision ?? 0),
     blocks: [{ id: 'routine', primitive: 'routine-detail', fallbackMarkdown: routine?.name ?? '—', data }],
     actions: [
-      ...(editable ? [{ id: routine ? 'routine-save' : 'routine-create', label: text('Save', '保存', '儲存', '保存', '저장') }] : []),
+      ...(editable ? [{ id: routine ? 'routine-save' : 'routine-create', label: text('Save', '保存', '儲存', '保存', '저장', 'Enregistrer') }] : []),
       ...(routine ? [
-        { id: 'routine-run', label: text('Run Now', '立即运行', '立即執行', '今すぐ実行', '지금 실행'), confirmation: { title: text('Run this routine now?', '立即运行这项例行任务？', '立即執行這項例行任務？', '今すぐこのルーティンを実行しますか？', '지금 이 루틴을 실행할까요?') } },
-        { id: 'routine-delete', label: text('Delete', '删除', '刪除', '削除', '삭제'), tone: 'destructive', confirmation: { title: text('Delete this routine?', '删除这项例行任务？', '刪除這項例行任務？', 'このルーティンを削除しますか？', '이 루틴을 삭제할까요?'), body: text('The routine and its run history will be removed.', '将删除这项例行任务及其运行记录。', '將刪除這項例行任務及其執行記錄。', 'ルーティンと実行履歴が削除されます。', '루틴과 실행 기록이 삭제됩니다。') } },
+        { id: 'routine-run', label: text('Run Now', '立即运行', '立即執行', '今すぐ実行', '지금 실행', 'Exécuter maintenant'), confirmation: { title: text('Run this routine now?', '立即运行这项例行任务？', '立即執行這項例行任務？', '今すぐこのルーティンを実行しますか？', '지금 이 루틴을 실행할까요?', 'Exécuter cette routine maintenant ?') } },
+        { id: 'routine-delete', label: text('Delete', '删除', '刪除', '削除', '삭제', 'Supprimer'), tone: 'destructive', confirmation: { title: text('Delete this routine?', '删除这项例行任务？', '刪除這項例行任務？', 'このルーティンを削除しますか？', '이 루틴을 삭제할까요?', 'Supprimer cette routine ?'), body: text('The routine and its run history will be removed.', '将删除这项例行任务及其运行记录。', '將刪除這項例行任務及其執行記錄。', 'ルーティンと実行履歴が削除されます。', '루틴과 실행 기록이 삭제됩니다。', 'La routine et son historique d\'exécution seront supprimés.') } },
       ] : []),
     ] };
 }

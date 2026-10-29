@@ -242,6 +242,7 @@ describe('bot group remote resources', () => {
     expect(preview).toEqual({ fallback: 'Taylor joined the group', translations: {
       'zh-CN': 'Taylor加入了群聊', 'zh-TW': 'Taylor加入了群聊',
       ja: 'Taylorさんがグループに参加しました', ko: 'Taylor 님이 그룹에 참여했습니다',
+      fr: 'Taylor a rejoint le groupe',
     } });
   });
 
