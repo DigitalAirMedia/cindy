@@ -322,6 +322,9 @@
     "closeAllDescription": "Les invités perdront l'accès. L'historique des tâches est conservé."
   },
   "providerShare": {
+    "owned": {
+      "title": "Fournisseurs que je partage"
+    },
     "memberBudget": {
       "recommended": "Modèle recommandé",
       "none": "Aucune recommandation",
@@ -1217,6 +1220,12 @@
     "clipboardSyncPermission": "La synchronisation du presse-papiers nécessite l'accès au collage. Autorisez-le, puis revenez à cette fenêtre pour reprendre.",
     "clipboardSyncWaiting": "Le presse-papiers de l'ordinateur distant n'est pas disponible pour le moment (il est peut-être verrouillé). La synchronisation reprendra automatiquement.",
     "lockingOnExit": "Verrouillage de l'ordinateur…",
+    "idleLock": "Déconnecter et verrouiller en cas d'inactivité",
+    "idleNever": "Jamais",
+    "idleMinutes_one": "{{count}} minute",
+    "idleMinutes_many": "{{count}} minutes",
+    "idleMinutes_other": "{{count}} minutes",
+    "idleDisconnected": "Déconnecté pour inactivité. Reconnectez-vous quand vous êtes prêt.",
     "lockOnExit": "Verrouiller à la sortie",
     "lockOnExitHint": "Verrouille l'ordinateur lorsque vous quittez le bureau à distance. Se reconnecter ou changer d'app ne le verrouille pas.",
     "lockOnExitFailed": "Impossible de confirmer le verrouillage de l'ordinateur. Vérifiez-le avant de le laisser sans surveillance.",
@@ -3437,6 +3446,9 @@
       },
       "xd": {
         "title": "Cindy AI",
+        "personal": "Personnel",
+        "xdOrganization": "XD",
+        "organization": "Organisation",
         "subtitle": "Tous les modèles · Claude Code / Codex · facturé sur votre solde au jeton",
         "modelLabel": "Tous les modèles",
         "billingLabel": "facturé sur votre solde au jeton",
@@ -5637,6 +5649,173 @@
       }
     },
     "remoteControl": {
+      "relay": {
+        "summary": {
+          "official": "Relais Cindy",
+          "owner": "Cet ordinateur sert de relais",
+          "member": "Rejoint : {{name}}",
+          "server": "Relais serveur « {{name}} »"
+        },
+        "description": "Par défaut, le contrôle à distance entre vos appareils passe par le relais Cindy. Vous pouvez aussi déployer un relais sur votre propre serveur, en faire tourner un sur cet ordinateur ou rejoindre le relais d'un autre de vos ordinateurs. La connexion, les modèles et les autres services ne sont pas concernés.",
+        "current": "Utilisé",
+        "ownerName": "Cet ordinateur",
+        "unavailable": "Pour utiliser votre propre relais, connectez-vous à Cindy et vérifiez que le trousseau du système est disponible.",
+        "limits": "Tant que vous utilisez votre propre relais, les notifications push sur téléphone, le partage de fournisseurs et les tâches partagées ne sont pas disponibles.",
+        "actions": {
+          "host": "Faire tourner sur cet ordinateur",
+          "join": "Rejoindre un autre relais",
+          "useOfficial": "Revenir au relais Cindy",
+          "editHost": "Modifier les paramètres",
+          "deploy": "Déployer sur mon serveur",
+          "useDeployment": "Utiliser ce relais"
+        },
+        "host": {
+          "title": "Faire tourner un relais sur cet ordinateur",
+          "hint": "Vos autres appareils doivent pouvoir joindre cet ordinateur : même réseau local, redirection de port sur le routeur, tunnel ou VPN maillé, c'est à vous de le mettre en place. Si cet ordinateur se met en veille ou si Cindy se ferme, tous les appareils sont déconnectés : « Empêcher la mise en veille » est donc activé.",
+          "port": "Port",
+          "scope": "Qui peut se connecter",
+          "scopeLocal": "Cet ordinateur uniquement",
+          "scopeAll": "Tous les réseaux",
+          "scopeLocalHint": "N'accepte que les connexions venant de cet ordinateur. À utiliser avec votre propre proxy inverse, tunnel ou VPN maillé.",
+          "scopeAllHint": "Les appareils de votre réseau local peuvent se connecter directement. La connexion n'est pas chiffrée : utilisez-la uniquement sur des réseaux de confiance. Les téléphones ont besoin d'une adresse https.",
+          "externalUrl": "Adresse utilisée par les autres appareils",
+          "externalUrlPlaceholder": "ex. : https://relay.example.com",
+          "externalUrlHintAll": "Incluse dans les liens d'invitation. Si elle est vide, l'adresse de cet ordinateur sur le réseau local est utilisée.",
+          "externalUrlHintLocal": "Incluse dans les liens d'invitation. Saisissez l'adresse publique de votre proxy ou de votre tunnel.",
+          "suggested": "Adresses de cet ordinateur :",
+          "start": "Démarrer",
+          "save": "Enregistrer et redémarrer le relais",
+          "cancel": "Annuler",
+          "running": "Le relais fonctionne. Les autres appareils se connectent à {{address}}"
+        },
+        "add": {
+          "intro": "Créez un lien d'invitation pour qu'un téléphone ou un autre ordinateur rejoigne ce relais.",
+          "create": "Ajouter un appareil",
+          "hint": "Scannez-le avec l'appareil photo de votre téléphone, ou envoyez le lien à un autre ordinateur et collez-le dans « Rejoindre un autre relais ». Le lien ne sert qu'une fois et expire au bout de 10 minutes.",
+          "qrAlt": "QR code pour rejoindre le relais",
+          "copy": "Copier le lien",
+          "copied": "Lien d'invitation copié",
+          "newLink": "Nouveau lien",
+          "waiting": "En attente d'une demande d'un appareil…"
+        },
+        "requests": {
+          "item": "{{name}} souhaite rejoindre",
+          "verify": "Code d'appairage",
+          "verifyHint": "N'approuvez que si ce code correspond à celui affiché sur cet appareil.",
+          "replaces": "Cet appareil s'est déjà connecté. L'approuver révoque son ancien identifiant.",
+          "approve": "Approuver",
+          "reject": "Refuser",
+          "unverified": "Cette demande ne peut pas être vérifiée : elle ne correspond à aucun lien d'invitation de cet ordinateur et a peut-être été falsifiée. Elle ne peut donc qu'être refusée. S'il s'agit de votre appareil, créez un nouveau lien d'invitation et réessayez."
+        },
+        "join": {
+          "title": "Rejoindre un autre relais",
+          "hint": "Collez le lien d'invitation obtenu avec « Ajouter un appareil » sur l'ordinateur du relais. Cindy bascule dès que la demande est approuvée.",
+          "placeholder": "Collez le lien d'invitation",
+          "submit": "Rejoindre",
+          "connecting": "Connexion au relais…",
+          "waiting": "Demande envoyée. Sur {{name}}, vérifiez que ces chiffres correspondent, puis approuvez :",
+          "cancel": "Annuler"
+        },
+        "issue": {
+          "removed": "Cet ordinateur a été retiré du relais, ou le relais a été arrêté.",
+          "unauthorized": "Le relais n'accepte plus l'identifiant de cet ordinateur.",
+          "next": "Rejoignez-le à nouveau, ou revenez au relais Cindy."
+        },
+        "confirm": {
+          "ownerTitle": "Arrêter le relais sur cet ordinateur ?",
+          "ownerDescription": "Les appareils qui l'ont rejoint seront déconnectés et prévenus que le relais a été arrêté. Cet ordinateur revient au relais Cindy.",
+          "memberTitle": "Revenir au relais Cindy ?",
+          "memberDescription": "Cet ordinateur quitte « {{name}} » et utilise le relais Cindy. Pour le rejoindre à nouveau, demandez un nouveau lien d'invitation.",
+          "serverTitle": "Revenir au relais Cindy ?",
+          "serverDescription": "Le relais « {{name}} » continue de fonctionner sur votre serveur, et les appareils qui l'ont rejoint peuvent toujours communiquer par son intermédiaire. Vous pouvez y rebasculer cet ordinateur à tout moment."
+        },
+        "errors": {
+          "INVALID_LINK": "Le lien d'invitation ou l'adresse n'est pas valide.",
+          "UNREACHABLE": "Impossible de joindre ce relais. Vérifiez que cet ordinateur peut ouvrir l'adresse du lien.",
+          "NOT_A_RELAY": "Cette adresse n'est pas un relais Cindy.",
+          "INCOMPATIBLE": "La version de ce relais n'est pas compatible. Mettez à jour Cindy sur les deux ordinateurs.",
+          "ACCOUNT_MISMATCH": "Ce relais appartient à un autre compte Cindy.",
+          "CODE_INVALID": "Ce lien d'invitation a expiré ou a déjà été utilisé. Demandez-en un nouveau.",
+          "RATE_LIMITED": "Trop de tentatives. Réessayez dans quelques minutes.",
+          "REJECTED": "La demande a été refusée.",
+          "EXPIRED": "Délai dépassé en attendant l'approbation. Rejoignez à nouveau.",
+          "CANCELLED": "Annulé.",
+          "FAILED": "L'action n'a pas abouti.",
+          "HOSTING": "Cet ordinateur fait tourner un relais. Revenez au relais Cindy avant d'en rejoindre un autre.",
+          "NOT_SIGNED_IN": "Connectez-vous d'abord à Cindy.",
+          "SECURE_STORAGE_UNAVAILABLE": "Le trousseau du système n'est pas disponible : l'identifiant du relais ne peut pas être stocké en sécurité.",
+          "PORT_IN_USE": "Le port {{port}} est déjà utilisé. Choisissez-en un autre.",
+          "START_FAILED": "Le relais n'a pas pu démarrer. Essayez un autre port.",
+          "EXTERNAL_URL_REQUIRED": "Saisissez l'adresse utilisée par les autres appareils, ou réglez « Qui peut se connecter » sur « Tous les réseaux ».",
+          "SSH_FAILED": "Impossible de se connecter au serveur. Vérifiez ses paramètres SSH dans « Machines distantes ».",
+          "NEEDS_ROOT": "Il faut le compte root, ou un compte qui peut utiliser sudo sans mot de passe. Cindy ne demande jamais le mot de passe de votre serveur.",
+          "UNSUPPORTED_SYSTEM": "Seul Linux 64 bits avec systemd (x64 / arm64) est pris en charge, et curl ou wget doit être installé.",
+          "PORT_BUSY": "Un autre service utilise le port 80 ou 443 et ne peut pas être configuré automatiquement. Nginx est géré automatiquement s'il est déjà présent ; vérifiez les autres services qui utilisent ces ports.",
+          "NGINX_FAILED": "La configuration de Nginx n'a pas pu être terminée, le déploiement a donc été interrompu. Consultez les détails pour en connaître la raison.",
+          "DOWNLOAD_FAILED": "Le serveur n'a pas pu télécharger l'environnement d'exécution depuis la source officielle ni depuis le miroir. Vérifiez que le serveur a accès à Internet.",
+          "RELAY_MISMATCH": "Ce serveur a déjà un relais qui n'a pas été déployé depuis cet ordinateur. Vous pouvez le supprimer et redéployer.",
+          "CERTIFICATE_FAILED": "Impossible d'obtenir un certificat HTTPS. En général, le port 80 n'est pas autorisé dans le groupe de sécurité cloud, ou le domaine ne pointe pas encore vers ce serveur. Corrigez-le, puis réessayez.",
+          "NOT_REACHABLE": "Le relais fonctionne sur le serveur, mais cet ordinateur ne parvient pas à le joindre. Autorisez le port 443 dans le groupe de sécurité cloud.",
+          "BUNDLE_MISSING": "Cette version de Cindy n'inclut pas le relais. Mettez Cindy à jour.",
+          "DEPLOY_FAILED": "Le déploiement n'a pas abouti.",
+          "PAIR_PROOF_INVALID": "La demande de cet appareil ne peut pas être vérifiée, elle ne peut donc pas être approuvée. Créez un nouveau lien d'invitation.",
+          "NOT_OWNER": "Seul l'ordinateur qui a déployé ou démarré ce relais peut le gérer.",
+          "BUSY": "Un déploiement est en cours. Veuillez patienter.",
+          "INVALID_ADDRESS": "Saisissez une IP publique ou un domaine, sans http:// ni port.",
+          "NO_DEPLOYMENT": "Rien n'a encore été déployé sur un serveur.",
+          "OWNER_MISMATCH": "Le relais a renvoyé un certificat qui n'a pas été émis par le propriétaire indiqué dans le lien d'invitation. Vous êtes peut-être connecté à un faux relais : la connexion a donc été interrompue."
+        },
+        "deploy": {
+          "title": "Déployer sur mon serveur",
+          "hint": "Installez le relais sur votre propre serveur Linux pour que votre téléphone et vos appareils sur d'autres réseaux puissent se connecter. Cindy l'installe via la connexion SSH configurée dans « Machines distantes », obtient un certificat HTTPS et le renouvelle automatiquement.",
+          "requirements": "Nécessite Linux 64 bits avec systemd, un accès root ou sudo sans mot de passe, et les ports TCP 80 et 443 ouverts dans votre groupe de sécurité cloud ou votre pare-feu. Cindy vérifie et configure automatiquement Nginx s'il est déjà installé.",
+          "noHosts": "Aucun serveur pour l'instant. Ajoutez un hôte SSH dans « Machines distantes », puis revenez ici pour déployer.",
+          "server": "Serveur",
+          "address": "Adresse",
+          "addressPlaceholder": "IP publique ou domaine, ex. : 203.0.113.10",
+          "addressHint": "L'adresse utilisée par les autres appareils pour joindre le relais. Une IP publique reçoit un certificat IP de 6 jours renouvelé automatiquement ; un domaine doit déjà pointer vers ce serveur.",
+          "name": "Nom",
+          "defaultName": "Mon relais",
+          "submit": "Déployer",
+          "cancel": "Annuler",
+          "detail": "Détails : {{detail}}",
+          "retry": "Réessayer",
+          "replace": "Supprimer l'ancien relais et redéployer",
+          "running": {
+            "deploy": "Déploiement sur votre serveur…",
+            "upgrade": "Mise à niveau du relais sur votre serveur…",
+            "uninstall": "Suppression du relais de votre serveur…"
+          },
+          "done": {
+            "deploy": "Déployé. Cet ordinateur utilise désormais le relais de votre serveur. Utilisez « Ajouter un appareil » pour y connecter votre téléphone et vos autres ordinateurs.",
+            "upgrade": "Le relais de votre serveur est maintenant en version {{version}}.",
+            "uninstall": "Le relais a été supprimé de votre serveur."
+          },
+          "steps": {
+            "connect": "Se connecter au serveur",
+            "check": "Vérifier le système et les ports",
+            "runtime": "Installer l'environnement d'exécution",
+            "upload": "Envoyer le relais",
+            "configure": "Configurer et démarrer le service",
+            "certificate": "Obtenir un certificat HTTPS",
+            "verify": "Vérifier que cet ordinateur peut le joindre",
+            "finish": "Terminé",
+            "remove": "Arrêter le service et supprimer les fichiers"
+          }
+        },
+        "server": {
+          "title": "Mon relais serveur",
+          "version": "Version du relais : {{version}}",
+          "incomplete": "Le dernier déploiement n'est pas allé jusqu'au bout. Réessayez ou désinstallez.",
+          "upgrade": "Mettre à niveau vers {{version}}",
+          "uninstall": "Désinstaller du serveur",
+          "uninstallTitle": "Désinstaller le relais de votre serveur ?",
+          "uninstallDescription": "Le relais et ses enregistrements d'appareils sont supprimés du serveur, et les appareils qui l'utilisent sont déconnectés. Si vous redéployez, chaque appareil devra le rejoindre à nouveau.",
+          "forget": "Retirer de cet ordinateur uniquement",
+          "forgetTitle": "Retirer de cet ordinateur uniquement ?",
+          "forgetDescription": "Le relais continue de fonctionner sur le serveur, mais cet ordinateur cesse de le gérer et ne peut plus y ajouter d'appareils. Ne le faites que si vous n'utilisez plus ce serveur."
+        }
+      },
       "title": "Connexion à distance",
       "description": "Contrôlez à distance vos autres appareils connectés, ou connectez-vous à un hôte distant via SSH.",
       "accessRevokedByPeer": "Accès révoqué : l'autre appareil doit le rétablir dans ses paramètres",
@@ -5656,6 +5835,7 @@
         "restoreFailed": "Échec du rétablissement de l'accès"
       },
       "sections": {
+        "relay": "Service de relais",
         "myDevices": "Mes appareils",
         "ssh": "Hôtes distants SSH",
         "hook": "Bots de messagerie Cindy"
@@ -11463,6 +11643,40 @@
     },
     "modelSelector": {
       "displayPricing": {
+        "components": {
+          "text": "Texte",
+          "image": "Image",
+          "audio": "Audio",
+          "video": "Vidéo"
+        },
+        "roles": {
+          "text": {
+            "input": "Entrée texte",
+            "output": "Sortie texte",
+            "cacheRead": "Lecture du cache texte",
+            "cacheWrite": "Écriture du cache texte"
+          },
+          "image": {
+            "input": "Entrée image",
+            "output": "Sortie image",
+            "cacheRead": "Lecture du cache image",
+            "cacheWrite": "Écriture du cache image"
+          },
+          "audio": {
+            "input": "Entrée audio",
+            "output": "Sortie audio",
+            "cacheRead": "Lecture du cache audio",
+            "cacheWrite": "Écriture du cache audio"
+          },
+          "video": {
+            "input": "Entrée vidéo",
+            "output": "Sortie vidéo",
+            "cacheRead": "Lecture du cache vidéo",
+            "cacheWrite": "Écriture du cache vidéo"
+          }
+        },
+        "durationInput": "Durée en entrée",
+        "durationOutput": "Durée en sortie",
         "million": "1M",
         "free": "Gratuit",
         "estimated": "Environ {{price}}",
@@ -13677,6 +13891,7 @@
       },
       "filterCreatorsHeading": "Coéquipiers",
       "filterCreatorsAny": "Toutes sources",
+      "filterCreatorsNone": "Tout masquer",
       "filterSelectedCreators": "{{count}} sélectionnés",
       "filterProjectsHeading": "Projets",
       "filterAllProjects": "Tous les projets",
@@ -18128,6 +18343,26 @@
     "contextReferences": "Références de contexte :"
   },
   "sharing": {
+    "loginRequired": "Se connecter pour partager",
+    "localUploadNotice": "Envoyez « {{name}} » v{{version}} sur Cindy pour que les destinataires connectés puissent télécharger cette version. Le partage ne la publie pas sur la marketplace.",
+    "uploadLocal": "Envoyer et partager le plugin",
+    "localPreparing": "Envoi du plugin et préparation du partage…",
+    "localRecipientHint": "Les destinataires se connectent à Cindy pour voir et installer exactement cette version.",
+    "localLoading": "Lecture du plugin partagé…",
+    "localPackage": "Partage local",
+    "localInstallTarget": "Installer sur",
+    "localTargetUnsupported": "Mettez à jour Cindy sur « {{device}} » pour installer des plugins locaux partagés.",
+    "localInstallButton": "Installer la v{{version}}",
+    "localReplaceTitle": "Remplacer « {{name}} »",
+    "localReplaceButton": "Remplacer",
+    "localReplaceNotice": "Ce paquet partagé remplacera le plugin installé. Ne le remplacez que si vous faites confiance à ce paquet.",
+    "localReplaceRetainsState": "Le nouveau code continuera d'utiliser les comptes et les données existants. Un identifiant de plugin identique ne prouve pas qu'il vient du même auteur.",
+    "localInstalling": "Installation du plugin…",
+    "localVersionNotice": "Ce lien conserve la version enregistrée au moment du partage. Vérifiez les autorisations du plugin avant de l'installer.",
+    "localSignIn": "Se connecter pour voir",
+    "localOpenHint": "Connectez-vous à Cindy pour voir et installer ce plugin partagé.",
+    "localReadFailed": "Impossible de lire ce plugin partagé",
+    "localChanged": "Le plugin a été modifié. Fermez cette fenêtre et partagez-le à nouveau.",
     "includeAttribution": "Inclure mon nom et mon avatar",
     "recipientHint": "Ouvrez le lien ou scannez l'image pour voir le plugin. Poursuivez dans Cindy sur un ordinateur.",
     "linkLabel": "Lien de partage",

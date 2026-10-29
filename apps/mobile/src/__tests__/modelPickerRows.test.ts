@@ -275,6 +275,7 @@ describe('modelRowAccessibilityLabel —— 父行保留完整元信息', () => 
     ['zh-TW', '選擇來源 OpenAI 的模型 Luna', '訂閱', '推理強度 超高', '快速模式'],
     ['ja', 'OpenAI のモデル Luna を選択', 'サブスク', '推論強度 超高', '高速モード'],
     ['ko', 'OpenAI의 모델 Luna 선택', '구독', '추론 강도 초고', '빠른 모드'],
+    ['fr', 'Sélectionner Luna de OpenAI', 'Abonnement', 'Effort de raisonnement Très élevé', 'Mode rapide'],
   ])('在 %s 下把订阅、完整 effort 和 Fast 纳入行级名称', async (
     language,
     expectedBase,

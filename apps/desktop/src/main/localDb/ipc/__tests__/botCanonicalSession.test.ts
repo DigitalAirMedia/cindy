@@ -876,7 +876,7 @@ describe('Bot canonical Session lifecycle', () => {
     expect(created.invitation.welcomeContext).toBeUndefined();
   });
 
-  it.each(['zh-CN', 'zh-TW', 'en', 'ja', 'ko'])(
+  it.each(['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'fr'])(
     'persists explicit %s for default provisioning before Main locale synchronization',
     async (locale) => {
       setMainLocale('en');
@@ -887,7 +887,7 @@ describe('Bot canonical Session lifecycle', () => {
     },
   );
 
-  it.each(['zh-CN', 'zh-TW', 'en', 'ja', 'ko'])(
+  it.each(['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'fr'])(
     'persists explicit %s for manual creation before Main locale synchronization',
     async (locale) => {
       setMainLocale('en');

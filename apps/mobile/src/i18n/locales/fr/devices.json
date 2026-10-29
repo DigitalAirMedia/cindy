@@ -423,6 +423,7 @@
       "filterEmptyCopy": "Ajustez ou réinitialisez les filtres dans les paramètres d'affichage.",
       "filterTeammatesHeading": "Coéquipiers",
       "filterAnySource": "Toutes les sources",
+      "filterHideAllTeammates": "Tout masquer",
       "filterSelectedTeammates": "{{count}} sélectionné(s)"
     },
     "search": {

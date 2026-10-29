@@ -98,17 +98,61 @@
     "stepTimeout": "{{name}} a mis trop de temps ; cette étape a donc été arrêtée",
     "stepUnavailable": "{{name}} est indisponible et ne peut pas réaliser cette étape",
     "runtimeFailure": {
-      "REMOTE_DEVICE_LIMIT": "{{name}} ne peut pas répondre : l'appareil du coéquipier a atteint sa limite de sessions distantes.\nDemandez au propriétaire du coéquipier d'archiver les sessions inutilisées, ou au propriétaire de l'ordinateur distant d'augmenter la limite dans Accès distant et partage.",
-      "REMOTE_TOTAL_LIMIT": "{{name}} ne peut pas répondre : l'ordinateur distant a atteint sa limite totale de sessions distantes.\nDemandez au propriétaire de cet ordinateur de libérer les sessions inutilisées ou d'augmenter la limite dans Accès distant et partage.",
-      "IMAGE_INPUT_UNSUPPORTED": "{{name}} n'a pas pu répondre : le modèle actuel ne prend pas en charge les images.\nChoisissez un modèle compatible avec les images, ou activez et configurez Vision Bridge dans Paramètres → Personnalisation, puis renvoyez votre message.",
-      "MODEL_UNAVAILABLE": "{{name}} n'a pas pu répondre : aucun modèle n'est disponible.\nChoisissez un modèle connecté et disponible dans les paramètres du coéquipier, puis renvoyez votre message.",
-      "AUTH_REQUIRED": "{{name}} n'a pas pu répondre : la connexion au modèle nécessite une authentification.\nReconnectez le fournisseur de modèles dans les Paramètres, puis renvoyez votre message.",
-      "RATE_LIMITED": "{{name}} n'a pas pu répondre : trop de requêtes au modèle.\nRenvoyez votre message plus tard, ou choisissez un autre modèle disponible.",
-      "UPSTREAM_OVERLOADED": "{{name}} n'a pas pu répondre : le service du modèle est temporairement surchargé.\nRéessayez plus tard, ou choisissez un autre modèle disponible.",
-      "QUOTA_EXCEEDED": "{{name}} n'a pas pu répondre : la limite de consommation du modèle a été atteinte.\nVérifiez le quota du fournisseur, ou choisissez un autre modèle disponible.",
-      "NETWORK_ERROR": "{{name}} n'a pas pu répondre : échec de la connexion réseau.\nVérifiez votre réseau ou votre proxy, puis renvoyez votre message.",
-      "RUNTIME_TIMEOUT": "{{name}} n'a pas répondu avant l'expiration du délai.\nRenvoyez votre message, ou choisissez un autre modèle disponible.",
-      "RUNTIME_ERROR": "{{name}} n'a pas pu répondre cette fois.\nRenvoyez votre message. Si l'échec persiste, consultez les journaux et signalez le problème."
+      "REMOTE_DEVICE_LIMIT": {
+        "summary": "{{name}} ne peut pas répondre : l'appareil du coéquipier a atteint sa limite de sessions à distance.",
+        "advice": "Demandez au propriétaire du coéquipier d'archiver les sessions inutilisées.",
+        "details": "Demandez au propriétaire du coéquipier d'archiver les sessions inutilisées, ou au propriétaire de l'ordinateur distant d'augmenter la limite dans « Accès distant et partage »."
+      },
+      "REMOTE_TOTAL_LIMIT": {
+        "summary": "{{name}} ne peut pas répondre : l'ordinateur distant a atteint sa limite totale de sessions à distance.",
+        "advice": "Demandez au propriétaire de l'ordinateur distant de libérer des sessions inutilisées ou d'augmenter la limite.",
+        "details": "Demandez au propriétaire de cet ordinateur de libérer des sessions inutilisées ou d'augmenter la limite dans « Accès distant et partage »."
+      },
+      "IMAGE_INPUT_UNSUPPORTED": {
+        "summary": "{{name}} n'a pas pu répondre : le modèle actuel ne prend pas en charge les images.",
+        "advice": "Choisissez un modèle compatible avec les images.",
+        "details": "Choisissez un modèle compatible avec les images, ou activez et configurez Vision Bridge dans Paramètres → Personnalisation, puis renvoyez votre message."
+      },
+      "MODEL_UNAVAILABLE": {
+        "summary": "{{name}} n'a pas pu répondre : aucun modèle n'est disponible.",
+        "advice": "Choisissez un modèle disponible dans les paramètres du coéquipier.",
+        "details": "Choisissez un modèle connecté et disponible dans les paramètres du coéquipier, puis renvoyez votre message."
+      },
+      "AUTH_REQUIRED": {
+        "summary": "{{name}} n'a pas pu répondre : la connexion au modèle nécessite une authentification.",
+        "advice": "Reconnectez le fournisseur de modèles.",
+        "details": "Reconnectez le fournisseur de modèles dans les Paramètres, puis renvoyez votre message."
+      },
+      "RATE_LIMITED": {
+        "summary": "{{name}} n'a pas pu répondre : trop de requêtes au modèle.",
+        "advice": "Renvoyez votre message plus tard.",
+        "details": "Renvoyez votre message plus tard, ou choisissez un autre modèle disponible."
+      },
+      "UPSTREAM_OVERLOADED": {
+        "summary": "{{name}} n'a pas pu répondre : le service du modèle est temporairement surchargé.",
+        "advice": "Renvoyez votre message plus tard.",
+        "details": "Réessayez plus tard, ou choisissez un autre modèle disponible."
+      },
+      "QUOTA_EXCEEDED": {
+        "summary": "{{name}} n'a pas pu répondre : la limite de consommation du modèle est atteinte.",
+        "advice": "Vérifiez le quota ou choisissez un autre modèle.",
+        "details": "Vérifiez le quota du fournisseur, ou choisissez un autre modèle disponible."
+      },
+      "NETWORK_ERROR": {
+        "summary": "{{name}} n'a pas pu répondre : la connexion réseau a échoué.",
+        "advice": "Vérifiez votre réseau ou votre proxy.",
+        "details": "Vérifiez votre réseau ou votre proxy, puis renvoyez votre message."
+      },
+      "RUNTIME_TIMEOUT": {
+        "summary": "{{name}} n'a pas répondu avant la fin du délai.",
+        "advice": "Renvoyez votre message.",
+        "details": "Renvoyez votre message, ou choisissez un autre modèle disponible."
+      },
+      "RUNTIME_ERROR": {
+        "summary": "{{name}} n'a pas pu répondre cette fois-ci.",
+        "advice": "Renvoyez votre message.",
+        "details": "Renvoyez votre message. Si l'échec persiste, consultez les journaux et signalez le problème."
+      }
     },
     "runtimeFailureSetupHint": "Pour changer le modèle ou les paramètres, utilisez l'ordinateur sur lequel ce coéquipier s'exécute."
   },
