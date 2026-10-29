@@ -5651,10 +5651,7 @@
     "remoteControl": {
       "relay": {
         "summary": {
-          "official": "Relais Cindy",
-          "owner": "Cet ordinateur sert de relais",
-          "member": "Rejoint : {{name}}",
-          "server": "Relais serveur « {{name}} »"
+          "official": "Relais Cindy"
         },
         "description": "Par défaut, le contrôle à distance entre vos appareils passe par le relais Cindy. Vous pouvez aussi déployer un relais sur votre propre serveur, en faire tourner un sur cet ordinateur ou rejoindre le relais d'un autre de vos ordinateurs. La connexion, les modèles et les autres services ne sont pas concernés.",
         "current": "Utilisé",
@@ -5662,12 +5659,10 @@
         "unavailable": "Pour utiliser votre propre relais, connectez-vous à Cindy et vérifiez que le trousseau du système est disponible.",
         "limits": "Tant que vous utilisez votre propre relais, les notifications push sur téléphone, le partage de fournisseurs et les tâches partagées ne sont pas disponibles.",
         "actions": {
-          "host": "Faire tourner sur cet ordinateur",
           "join": "Rejoindre un autre relais",
           "useOfficial": "Revenir au relais Cindy",
           "editHost": "Modifier les paramètres",
-          "deploy": "Déployer sur mon serveur",
-          "useDeployment": "Utiliser ce relais"
+          "deploy": "Déployer sur mon serveur"
         },
         "host": {
           "title": "Faire tourner un relais sur cet ordinateur",
@@ -5748,13 +5743,16 @@
           "START_FAILED": "Le relais n'a pas pu démarrer. Essayez un autre port.",
           "EXTERNAL_URL_REQUIRED": "Saisissez l'adresse utilisée par les autres appareils, ou réglez « Qui peut se connecter » sur « Tous les réseaux ».",
           "SSH_FAILED": "Impossible de se connecter au serveur. Vérifiez ses paramètres SSH dans « Machines distantes ».",
+          "SHELL_UNAVAILABLE": "Ce compte SSH ne peut pas exécuter de commandes (par exemple le compte git d'un service Git) : il ne peut donc pas servir au déploiement. Choisissez un serveur auquel vous pouvez vous connecter avec un shell.",
           "NEEDS_ROOT": "Il faut le compte root, ou un compte qui peut utiliser sudo sans mot de passe. Cindy ne demande jamais le mot de passe de votre serveur.",
           "UNSUPPORTED_SYSTEM": "Seul Linux 64 bits avec systemd (x64 / arm64) est pris en charge, et curl ou wget doit être installé.",
-          "PORT_BUSY": "Un autre service utilise le port 80 ou 443 et ne peut pas être configuré automatiquement. Nginx est géré automatiquement s'il est déjà présent ; vérifiez les autres services qui utilisent ces ports.",
+          "PORT_BUSY": "Le port 80 ou 443 du serveur est utilisé par {{detail}}. Cindy n'arrête pas les autres programmes. Choisissez un autre serveur, ou arrêtez ce programme et vérifiez à nouveau.",
+          "PORT_BUSY_CONTAINER": "Le port 80 ou 443 du serveur est utilisé par le conteneur Docker {{detail}}. Cindy ne peut configurer que Nginx installé directement sur le système, pas dans un conteneur. Choisissez un autre serveur.",
           "NGINX_FAILED": "La configuration de Nginx n'a pas pu être terminée, le déploiement a donc été interrompu. Consultez les détails pour en connaître la raison.",
           "DOWNLOAD_FAILED": "Le serveur n'a pas pu télécharger l'environnement d'exécution depuis la source officielle ni depuis le miroir. Vérifiez que le serveur a accès à Internet.",
-          "RELAY_MISMATCH": "Ce serveur a déjà un relais qui n'a pas été déployé depuis cet ordinateur. Vous pouvez le supprimer et redéployer.",
+          "RELAY_MISMATCH": "Le relais de ce serveur n'a pas été déployé depuis cet ordinateur : Cindy n'y touche donc pas.",
           "CERTIFICATE_FAILED": "Impossible d'obtenir un certificat HTTPS. En général, le port 80 n'est pas autorisé dans le groupe de sécurité cloud, ou le domaine ne pointe pas encore vers ce serveur. Corrigez-le, puis réessayez.",
+          "CA_UNREACHABLE": "Le serveur n'a pas pu joindre l'autorité de certification Let's Encrypt, même après plusieurs minutes de nouvelles tentatives. Vérifiez que le serveur a accès à Internet, puis réessayez plus tard.",
           "NOT_REACHABLE": "Le relais fonctionne sur le serveur, mais cet ordinateur ne parvient pas à le joindre. Autorisez le port 443 dans le groupe de sécurité cloud.",
           "BUNDLE_MISSING": "Cette version de Cindy n'inclut pas le relais. Mettez Cindy à jour.",
           "DEPLOY_FAILED": "Le déploiement n'a pas abouti.",
@@ -5767,10 +5765,10 @@
         },
         "deploy": {
           "title": "Déployer sur mon serveur",
-          "hint": "Installez le relais sur votre propre serveur Linux pour que votre téléphone et vos appareils sur d'autres réseaux puissent se connecter. Cindy l'installe via la connexion SSH configurée dans « Machines distantes », obtient un certificat HTTPS et le renouvelle automatiquement.",
-          "requirements": "Nécessite Linux 64 bits avec systemd, un accès root ou sudo sans mot de passe, et les ports TCP 80 et 443 ouverts dans votre groupe de sécurité cloud ou votre pare-feu. Cindy vérifie et configure automatiquement Nginx s'il est déjà installé.",
+          "hint": "Installez le relais sur votre propre serveur Linux pour que votre téléphone et vos appareils sur d'autres réseaux puissent se connecter. Cindy l'installe via la connexion SSH configurée dans « Machines distantes », puis obtient et renouvelle automatiquement un certificat HTTPS. Autorisez les ports TCP 80 et 443 dans votre groupe de sécurité cloud.",
           "noHosts": "Aucun serveur pour l'instant. Ajoutez un hôte SSH dans « Machines distantes », puis revenez ici pour déployer.",
           "server": "Serveur",
+          "serverPlaceholder": "Choisir un serveur",
           "address": "Adresse",
           "addressPlaceholder": "IP publique ou domaine, ex. : 203.0.113.10",
           "addressHint": "L'adresse utilisée par les autres appareils pour joindre le relais. Une IP publique reçoit un certificat IP de 6 jours renouvelé automatiquement ; un domaine doit déjà pointer vers ce serveur.",
@@ -5778,9 +5776,27 @@
           "defaultName": "Mon relais",
           "submit": "Déployer",
           "cancel": "Annuler",
-          "detail": "Détails : {{detail}}",
           "retry": "Réessayer",
-          "replace": "Supprimer l'ancien relais et redéployer",
+          "submitReplace": "Supprimer et déployer",
+          "edit": "Modifier les paramètres",
+          "abandon": "Abandonner le déploiement",
+          "abandonTitle": "Abandonner ce déploiement ?",
+          "abandonDescription": "Ce qui a déjà été installé sur le serveur est nettoyé, et l'enregistrement du déploiement sur cet ordinateur est supprimé.",
+          "replaceTitle": "Supprimer le relais de ce serveur ?",
+          "replaceDescription": "Le relais de ce serveur n'a pas été déployé depuis cet ordinateur. Le déploiement le supprime avec ses enregistrements d'appareils, et les appareils qui l'avaient rejoint devront le rejoindre à nouveau.",
+          "incompleteHint": "Le dernier déploiement n'est pas allé jusqu'au bout. Réessayez, ou modifiez les paramètres et redéployez.",
+          "showDetails": "Afficher les détails",
+          "check": {
+            "checking": "Vérification du serveur…",
+            "ready": "Prêt à déployer",
+            "blocked": "Déploiement automatique impossible",
+            "recheck": "Vérifier à nouveau",
+            "direct": "Les ports 80 et 443 sont libres : le relais les utilise directement.",
+            "nginx": "Le relais passe par le Nginx déjà présent sur le serveur et conserve vos sites actuels.",
+            "mine": "Ce serveur fait déjà tourner un relais déployé depuis cet ordinateur. Il est mis à jour sur place, sans effet sur les appareils qui l'ont rejoint.",
+            "other": "Ce serveur fait tourner un relais qui n'a pas été déployé depuis cet ordinateur. Le déploiement le supprime, et les appareils qui l'avaient rejoint devront le rejoindre à nouveau.",
+            "cleanup": "Le déploiement inachevé sur {{server}} est d'abord nettoyé."
+          },
           "running": {
             "deploy": "Déploiement sur votre serveur…",
             "upgrade": "Mise à niveau du relais sur votre serveur…",
@@ -5789,11 +5805,31 @@
           "done": {
             "deploy": "Déployé. Cet ordinateur utilise désormais le relais de votre serveur. Utilisez « Ajouter un appareil » pour y connecter votre téléphone et vos autres ordinateurs.",
             "upgrade": "Le relais de votre serveur est maintenant en version {{version}}.",
-            "uninstall": "Le relais a été supprimé de votre serveur."
+            "uninstall": "Relais supprimé de votre serveur"
+          },
+          "failed": {
+            "deploy": "Le déploiement n'a pas abouti",
+            "upgrade": "La mise à niveau n'a pas abouti",
+            "uninstall": "La suppression n'a pas abouti"
+          },
+          "elapsed": "Temps écoulé : {{time}}",
+          "logs": "Journal du déploiement",
+          "progress": {
+            "runtime-cached": "L'environnement d'exécution est prêt. Aucun téléchargement nécessaire.",
+            "runtime-download": "Téléchargement de l'environnement d'exécution. La vitesse dépend du réseau du serveur…",
+            "runtime-fallback": "La source de téléchargement actuelle est indisponible. Essai de la source de secours…",
+            "runtime-checksum": "Téléchargement terminé. Vérification du fichier…",
+            "runtime-extract": "Fichier vérifié. Extraction et installation de l'environnement d'exécution…",
+            "nginx-prepare": "Nginx détecté. Configuration de l'accès au relais…",
+            "certificate-wait": "En attente du certificat. Cela peut prendre quelques minutes…",
+            "certificate-retry": "L'autorité de certification est injoignable pour le moment. Nouvelle tentative automatique…",
+            "verify-retry": "Le relais n'est pas encore joignable. Nouvelle vérification…",
+            "nginx-rollback": "Le déploiement n'a pas abouti. Restauration de la configuration Nginx précédente…"
           },
           "steps": {
+            "cleanup": "Nettoyer {{server}}",
             "connect": "Se connecter au serveur",
-            "check": "Vérifier le système et les ports",
+            "check": "Vérifier le serveur",
             "runtime": "Installer l'environnement d'exécution",
             "upload": "Envoyer le relais",
             "configure": "Configurer et démarrer le service",
@@ -5804,16 +5840,71 @@
           }
         },
         "server": {
-          "title": "Mon relais serveur",
-          "version": "Version du relais : {{version}}",
-          "incomplete": "Le dernier déploiement n'est pas allé jusqu'au bout. Réessayez ou désinstallez.",
+          "inUse": "Utilisé",
           "upgrade": "Mettre à niveau vers {{version}}",
-          "uninstall": "Désinstaller du serveur",
-          "uninstallTitle": "Désinstaller le relais de votre serveur ?",
-          "uninstallDescription": "Le relais et ses enregistrements d'appareils sont supprimés du serveur, et les appareils qui l'utilisent sont déconnectés. Si vous redéployez, chaque appareil devra le rejoindre à nouveau.",
+          "remove": "Supprimer",
+          "removeTitle": "Supprimer le relais serveur ?",
+          "removeDescription": "Le relais et ses enregistrements d'appareils sont supprimés du serveur, et les appareils qui l'utilisent sont déconnectés. Si vous redéployez, chaque appareil devra le rejoindre à nouveau.",
           "forget": "Retirer de cet ordinateur uniquement",
           "forgetTitle": "Retirer de cet ordinateur uniquement ?",
           "forgetDescription": "Le relais continue de fonctionner sur le serveur, mais cet ordinateur cesse de le gérer et ne peut plus y ajouter d'appareils. Ne le faites que si vous n'utilisez plus ce serveur."
+        },
+        "route": {
+          "title": "Itinéraire de connexion",
+          "hint": "Le contrôle à distance entre vos appareils passe par cet itinéraire",
+          "kindServer": "Mon serveur",
+          "kindJoined": "Rejoint",
+          "hostTitle": "Cet ordinateur comme relais",
+          "hostHint": "Les autres appareils doivent pouvoir joindre directement cet ordinateur. Ils sont déconnectés s'il se met en veille ou si Cindy se ferme",
+          "officialHint": "Aucune configuration nécessaire. Toutes les fonctions sont disponibles",
+          "defaultTag": "Par défaut",
+          "useNamed": "Passer à {{name}}",
+          "deployingStep": "{{step}}…",
+          "viewProgress": "Voir la progression",
+          "resume": "Reprendre le déploiement",
+          "statusChecking": "Vérification…",
+          "statusOnline": "En ligne",
+          "statusOffline": "Injoignable",
+          "switchTitle": "Passer à {{name}} ?",
+          "switchFromHost": "Le relais de cet ordinateur s'arrête, et les appareils qui l'ont rejoint sont déconnectés.",
+          "switchFromMember": "Cet ordinateur quitte {{name}}. Pour le rejoindre plus tard, son propriétaire devra créer un nouveau lien d'invitation.",
+          "switchConfirm": "Basculer",
+          "switchFromOfficial": "Le contrôle à distance entre vos appareils passera par {{name}}. Les notifications push sur téléphone, le partage de fournisseurs et les tâches partagées ne sont pas disponibles tant que vous utilisez votre propre relais."
+        },
+        "dialog": {
+          "steps": {
+            "label": "Étapes du déploiement",
+            "form": "Choisir le serveur",
+            "deploy": "Déployer",
+            "done": "Ajouter des appareils"
+          },
+          "running": "Déploiement sur {{server}}…",
+          "backgroundHint": "Fermer cette fenêtre n'arrête pas le déploiement",
+          "background": "Continuer en arrière-plan",
+          "doneTitle": "{{name}} est prêt",
+          "doneHint": "Cet ordinateur l'utilise désormais. Scannez avec votre téléphone, ou envoyez le lien à un autre ordinateur pour le rejoindre.",
+          "doneLater": "Vous pourrez aussi ajouter des appareils plus tard dans « Itinéraire de connexion »",
+          "finish": "Terminé"
+        },
+        "manage": {
+          "check": "Vérifier la connexion",
+          "offline": "Cet ordinateur ne parvient pas à joindre ce relais pour le moment. Cela arrive quand le serveur est éteint ou que son réseau ou son groupe de sécurité a changé. Corrigez le problème, puis vérifiez à nouveau la connexion.",
+          "devices": "Appareils connectés",
+          "deviceCount_one": "{{count}} appareil",
+          "deviceCount_many": "{{count}} appareils",
+          "deviceCount_other": "{{count}} appareils",
+          "onlineCount_one": "{{count}} en ligne",
+          "onlineCount_many": "{{count}} en ligne",
+          "onlineCount_other": "{{count}} en ligne",
+          "certificate": "Certificat HTTPS",
+          "certificateDays_one": "Expire dans {{count}} jour",
+          "certificateDays_many": "Expire dans {{count}} jours",
+          "certificateDays_other": "Expire dans {{count}} jours",
+          "certificateRenew": "Renouvelé automatiquement",
+          "certificateSite": "Utilise le certificat du site",
+          "version": "Version du relais",
+          "latest": "À jour",
+          "remove": "Supprimer ce relais"
         }
       },
       "title": "Connexion à distance",
@@ -5835,7 +5926,6 @@
         "restoreFailed": "Échec du rétablissement de l'accès"
       },
       "sections": {
-        "relay": "Service de relais",
         "myDevices": "Mes appareils",
         "ssh": "Hôtes distants SSH",
         "hook": "Bots de messagerie Cindy"
