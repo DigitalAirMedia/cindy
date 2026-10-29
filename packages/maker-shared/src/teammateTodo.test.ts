@@ -11,6 +11,7 @@ import {
   todoDueSoon,
   todoVisible,
   validateTodoDeadline,
+  todoActionText,
   type TodoPatch,
 } from './teammateTodo';
 const now = new Date('2026-10-10T12:00:00Z');
@@ -505,4 +506,13 @@ it('refreshes once at a long deferral boundary and cancels without polling or ex
   } finally {
     vi.useRealTimers();
   }
+});
+
+describe('todoActionText', () => {
+  it('uses each locale typography for the public action text', () => {
+    expect(todoActionText('Fix avatar', 'check upload', 'en')).toBe('Continue “Fix avatar”: check upload');
+    expect(todoActionText('Avatar', 'vérifier', 'fr')).toBe('Continuer « Avatar » : vérifier');
+    expect(todoActionText('Avatar', 'vérifier', 'fr-CA')).toBe('Continuer « Avatar » : vérifier');
+    expect(todoActionText('Avatar', 'check', 'frr-DE')).toBe('Continue “Avatar”: check');
+  });
 });

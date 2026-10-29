@@ -619,8 +619,8 @@ export function todoActionText(title: string, step: string, locale = 'en'): stri
         ? '続ける'
         : locale.startsWith('ko')
           ? '계속'
-          : locale.split(/[-_]/)[0] === 'fr'
-            ? 'Continuer'
-            : 'Continue';
+          : 'Continue';
+  // French typography: guillemets and a space before the colon.
+  if (locale.split(/[-_]/)[0] === 'fr') return `Continuer « ${title} » : ${step}`;
   return `${prefix} “${title}”: ${step}`;
 }

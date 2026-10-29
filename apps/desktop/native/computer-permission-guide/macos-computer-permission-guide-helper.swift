@@ -15,6 +15,7 @@ private enum GuideLocale: String {
     case en
     case ja
     case ko
+    case fr
 }
 
 /** Localized native copy selected from the renderer-synchronized app locale. */
@@ -97,6 +98,21 @@ private struct GuideCopy {
                 waiting: "켜기 대기",
                 dragTitle: "CuaDriver를 {{permission}}으로 드래그",
                 dragHint: "드래그"
+            )
+        case .fr:
+            return GuideCopy(
+                close: "Fermer",
+                turnThisOn: "Activez cette option",
+                pointsToSwitch: "Pointe vers l'interrupteur",
+                accessibility: "Accessibilité",
+                screenRecording: "Enregistrement de l'écran",
+                completeEyebrow: "Autorisations accordées",
+                readyTitle: "Computer Use est prêt",
+                step: "Ouvrir l'automatisation",
+                turnOnAppTitle: "Activez CuaDriver dans « {{permission}} »",
+                waiting: "En attente de votre action",
+                dragTitle: "Faites glisser CuaDriver dans « {{permission}} »",
+                dragHint: "Glisser"
             )
         case .en:
             return GuideCopy(

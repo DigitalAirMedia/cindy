@@ -53,6 +53,19 @@ const RETRY_COPY = {
     spawn_failed:
       '업데이트 재시도를 시작할 수 없습니다. 이 창을 닫고 업데이트를 다시 확인해 주세요',
   },
+  fr: {
+    retry: 'Réessayer',
+    processes_running:
+      "Fermez Cindy et tous les processus lancés depuis son dossier d'installation, puis réessayez",
+    updater_busy:
+      'Une autre mise à jour est déjà en cours. Fermez cette fenêtre et recherchez à nouveau les mises à jour',
+    in_progress: 'Une nouvelle tentative de mise à jour est déjà en cours',
+    unavailable: 'Cet échec de mise à jour ne peut pas être retenté',
+    archive_unavailable:
+      'Le fichier de mise à jour est introuvable ou illisible. Recherchez à nouveau les mises à jour',
+    spawn_failed:
+      "Impossible de relancer l'outil de mise à jour. Fermez cette fenêtre et recherchez à nouveau les mises à jour",
+  },
 };
 
 globalThis.retryCopy = function retryCopy(language = 'en') {

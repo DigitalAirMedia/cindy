@@ -99,7 +99,8 @@ describe('updater failure retry UI', () => {
       ['en-US', 'Retry'],
       ['ja-JP', '再試行'],
       ['ko-KR', '다시 시도'],
-      ['fr-FR', 'Retry'],
+      ['fr-FR', 'Réessayer'],
+      ['de-DE', 'Retry'],
     ]) {
       const copy = context.retryCopy(locale);
       expect(copy.retry).toBe(label);

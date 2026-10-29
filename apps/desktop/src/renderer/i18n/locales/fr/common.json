@@ -3887,7 +3887,7 @@
           },
           "lifecycle": {
             "alpha": "Accès anticipé",
-            "deprecated": "Plus recommandé",
+            "deprecated": "N'est plus recommandé",
             "retired": "Retiré"
           },
           "codexContextUnknown": "Configuration de la CLI indisponible",
