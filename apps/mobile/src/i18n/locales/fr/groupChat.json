@@ -297,6 +297,7 @@
     "failedStep": "L'étape {{step}} n'a pas abouti"
   },
   "server": {
+    "attachmentTooLarge": "Les pièces jointes de groupe doivent faire {{size}} Mo maximum. Choisissez un fichier plus petit.",
     "offline": "Impossible de se connecter à la conversation de groupe. Réessayez.",
     "loadFailed": "Impossible de charger cette conversation de groupe pour le moment. Réessayez.",
     "loadOlder": "Messages précédents",

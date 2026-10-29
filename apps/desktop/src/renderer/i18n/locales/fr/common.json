@@ -115,7 +115,11 @@
   "taskActionConfirmation": {
     "title": "Confirmer l'action sur la session",
     "once": "Vérifiez ci-dessous la cible, l'action et le contenu complet. « Autoriser » s'applique à cette action une seule fois.",
-    "delegation": "Vérifiez l'objectif et les paramètres de cette session indépendante. « Autoriser » la démarre et permet l'envoi de messages et l'arrêt dans le cadre de cette délégation jusqu'à sa fin. Répondre à des questions, reprendre après une pause ou changer de modèle nécessite toujours une confirmation distincte."
+    "remove": "Cette action supprime une automatisation. Vérifiez la cible ; l'approbation ne vaut que pour cette fois.",
+    "permission": "Cette action répond à votre place à une demande d'autorisation dans une autre tâche. Vérifiez l'action ; l'approbation ne vaut que pour cette fois.",
+    "resume": "Cette action reprend une exécution en pause. Vérifiez la cible ; l'approbation ne vaut que pour cette fois.",
+    "command": "Cette action enregistre ou exécute une commande sur votre ordinateur, en dehors de l'approbation des outils de l'Agent. Vérifiez la commande et le dossier de travail ; l'approbation ne vaut que pour cette fois.",
+    "authority": "Cette action crée ou modifie des instructions d'automatisation que les prochaines exécutions considéreront comme une autorisation permanente. Vérifiez l'intégralité des instructions ; l'approbation vaut pour cet enregistrement."
   },
   "logSupport": {
     "title": "Journaux et retours",
@@ -3664,7 +3668,7 @@
           "modelsAutoNote": "Les modèles disponibles sont détectés après la connexion"
         },
         "advanced": {
-          "label": "Avancé (modèles / en-têtes)"
+          "label": "Paramètres de connexion avancés"
         },
         "runtimeFill": {
           "action": "Remplir les autres environnements",
@@ -3828,16 +3832,16 @@
           "defaultEffort": "Effort de raisonnement par défaut",
           "defaultEffortHint": "L'effort initial pour les nouvelles tâches. Vous pouvez toujours l'ajuster au sein d'une tâche.",
           "contextLimit": "Limite de contexte",
-          "contextLimitHint": "S'applique à tous les Harness disponibles pour ce modèle. Saisissez des K entiers (1 K = 1 000 jetons) ; les valeurs non modifiées conservent leur précision. Les modifications enregistrées s'appliquent aux exécutions suivantes sans interrompre une réponse. La capacité réelle reste soumise aux limites du service de modèles.",
+          "contextLimitHint": "Saisissez directement un nombre de jetons, ou utilisez K ou M (par exemple 1000000 ou 1M). S'applique à tous les moteurs disponibles pour ce modèle lors des exécutions suivantes. La capacité réelle reste limitée par le service de modèles.",
           "contextLimitLocalMillionHint": "256K en natif (262 144 jetons), extensible en option à 1M (1 000 000). Si le service est en cours d'exécution, redémarrez-le depuis Gérer le service pour appliquer les modifications ; s'il est arrêté, elles s'appliqueront à la prochaine utilisation. Les entrées plus longues nécessitent davantage de mémoire et sont plus longues à traiter.",
-          "contextLimitAria": "Limite de contexte (milliers de jetons)",
+          "contextLimitAria": "Limite de contexte (jetons, K ou M)",
           "compaction": {
             "title": "Compactage automatique",
             "hint": "Compacter le contexte au pourcentage d'utilisation sélectionné. Une valeur plus basse compacte plus tôt ; les limites du Harness s'appliquent toujours.",
             "default": "{{pct}} % (par défaut)",
             "timing": "S'applique à tous les Harness disponibles pour ce modèle et cette source lors des exécutions suivantes, sans interrompre une réponse."
           },
-          "contextLimitRoute": "Actuellement {{tokens}} jetons · 1 K = 1 000 jetons",
+          "contextLimitRoute": "Actuellement {{tokens}} jetons",
           "contextLimitOverWindow": "Supérieur à la fenêtre déclarée par le fournisseur ; les requêtes peuvent échouer.",
           "restoreDefault": "Réinitialiser",
           "engines": "Prise en charge des Harness",
@@ -3864,7 +3868,7 @@
           "close": "Fermer",
           "maxOutput": "Sortie maximale",
           "catalogCapabilities": "Capacités déclarées dans le catalogue",
-          "contextInvalid": "Saisissez un nombre entier compris entre {{min}} et 100 000 K.",
+          "contextInvalid": "Saisissez entre {{min}} et {{max}} jetons ; K et M sont aussi acceptés.",
           "contextWriteFailed": "Non enregistré. Veuillez réessayer.",
           "contextMixed": "Les paramètres existants des Harness diffèrent. La modification ou la réinitialisation s'applique à tous les Harness.",
           "inputModalities": "Types d'entrée",
