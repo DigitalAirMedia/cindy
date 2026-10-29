@@ -43,6 +43,6 @@ export function resolveSystemLocale(
   }
   if (tag.startsWith("ja")) return "ja";
   if (tag.startsWith("ko")) return "ko";
-  if (tag.startsWith("fr")) return "fr";
+  if (tag.split("-")[0] === "fr") return "fr";
   return DEFAULT_LOCALE;
 }

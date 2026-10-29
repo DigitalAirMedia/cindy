@@ -19,6 +19,8 @@ describe('OAuth result page language and copy', () => {
   it('uses the first supported browser language and falls back to English', () => {
     expect(pickOAuthResultPageLang('de-DE,ja;q=0.8,en;q=0.7')).toBe('ja');
     expect(pickOAuthResultPageLang('fr-FR,en;q=0.7')).toBe('fr');
+    expect(pickOAuthResultPageLang('frr-DE,fr;q=0.8')).toBe('fr');
+    expect(pickOAuthResultPageLang('frr-DE')).toBe('en');
     expect(pickOAuthResultPageLang('zh-TW,zh;q=0.9')).toBe('zh-TW');
     expect(pickOAuthResultPageLang('de-DE')).toBe('en');
     expect(pickOAuthResultPageLang(undefined)).toBe('en');

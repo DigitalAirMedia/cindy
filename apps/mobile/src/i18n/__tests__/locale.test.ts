@@ -15,4 +15,11 @@ describe("mobile locale resolution", () => {
     expect(resolveSystemLocale("zh-HK")).toBe("zh-TW");
     expect(resolveSystemLocale("zh-Hant")).toBe("zh-TW");
   });
+
+  it("matches French by its exact primary language subtag", () => {
+    expect(resolveSystemLocale("fr")).toBe("fr");
+    expect(resolveSystemLocale("fr-CA")).toBe("fr");
+    expect(resolveSystemLocale("fr_BE")).toBe("fr");
+    expect(resolveSystemLocale("frr-DE")).toBe("en");
+  });
 });

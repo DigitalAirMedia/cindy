@@ -812,7 +812,7 @@ export function resolveLoginLocale(
   }
   if (tag.startsWith("ja")) return "ja";
   if (tag.startsWith("ko")) return "ko";
-  if (tag.startsWith("fr")) return "fr";
+  if (tag.split(/[-_]/)[0] === "fr") return "fr";
   return "en";
 }
 

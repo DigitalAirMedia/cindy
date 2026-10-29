@@ -619,7 +619,7 @@ export function todoActionText(title: string, step: string, locale = 'en'): stri
         ? '続ける'
         : locale.startsWith('ko')
           ? '계속'
-          : locale.startsWith('fr')
+          : locale.split(/[-_]/)[0] === 'fr'
             ? 'Continuer'
             : 'Continue';
   return `${prefix} “${title}”: ${step}`;

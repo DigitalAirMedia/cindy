@@ -88,7 +88,7 @@ export function pickOAuthResultPageLang(acceptLanguage: string | undefined): OAu
     }
     if (primary.startsWith('ja')) return 'ja';
     if (primary.startsWith('ko')) return 'ko';
-    if (primary.startsWith('fr')) return 'fr';
+    if (primary.split(/[-_]/)[0] === 'fr') return 'fr';
     if (primary.startsWith('en')) return 'en';
   }
   return 'en';

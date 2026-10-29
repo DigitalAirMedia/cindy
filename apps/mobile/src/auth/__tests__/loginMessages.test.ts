@@ -161,6 +161,7 @@ describe("resolveLoginLocale 系统 locale 解析", () => {
     expect(resolveLoginLocale("ko-KR")).toBe("ko");
     expect(resolveLoginLocale("fr")).toBe("fr");
     expect(resolveLoginLocale("fr-FR")).toBe("fr");
+    expect(resolveLoginLocale("frr-DE")).toBe("en");
   });
 
   it("其余与缺失 → 兜底 en", () => {
