@@ -391,7 +391,7 @@ describe('SplashScreen wave4 统一面板', () => {
       'databaseCleanup.cancellingHint',
       'databaseCleanup.finalizingHint',
     ];
-    for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko']) {
+    for (const locale of ['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'fr']) {
       const json = JSON.parse(
         readFileSync(path.join(localesDir, locale, 'common.json'), 'utf8'),
       ) as { splash: Record<string, unknown> };

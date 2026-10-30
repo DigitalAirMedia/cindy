@@ -11,6 +11,7 @@
     "deleteMessage": "Retirer cet appareil de votre compte et couper l'accès à distance. Ses sessions et fichiers sont conservés. Reconnectez-vous sur cet appareil pour le rajouter.",
     "deleteFailed": "Impossible de supprimer l'appareil.",
     "deleteOnline": "Ce serveur ne permet pas encore de retirer des appareils en ligne. Réessayez après la mise à niveau du service.",
+    "deleteRejectedWhileOffline": "Impossible de supprimer l'appareil : le serveur l'indique encore en ligne, alors qu'il apparaît hors ligne ici.",
     "currentlyOnline": "Actuellement en ligne",
     "availableSection": "En ligne",
     "offlineSection": "Hors ligne",
@@ -406,6 +407,7 @@
         "30d": "30 j",
         "all": "Toutes"
       },
+      "showCollapsedTeammateAvatars": "Afficher les avatars en mode réduit",
       "displayHeading": "Affichage",
       "view": {
         "text": "Texte",
@@ -699,7 +701,14 @@
     "createMenu": "Nouveau",
     "awaiting": "Attend votre accord",
     "taskResult": "Résultat de la tâche",
-    "collapseResult": "Masquer le résultat"
+    "collapseResult": "Masquer le résultat",
+    "avatarStatus": {
+      "awaiting": "Attend votre confirmation",
+      "error": "Requiert votre attention",
+      "running": "Au travail",
+      "done": "Terminé",
+      "unread": "Non lu"
+    }
   },
   "companionProfile": {
     "avatar": "Avatar",

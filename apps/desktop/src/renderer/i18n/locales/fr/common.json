@@ -1717,6 +1717,9 @@
     }
   },
   "settings": {
+    "newChatDefaults": {
+      "title": "Autorisation par défaut des nouvelles tâches"
+    },
     "imConnection": {
       "reconnect": "Se reconnecter",
       "savedNote": "Votre liaison enregistrée est conservée. Vous pouvez réessayer la connexion.",
@@ -5792,14 +5795,15 @@
           "showDetails": "Afficher les détails",
           "check": {
             "checking": "Vérification du serveur…",
+            "checkingHint": "Connexion au serveur pour vérifier son système, ses ports et les services existants.",
+            "idle": "Une fois le serveur choisi, Cindy vérifie s'il est possible d'y déployer le relais.",
             "ready": "Prêt à déployer",
             "blocked": "Déploiement automatique impossible",
             "recheck": "Vérifier à nouveau",
             "direct": "Les ports 80 et 443 sont libres : le relais les utilise directement.",
             "nginx": "Le relais passe par le Nginx déjà présent sur le serveur et conserve vos sites actuels.",
             "mine": "Ce serveur fait déjà tourner un relais déployé depuis cet ordinateur. Il est mis à jour sur place, sans effet sur les appareils qui l'ont rejoint.",
-            "other": "Ce serveur fait tourner un relais qui n'a pas été déployé depuis cet ordinateur. Le déploiement le supprime, et les appareils qui l'avaient rejoint devront le rejoindre à nouveau.",
-            "cleanup": "Le déploiement inachevé sur {{server}} est d'abord nettoyé."
+            "other": "Ce serveur fait tourner un relais qui n'a pas été déployé depuis cet ordinateur. Le déploiement le supprime, et les appareils qui l'avaient rejoint devront le rejoindre à nouveau."
           },
           "running": {
             "deploy": "Déploiement sur votre serveur…",
@@ -5807,7 +5811,7 @@
             "uninstall": "Suppression du relais de votre serveur…"
           },
           "done": {
-            "deploy": "Déployé. Cet ordinateur utilise désormais le relais de votre serveur. Utilisez « Ajouter un appareil » pour y connecter votre téléphone et vos autres ordinateurs.",
+            "deploy": "Déployé. Basculez dessus dans « Itinéraire de connexion », puis vous pourrez ajouter des appareils.",
             "upgrade": "Le relais de votre serveur est maintenant en version {{version}}.",
             "uninstall": "Relais supprimé de votre serveur"
           },
@@ -5831,7 +5835,6 @@
             "nginx-rollback": "Le déploiement n'a pas abouti. Restauration de la configuration Nginx précédente…"
           },
           "steps": {
-            "cleanup": "Nettoyer {{server}}",
             "connect": "Se connecter au serveur",
             "check": "Vérifier le serveur",
             "runtime": "Installer l'environnement d'exécution",
@@ -5866,6 +5869,10 @@
           "deployingStep": "{{step}}…",
           "viewProgress": "Voir la progression",
           "resume": "Reprendre le déploiement",
+          "rename": "Renommer",
+          "renameHint": "Change uniquement le nom affiché sur cet ordinateur. Le serveur et les appareils connectés gardent le nom d'origine.",
+          "renameSave": "Enregistrer",
+          "renameCancel": "Annuler",
           "statusChecking": "Vérification…",
           "statusOnline": "En ligne",
           "statusOffline": "Injoignable",
@@ -5880,14 +5887,15 @@
             "label": "Étapes du déploiement",
             "form": "Choisir le serveur",
             "deploy": "Déployer",
-            "done": "Ajouter des appareils"
+            "done": "Terminé"
           },
           "running": "Déploiement sur {{server}}…",
           "backgroundHint": "Fermer cette fenêtre n'arrête pas le déploiement",
           "background": "Continuer en arrière-plan",
           "doneTitle": "{{name}} est prêt",
-          "doneHint": "Cet ordinateur l'utilise désormais. Scannez avec votre téléphone, ou envoyez le lien à un autre ordinateur pour le rejoindre.",
-          "doneLater": "Vous pourrez aussi ajouter des appareils plus tard dans « Itinéraire de connexion »",
+          "doneHint": "Cet ordinateur reste sur son itinéraire actuel. Choisissez « Utiliser cet itinéraire » pour basculer, puis ajoutez votre téléphone et vos autres ordinateurs.",
+          "doneLater": "Vous pourrez aussi basculer plus tard dans « Itinéraire de connexion »",
+          "use": "Utiliser cet itinéraire",
           "finish": "Terminé"
         },
         "manage": {
@@ -9962,6 +9970,13 @@
     }
   },
   "bots": {
+    "avatarStatus": {
+      "awaiting": "Attend votre confirmation",
+      "error": "Requiert votre attention",
+      "running": "Au travail",
+      "done": "Terminé",
+      "unread": "Non lu"
+    },
     "workbench": {
       "ownedMark": "Appartient à {{names}}",
       "createdMark": "Créé par {{names}}",
@@ -10692,8 +10707,10 @@
         "reactorsUnavailable_many": "Noms indisponibles pour {{count}} autres membres",
         "reactorsUnavailable_other": "Noms indisponibles pour {{count}} autres membres",
         "invite": "Inviter dans le groupe",
+        "groupCreated": "Discussion de groupe créée",
+        "inviteFriends": "Invitez des amis à rejoindre le groupe et à travailler avec votre coéquipier.",
+        "generatingLink": "Génération du lien d'invitation…",
         "join": "Rejoindre le groupe",
-        "inviteDescription": "Les personnes qui acceptent l'invitation rejoignent le groupe et peuvent lire l'historique de ses conversations.",
         "revokeLink": "Révoquer ce lien",
         "revokeDescription": "Ce lien n'acceptera plus de nouveaux membres. Les autres liens d'invitation et les membres existants ne sont pas affectés.",
         "revokedLink": "Ce lien d'invitation a été révoqué.",
