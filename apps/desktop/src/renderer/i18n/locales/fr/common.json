@@ -5314,7 +5314,7 @@
         "title": "Utiliser mes connexions du navigateur",
         "description": "L'Agent ouvrira les sites avec les comptes auxquels vous êtes connecté dans Chrome, Edge ou Brave.",
         "toggleAria": "Utiliser mes connexions du navigateur",
-        "unavailableEmbedded": "Disponible uniquement avec le navigateur externe autonome. Le navigateur de la barre latérale ne peut pas charger les fichiers de connexion de Chrome.",
+        "unavailableEmbedded": "S'applique uniquement au navigateur autonome. Le désactiver supprime les fichiers de connexion copiés.",
         "confirmTitle": "Autoriser l'Agent à utiliser vos connexions du navigateur ?",
         "confirmDescription": "L'Agent pourra ouvrir des sites avec les comptes auxquels vous êtes connecté, y compris la messagerie, les espaces de stockage cloud et les consoles professionnelles. Vous pouvez désactiver cette option à tout moment ; la copie sera alors supprimée.",
         "confirmDescriptionMac": "L'Agent pourra ouvrir des sites avec les comptes auxquels vous êtes connecté, y compris la messagerie, les espaces de stockage cloud et les consoles professionnelles. La lecture des fichiers de connexion de Chrome nécessite également l'accès complet au disque. Vous pouvez désactiver cette option à tout moment ; la copie sera alors supprimée.",
@@ -5331,33 +5331,54 @@
       },
       "browserBackend": {
         "title": "Navigateur cible de l'automatisation",
-        "description": "Choisissez le navigateur que l'Agent pilote réellement pendant l'automatisation. L'état de connexion est indépendant entre les deux modes.",
         "defaultTag": "Par défaut",
         "resetToDefault": "Réinitialiser",
         "toggleFailed": "Échec du changement de navigateur cible",
         "health": {
-          "ready": "Le contrôle du navigateur intégré est connecté.",
-          "error": "Échec de la connexion au navigateur intégré : {{reason}}. Choisissez « Restaurer le navigateur » pour reconstruire la connexion de contrôle.",
+          "ready": "Le contrôle du navigateur de la barre latérale est connecté.",
+          "error": "Échec de la connexion au navigateur de la barre latérale : {{reason}}. Choisissez « Restaurer le navigateur » pour reconstruire la connexion de contrôle.",
           "reasons": {
             "disposing": "l'arrêt précédent n'est pas terminé",
-            "hostUnavailable": "l'interface du navigateur intégré n'est pas prête ou sa connexion a été perdue",
+            "hostUnavailable": "l'interface du navigateur de la barre latérale n'est pas prête ou sa connexion a été perdue",
             "startFailed": "le contrôleur de remplacement n'a pas pu démarrer",
             "statusFailed": "la vérification du statut du contrôleur a échoué",
-            "recoveryFailed": "la connexion de contrôle n'a pas pu être reconstruite"
+            "recoveryFailed": "la connexion de contrôle n'a pas pu être reconstruite",
+            "extensionDisconnected": "aucune extension de navigateur n'est connectée (installez et activez le plugin Cindy Chrome et son extension)",
+            "pluginMissing": "le plugin Cindy Chrome n'est pas installé ou pas activé"
           },
           "reconnect": "Reconnecter le navigateur",
           "recover": "Restaurer le navigateur",
           "recovering": "Restauration du navigateur…",
-          "recovered": "Navigateur intégré reconnecté",
-          "recoverFailed": "Impossible de restaurer le navigateur intégré. Consultez la raison et réessayez."
+          "recovered": "Navigateur de la barre latérale reconnecté",
+          "recoverFailed": "Impossible de restaurer le navigateur de la barre latérale. Consultez la raison et réessayez.",
+          "userBrowserReady": "Votre navigateur est connecté : l'Agent peut piloter le navigateur que vous utilisez.",
+          "userBrowserError": "Votre navigateur est indisponible : {{reason}}."
         },
         "rsbWebview": {
-          "title": "Navigateur intégré à la barre latérale",
-          "description": "L'Agent opère dans les onglets webview de la barre latérale droite. Aucune fenêtre contextuelle ; les connexions sont conservées séparément."
+          "title": "Navigateur de la barre latérale",
+          "description": "Ouvre les pages dans la barre latérale droite de Cindy pour que vous puissiez suivre ce que fait l'Agent. Les connexions sont conservées séparément."
         },
         "external": {
-          "title": "Navigateur externe autonome",
-          "description": "L'Agent pilote une fenêtre Chrome dédiée (Playwright intégré)."
+          "title": "Navigateur autonome",
+          "description": "Une fenêtre Chrome réservée à Cindy, distincte du Chrome que vous utilisez au quotidien. Les connexions sont conservées séparément."
+        },
+        "userBrowser": {
+          "title": "Mon navigateur",
+          "description": "Fonctionne dans le Chrome ou l'Edge que vous utilisez, avec vos connexions existantes. Les nouvelles pages s'ouvrent dans une fenêtre en arrière-plan, sans vous gêner."
+        },
+        "userBrowserSetup": {
+          "installPluginTitle": "Installer le plugin Cindy Chrome",
+          "enablePluginTitle": "Activer le plugin Cindy Chrome",
+          "installExtensionTitle": "Ajouter l'extension Cindy à votre navigateur",
+          "pluginBody": "« Mon navigateur » accède à votre Chrome ou Edge via le plugin Cindy Chrome et son extension de navigateur. Installez d'abord le plugin dans Cindy, puis suivez ses indications pour ajouter l'extension.",
+          "extensionBody": "« Ajouter l'extension » ouvre la page de l'extension Cindy dans la boutique de votre navigateur ; choisissez Ajouter et l'état passera à connecté de lui-même. Déjà ajoutée ? Activez-la dans les paramètres des extensions du navigateur.",
+          "installPlugin": "Installer le plugin",
+          "enablePlugin": "Activer",
+          "installExtension": "Ajouter l'extension",
+          "updatePluginTitle": "Mettre à jour le plugin Cindy Chrome",
+          "updatePluginBody": "Le plugin Cindy Chrome installé est trop ancien pour « Mon navigateur ». Mettez-le à jour vers la dernière version, puis suivez ses indications pour ajouter l'extension.",
+          "updatePlugin": "Mettre à jour",
+          "storeOpened": "La page de l'extension Cindy s'est ouverte dans votre navigateur. Choisissez « Ajouter à Chrome » et la connexion se fera d'elle-même."
         }
       },
       "android": {
@@ -7521,6 +7542,9 @@
         "sessionContextDetail": "Ne partage que des informations d'emplacement (ID de session et chemin du dossier de projet) pendant qu'il travaille pour la session en cours : aucun contenu de fichier n'est partagé et aucun accès aux fichiers n'est accordé.",
         "preview": "Peut ouvrir des pages d'aperçu des sites ci-dessous dans le navigateur de la barre latérale",
         "previewDetail": "Seuls les sites listés ci-dessous peuvent être ouverts ; chaque page ouverte est attribuée à ce plugin.",
+        "browserExtension": "Permet à son extension de navigateur intégrée de se connecter à Cindy",
+        "browserExtensionDetail": "Seules les extensions listées ci-dessous peuvent se connecter, via l'adresse de bouclage locale ; Cindy transmet à ce plugin les requêtes de l'extension.",
+        "browserExtensionPageControlDetail": "Seules les extensions listées ci-dessous peuvent se connecter. L'extension gère aussi le contrôle des pages : avec « Mon navigateur » sélectionné, l'Agent peut lire et piloter les pages du navigateur que vous utilisez.",
         "nodeChildSpawn": "Son programme Node peut demander à l'hôte de lancer des sous-processus déclarés dans son paquet",
         "nodeChildSpawnDetail": "Seuls les fichiers JS déclarés dans son propre paquet peuvent être lancés (avec les mêmes autorisations locales que le programme principal) ; aucune commande arbitraire ne peut être exécutée. Les sous-processus sont fermés en même temps lorsque le plugin est désactivé ou se termine.",
         "skill": "Ajoute la skill « {{name}} » à vos assistants IA",
