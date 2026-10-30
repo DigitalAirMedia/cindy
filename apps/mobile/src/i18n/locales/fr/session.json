@@ -581,6 +581,7 @@
     "toolUseLoopDetectedPingPongWithCount": "Le modèle alternait sans fin entre des appels d'outils, Cindy a donc arrêté ce tour après avoir détecté {{count}} appels dans la boucle. Envoyez un nouveau message pour continuer.",
     "toolUseLoopDetectedRotationWithCount": "Le modèle enchaînait des appels d'outils en rotation, Cindy a donc arrêté ce tour après avoir détecté {{count}} appels dans la boucle. Envoyez un nouveau message pour continuer.",
     "codexThreadLost": "Le mode d'authentification Codex a changé : cette session ne peut donc pas continuer. Démarrez une nouvelle session.",
+    "remoteCompactEncryptedContent": "La compaction du contexte a échoué, car le modèle n'a pas pu lire l'historique chiffré. La reprise automatique n'a pas abouti. Réessayez pour tenter une récupération.",
     "encryptedContentInvalid": "Le changement de fournisseur a rendu le chiffrement indisponible : cette session ne fonctionne donc qu'avec le fournisseur d'origine. Réglez ce problème sur l'ordinateur (utilisez « Démarrer une nouvelle session à partir d'ici » pour abandonner le contenu chiffré du protocole et continuer dans une nouvelle session)."
   },
   "row": {

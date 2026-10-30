@@ -1,5 +1,25 @@
 {
   "providerAccountUsage": {
+    "kimi": {
+      "refresh": "Actualiser le quota",
+      "usage": "Voir la consommation Kimi Code",
+      "error": {
+        "no-credentials": "Aucun identifiant Kimi Code n'est disponible. Connectez d'abord ce fournisseur.",
+        "auth": "Kimi Code a refusé les identifiants. Vérifiez la connexion et réessayez.",
+        "rate-limited": "Kimi Code limite les demandes de quota. Réessayez plus tard.",
+        "network": "Cindy ne parvient pas à joindre Kimi Code. Vérifiez le réseau et réessayez.",
+        "server": "Kimi Code ne peut pas renvoyer le quota pour le moment. Réessayez plus tard.",
+        "invalid-response": "Kimi Code a renvoyé des données de quota illisibles. Réessayez plus tard.",
+        "throttled": "Le quota vient d'être actualisé. Réessayez un peu plus tard.",
+        "unknown": "Cindy ne parvient pas à charger le quota Kimi Code. Réessayez plus tard.",
+        "updating": "La connexion a changé. Actualisez pour récupérer son quota."
+      },
+      "limit_5h": "5 heures",
+      "limit_7d": "Hebdomadaire",
+      "limit_month_total": "Total mensuel",
+      "limit_month_code": "Code mensuel",
+      "stale": "Affichage du dernier quota disponible. La dernière mise à jour a échoué."
+    },
     "openDashboard": "Ouvrir le tableau de bord de consommation DeepSeek",
     "deepSeek": {
       "balanceLine": "Solde {{total}} (rechargé {{toppedUp}} / offert {{granted}})",
@@ -1055,7 +1075,7 @@
   },
   "privacyExit": {
     "status": "Cet ordinateur est contrôlé à distance via Cindy",
-    "hint": "Cliquez ou appuyez sur une touche pour vous déconnecter…",
+    "hint": "Pour afficher cet écran, désactivez « Écran de confidentialité » dans Sécurité, sur l'appareil qui le contrôle. Ou cliquez ou appuyez sur une touche de cet ordinateur, puis choisissez Déconnecter.",
     "title": "Déconnecter le bureau à distance ?",
     "detail": "Cela mettra fin au contrôle à distance et rétablira l'écran de cet ordinateur. L'ordinateur se verrouillera si le verrouillage à la sortie est activé.",
     "cancel": "Rester connecté",
@@ -1438,6 +1458,8 @@
       "minutes": "{{m}} min"
     },
     "window": {
+      "kimiMonthTotal": "Total mensuel",
+      "kimiMonthCode": "Code mensuel",
       "session": "{{hours}} heures",
       "week": "Hebdomadaire",
       "scoped": "{{model}} hebdomadaire"
@@ -3362,8 +3384,12 @@
         "modelsPending": "{{name}} est configuré, mais impossible de récupérer les modèles. Réessayez dans les paramètres du fournisseur.",
         "busyWarning": "Cette modification nécessite de recharger le service Codex local et peut interrompre {{count}} session(s) en cours d'exécution. Continuer ?",
         "close": "Fermer l'importation du fournisseur",
-        "loadFailed": "Ce lien d'importation de fournisseur est invalide ou a expiré.",
-        "confirmFailed": "Impossible d'importer le fournisseur. Vérifiez le lien ou l'endpoint, puis réessayez.",
+        "fromFile": "Importer depuis un fichier",
+        "fileTooLarge": "Le fichier dépasse 4 Mio. Réduisez sa taille et réessayez.",
+        "fileInvalid": "Ce fichier n'est pas une configuration d'import de fournisseur valide. Vérifiez le format JSON et les champs de configuration.",
+        "fileReadFailed": "Impossible d'importer le fichier. Sélectionnez-le à nouveau et réessayez.",
+        "loadFailed": "Cet import de fournisseur n'est plus valide. Ouvrez le lien ou sélectionnez à nouveau le fichier.",
+        "confirmFailed": "Impossible d'importer le fournisseur. Vérifiez la configuration ou l'endpoint, puis réessayez.",
         "oauthFailed": "Le fournisseur a été ajouté, mais l'autorisation n'a pas abouti. Relancez l'autorisation.",
         "done": "{{name}} a été importé",
         "oauthDone": "{{name}} a été ajouté et autorisé",
@@ -3387,6 +3413,47 @@
           "create": "Un nouveau fournisseur local sera créé sous le nom {{name}}.",
           "update": "Le fournisseur existant {{name}} sera mis à jour.",
           "replace-key": "La clé API stockée localement pour {{name}} sera remplacée."
+        },
+        "fileGuideDescription": "Fichiers JSON UTF-8 au format Cindy, jusqu'à 4 Mio.",
+        "fileGuideSteps": "Utilisez l'exemple pour renseigner le nom du fournisseur, l'URL de l'endpoint, la clé API et les détails des modèles.",
+        "fileGuidePrivacy": "L'exemple ne contient aucune vraie clé. Gardez privés les fichiers qui contiennent votre clé.",
+        "selectJsonFile": "Choisir un fichier JSON",
+        "downloadExample": "Télécharger l'exemple",
+        "showFormat": "Voir le guide du format",
+        "hideFormat": "Masquer le guide du format",
+        "formatStructure": "Le fichier contient un seul objet JSON, sans Base64, lien d'import ni enveloppe supplémentaire. Les champs ci-dessous décrivent un fournisseur personnalisé avec clé API. Les noms de champs sont sensibles à la casse ; le JSON n'accepte pas les commentaires.",
+        "formatIdentity": "Obligatoire. Mettez kind à \"custom\" et name au nom du fournisseur à afficher.",
+        "formatAuth": "Obligatoire. Dans cet exemple, mettez method à \"apiKey\" et remplacez apiKey par la clé de votre fournisseur.",
+        "formatEndpoint": "Obligatoire pour chaque endpoint. protocol accepte \"openai-chat\", \"openai-responses\", \"anthropic-messages\" et \"google-generative-ai\". Mettez dans baseUrl l'URL HTTP(S) complète de l'endpoint ; HTTPS est recommandé.",
+        "formatTargets": "Tableau de moteurs facultatif : \"claude-code\", \"codex\" ou \"pi\". Omettez-le pour associer les moteurs selon le protocole, ou indiquez-les explicitement. Claude Code prend aussi en charge les protocoles OpenAI et Google. L'exemple n'active que Pi.",
+        "formatModels": "Facultatif. Utilisez des chaînes d'ID de modèle ou des objets avec id (name est facultatif). Omettez la liste ou laissez-la vide pour récupérer les modèles après confirmation. Une liste non vide désactive la récupération automatique.",
+        "formatMetadata": "Champs de modèle facultatifs : group est le groupe du modèle, contextWindow la longueur de contexte et maxOutputTokens la limite de sortie (tous deux en jetons). Les nombres de l'exemple sont indicatifs ; utilisez les capacités réelles du modèle.",
+        "formatEffort": "Champs de modèle facultatifs : efforts liste les niveaux d'effort pris en charge ; defaultEffort désigne celui utilisé par défaut. Retirez ces deux champs en cas de doute.",
+        "formatLimits": "Jusqu'à 8 endpoints par fournisseur et 10 000 modèles par endpoint, dans la limite de 4 Mio par fichier.",
+        "exampleTitle": "Exemple JSON (identique au téléchargement)",
+        "fileGuidePrepare": "Préparer votre fichier",
+        "fileGuideReview": "Prévisualiser et confirmer",
+        "fileGuideReviewHint": "Importez un ou plusieurs fournisseurs. Vérifiez d'abord le fichier ; rien n'est enregistré avant votre confirmation.",
+        "formatConversion": "Convertissez d'abord dans ce format les exports d'autres clients.",
+        "downloadBatchExample": "Télécharger l'exemple groupé",
+        "formatBatch": "Pour un import groupé, utilisez { \"providers\": [config1, config2] }, avec pour chaque entrée la structure d'un fournisseur unique décrite ci-dessous. 50 entrées et 4 Mio au maximum. Les emplacements de clé intégrés et les id explicites ne doivent pas se répéter. Si une entrée a une structure invalide, aucun brouillon d'import n'est créé pour le fichier.",
+        "batchTitle": "Importer des fournisseurs ({{count}})",
+        "batchNote": "Sélectionnez les fournisseurs à importer ensemble. Vérifiez-les un par un pour mettre à jour une connexion existante ou l'autoriser. Les entrées enregistrées sont conservées si une autre échoue.",
+        "batchImport": "Importer la sélection ({{count}})",
+        "batchProgress": "{{count}} sur {{total}} ajoutés ou mis à jour",
+        "batchItem": "Configuration {{index}}",
+        "batchReviewOne": "Vérifier individuellement",
+        "batchStatus": {
+          "loading": "Chargement de l'aperçu…",
+          "ready": "Prêt à importer",
+          "saving": "Import en cours…",
+          "saved": "Importé",
+          "modelsPending": "Importé ; relancez la découverte des modèles dans les paramètres du fournisseur",
+          "failed": "Échec de l'import ; réessayez ou vérifiez individuellement",
+          "manual": "Confirmation ou autorisation individuelle requise",
+          "invalid": "Aperçu indisponible ; vérifiez la configuration ou sélectionnez à nouveau le fichier",
+          "skipped": "Ignoré ; sélectionnez à nouveau le fichier pour importer cette entrée",
+          "authorizationPending": "Connexion ajoutée ; terminez l'autorisation dans les paramètres du fournisseur"
         }
       },
       "order": {
@@ -7464,9 +7531,11 @@
         "agentBackgroundDetail": "Ne nécessite pas de clic à chaque fois, mais ne peut utiliser que les sessions que vous avez précédemment connectées à ce plugin. Des frais de modèle peuvent s'appliquer.",
         "agentTasksRequest": "Vérifier l'autorisation de tâches",
         "agentTasks": "Peut créer et gérer ses propres tâches Cindy",
-        "agentTasksDetail": "Peut envoyer des messages, lire les résultats et arrêter ses propres exécutions. Les tâches restent visibles pour vous. Utilise les paramètres IA de ce plugin et peut entraîner des frais de modèle ; ne donne pas accès aux autres tâches.",
+        "agentTasksDetail": "Le plugin peut envoyer des messages à ses propres tâches, lire leurs résultats et les arrêter. Les tâches restent visibles pour vous, utilisent les paramètres IA du plugin et peuvent entraîner des frais de modèle. Les Agents de ces tâches peuvent utiliser les outils connectés, y compris l'accès à d'autres tâches et aux données du compte, dans la limite des autorisations des tâches et de la propriété du compte.",
+        "agentDelegation": "Peut déléguer des tâches délimitées aux coéquipiers",
+        "agentDelegationDetail": "Les coéquipiers peuvent effectuer la tâche déléguée sous approbation automatique. Ne se fait pas passer pour le propriétaire et ne modifie pas les autorisations des coéquipiers.",
         "agentTargets": "Peut envoyer des messages aux projets, aux tâches existantes et aux compagnons",
-        "agentTargetsDetail": "Peut voir les répertoires des projets locaux ainsi que les noms et ID des tâches et des compagnons, créer des tâches dans les projets, et envoyer du texte et des images aux tâches et compagnons existants. Peut déclencher une exécution IA et des frais de modèle ; ne donne pas accès à l'historique, aux paramètres ni aux commandes d'arrêt des autres tâches.",
+        "agentTargetsDetail": "Peut voir les répertoires des projets locaux ainsi que les noms et ID des tâches et des coéquipiers, créer des tâches dans les projets, et envoyer du texte et des images aux tâches et coéquipiers existants. Peut déclencher une exécution IA et des frais de modèle. Cette API d'envoi ne peut elle-même ni lire l'historique des autres tâches, ni modifier leurs paramètres, ni les arrêter.",
         "agentHiddenTasks": "Peut créer des tâches en arrière-plan masquées de la liste des tâches",
         "agentHiddenTasksDetail": "Les tâches créées par ce plugin peuvent ne pas apparaître dans la liste des tâches, la recherche et les notifications. Vous pouvez toujours les voir, les ouvrir ou les afficher dans la liste des tâches depuis Tâches en arrière-plan sur la page de ce plugin ; désinstaller le plugin les fait réapparaître.",
         "agentErrand": "Créer des tâches, effectuer du travail et lire les résultats",
@@ -11762,6 +11831,7 @@
         "cancelled": "Annulé"
       },
       "timeout": "Délai de configuration dépassé",
+      "cancelled": "La configuration du plugin a été annulée ; cet appel n'a pas été exécuté.",
       "oauthCancelled": "L'autorisation a été annulée",
       "oauthFailed": "Échec de l'autorisation : {{detail}}",
       "pluginUninstalledDuringOauth": "Le plugin cible a été désinstallé ou est indisponible",
@@ -12862,6 +12932,7 @@
       "piTransportClosed": "Connexion Pi distante interrompue (canal SSH fermé). La tâche distante est toujours en cours d'exécution : reconnectez-vous pour continuer.",
       "piManagerUnavailable": "Le gestionnaire Pi distant n'est pas prêt. Réessayez dans un instant ; si l'échec persiste, réinstallez Pi dans Paramètres → Machines distantes.",
       "piBundledNodeMissing": "Il manque l'environnement d'exécution (Node.js) sur l'hôte distant. Développez l'hôte dans Paramètres → Machines distantes et cliquez d'abord sur Installer pour Claude Code ou Codex (ils incluent Node.js), puis démarrez une tâche Pi.",
+      "remoteCompactEncryptedContent": "La compaction du contexte a échoué, car le modèle n'a pas pu lire l'historique chiffré. La reprise automatique n'a pas abouti. Réessayez pour tenter une récupération.",
       "contextOverflow": "Ce message dépasse à lui seul la fenêtre de contexte du modèle : Cindy ne peut donc pas le poursuivre dans une nouvelle session Agent. Raccourcissez la saisie ou retirez une pièce jointe volumineuse, puis réessayez.",
       "attachmentAccessDeniedTitle": "Cindy ne peut pas lire la pièce jointe source ; le message n'a pas été envoyé.",
       "attachmentAccessDeniedRecovery": "Enregistrez une copie dans Téléchargements ou dans un autre dossier accessible, retirez la pièce jointe d'origine et ajoutez la copie à l'aide du bouton de pièce jointe avant de renvoyer."
@@ -13948,6 +14019,20 @@
       }
     },
     "draft": {
+      "directoryRecovery": {
+        "required": "Certains dossiers liés nécessitent une autorisation. Sélectionnez à nouveau les {{count}} dossiers liés",
+        "changed": "Un dossier lié a changé. Vérifiez les dossiers, puis sélectionnez à nouveau les {{count}} dossiers liés",
+        "unavailable": "Un dossier lié est indisponible. Vérifiez le dossier ou les autorisations du système, ou revenez à l'édition pour le retirer",
+        "selecting": "Nouvelle sélection du dossier {{index}}/{{count}} : {{directory}}",
+        "cancelled": "Sélection des dossiers annulée. Votre prompt et vos dossiers liés sont conservés",
+        "mismatch": "Le dossier sélectionné diffère de l'original. Votre liste de dossiers n'a pas changé",
+        "failed": "Impossible de terminer la sélection des dossiers. Votre prompt et vos dossiers liés sont conservés",
+        "ready": "Dossiers sélectionnés à nouveau. Renvoyez la tâche",
+        "readyGoal": "Dossiers sélectionnés à nouveau. Créez à nouveau l'objectif",
+        "reselect": "Sélectionner à nouveau les dossiers",
+        "cancel": "Annuler la sélection des dossiers",
+        "edit": "Revenir à l'édition"
+      },
       "createSessionFailed": "Échec de la création de la session, veuillez réessayer",
       "piRemoteUnsupported": "Pi s'exécute uniquement en local et ne peut pas utiliser d'hôtes distants SSH. Passez à Claude ou Codex pour utiliser cet hôte.",
       "localWorktreeCleanupPending": "La session worktree locale précédente est toujours en attente de nettoyage. Réessayez une fois le nettoyage terminé.",

@@ -930,6 +930,7 @@ describe('production Session event pipeline', () => {
     ['en', 'Pi extensions could not be refreshed. Restart Cindy before using Pi again.'],
     ['ja', 'Pi 拡張機能を更新できませんでした。Pi を再び使用する前に Cindy を再起動してください。'],
     ['ko', 'Pi 확장을 새로 고치지 못했습니다. Pi를 다시 사용하기 전에 Cindy를 다시 시작하세요.'],
+    ['fr', "Impossible d'actualiser les extensions Pi. Redémarrez Cindy avant d'utiliser à nouveau Pi."],
   ] as const)('persists and broadcasts localized post-terminal recovery in %s', async (locale, text) => {
     setMainLocale(locale);
     const h = harness();
