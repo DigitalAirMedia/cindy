@@ -3824,6 +3824,7 @@
           },
           "capabilityHint": "Utilise les capacités déclarées par ce fournisseur. Si elle n'est pas déclarée, la prise en charge des images est déduite du nom du modèle.",
           "imageInput": "Images en entrée",
+          "imageInputMixed": "Variable selon le moteur",
           "supported": "Pris en charge",
           "unsupported": "Non pris en charge",
           "undeclared": "Non déclaré",
@@ -10351,6 +10352,72 @@
       "threadClosed": "Cette conversation entre coéquipiers est terminée · lecture seule"
     },
     "groupChat": {
+      "mask": {
+        "toolAccess": "Accès aux outils",
+        "catchup": {
+          "title": "Mentions me concernant",
+          "me": "Moi",
+          "markAll": "Tout marquer comme lu",
+          "empty": "Aucune mention non lue",
+          "thread": "Fil",
+          "main": "Discussion de groupe",
+          "answered": "Répondu à votre place"
+        },
+        "title": "Mode de réponse IA",
+        "settings": "Paramètres des réponses IA",
+        "companion": "Mon coéquipier",
+        "choose": "Choisir un coéquipier",
+        "enabled": "Réponses automatiques",
+        "triggerLabel": "Déclenchement",
+        "resumeAfter": "Reprendre après une absence",
+        "start": "Heure de début",
+        "end": "Heure de fin",
+        "startManual": "Démarrer maintenant",
+        "stop": "Arrêter les réponses",
+        "todos": "Collecter mes tâches à faire",
+        "digestLabel": "M'envoyer un résumé",
+        "saving": "Enregistrement…",
+        "saveError": "Échec de l'enregistrement. Vos paramètres précédents restent appliqués. Réessayez.",
+        "retry": "Réessayer",
+        "loading": "Chargement de vos paramètres…",
+        "takeover": "Je réponds",
+        "resume": "Reprendre les réponses IA",
+        "status": {
+          "enabled": "Activé",
+          "paused": "En pause",
+          "off": "Désactivé",
+          "offline": "Hors ligne",
+          "waiting": "En attente",
+          "unbound": "Non défini"
+        },
+        "detail": {
+          "paused": "Vous avez pris le relais de cet échange",
+          "off": "Les réponses automatiques sont désactivées",
+          "offline": "Réponses en pause · Ordinateur hors ligne",
+          "waiting": "En attente de votre démarrage",
+          "unbound": "Aucun coéquipier sélectionné",
+          "enabled": "Votre coéquipier est prêt à répondre à votre place."
+        },
+        "trigger": {
+          "always": "Toujours actif",
+          "manual": "Manuel",
+          "scheduled": "Planifié"
+        },
+        "digest": {
+          "daily": "Tous les jours",
+          "manual": "Manuellement"
+        },
+        "minutes": "{{count}} minutes",
+        "presence": "Vous êtes là · Reprise après {{minutes}} min d'absence",
+        "scheduledWait": "Démarre à {{time}}",
+        "attribution": "{{name}} a répondu pour {{owner}}",
+        "digestNow": "Résumer maintenant",
+        "digestWorking": "Résumé en cours…",
+        "digestSent": "Envoyé dans votre conversation avec le coéquipier",
+        "digestFailed": "Impossible de résumer. Réessayez.",
+        "digestEmpty": "Rien de nouveau à résumer",
+        "joinSetup": "Configurer les réponses IA après avoir rejoint le groupe"
+      },
       "migrationPending": "Une partie de l'historique antérieur est encore en cours d'importation. Une nouvelle tentative aura lieu automatiquement ; cette conversation reste disponible.",
       "memberSeparator": ", ",
       "ownerOf": "Propriétaire de {{name}}",
