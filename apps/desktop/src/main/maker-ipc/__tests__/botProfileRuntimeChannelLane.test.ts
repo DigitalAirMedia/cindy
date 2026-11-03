@@ -1,4 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 const state = vi.hoisted(() => ({ rows: [] as unknown[][] }));
 vi.mock('../../localDb/client/current.js', () => ({ getDbClient: () => ({ drizzle: { select: () => {
@@ -214,6 +217,31 @@ describe('guest-DM lanes bound to a project', () => {
     expect(opts.writableDirs ?? []).toEqual([]);
     expect(prompt(opts)).not.toContain('/bots/bot');
     expect(opts.botUserProfilePrompt ?? '').not.toContain('Takeshi');
+  });
+
+  // Bot sessions never load project docs natively, so a bound guest's first
+  // reply ignored the project's rules. Cindy passes the project's own file.
+  it('gives a bound guest the project instructions, and nobody else', async () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'guest-proj-'));
+    try {
+      fs.writeFileSync(path.join(dir, 'CLAUDE.md'), 'Reply in two sentences.');
+      const run = async (access: unknown) => {
+        seed('channel', 'im:telegram:777:dm:555');
+        const opts = { id: 'lane', agentKind: 'codex', workingDir: dir, model: 'm' } as unknown as MakerSessionCreateOpts;
+        await hydrateBotProfileRuntime(opts, { resolveGuestAccess: async () => access as never }, { persistSnapshot: false });
+        return prompt(opts);
+      };
+      expect(await run({ ...bound, projectPath: dir })).toContain('Reply in two sentences.');
+      // AGENTS.md wins over CLAUDE.md.
+      fs.writeFileSync(path.join(dir, 'AGENTS.md'), 'Ask before guessing.');
+      const both = await run({ ...bound, projectPath: dir });
+      expect(both).toContain('Ask before guessing.');
+      expect(both).not.toContain('Reply in two sentences.');
+      // An unbound guest lane runs in the Home: no project text.
+      expect(await run({ kind: 'shared', route: bound.route })).not.toContain('Ask before guessing.');
+    } finally {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   // #8359 review: a remote engine does not receive the confinement option.
